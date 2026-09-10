@@ -377,9 +377,6 @@
   // ---------------- Header stats + init ----------------
 
   function renderTopStats() {
-    document.getElementById("stat-warband-gold").textContent = fmtNumber(DATA.warbandGold || 0) + "g";
-    document.getElementById("stat-char-count").textContent = DATA.characters.length;
-
     const generated = new Date(DATA.generatedAt);
     document.getElementById("generated-at").textContent =
       "Last updated " + generated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });

@@ -67,24 +67,6 @@ a { color: var(--gold-2); }
   color: var(--ink);
   letter-spacing: 0.01em;
 }
-.brand-name { color: var(--gold-2); }
-
-.brand-sub {
-  margin: 0.35rem 0 0;
-  color: var(--ink-dim);
-  font-size: 0.92rem;
-}
-
-.topbar-stats { display: flex; gap: 2rem; }
-.stat { text-align: right; }
-.stat-value {
-  display: block;
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  color: var(--gold-2);
-  font-weight: 600;
-}
-.stat-label { display: block; font-size: 0.78rem; color: var(--ink-dim); }
 
 /* ---------- Page ---------- */
 

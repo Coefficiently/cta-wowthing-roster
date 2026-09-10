@@ -102,6 +102,7 @@ a { color: var(--gold-2); }
   border: 1px solid var(--line);
   border-radius: 6px;
   background: var(--panel);
+  padding-bottom: 14px; /* keeps the native scrollbar from overlapping the last row */
 }
 
 .roster-table {
@@ -144,6 +145,8 @@ a { color: var(--gold-2); }
 .char-col-name { font-family: var(--serif); font-weight: 600; font-size: 1rem; }
 
 .section-row td {
+  position: sticky;
+  left: 0;
   background: #241f14;
   color: var(--gold-2);
   font-family: var(--serif);

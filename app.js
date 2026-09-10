@@ -65,10 +65,14 @@
     </tr>`;
   }
 
-  function rowGold(chars) {
+  function rowProfession(index, chars) {
     return `<tr>
-      <td class="row-label">Gold</td>
-      ${chars.map((c) => `<td class="cell-dim">${fmtNumber(c.gold)}</td>`).join("")}
+      <td class="row-label">Profession ${index + 1}</td>
+      ${chars.map((c) => {
+        const p = c.professions[index];
+        if (!p) return `<td class="cell-dim">\u2014</td>`;
+        return `<td class="cell-profession">${p.name} <span class="profession-skill">${p.currentSkill}/${p.maxSkill}</span></td>`;
+      }).join("")}
     </tr>`;
   }
 
@@ -161,10 +165,11 @@
     let rows = "";
     rows += rowRealm(chars);
     rows += rowItemLevel(chars);
-    rows += rowGold(chars);
     rows += rowRating(chars);
     rows += rowKeystone(chars);
     rows += rowVault(chars);
+    rows += rowProfession(0, chars);
+    rows += rowProfession(1, chars);
     rows += rowMythicPlusSectionHeader(chars);
     for (const dungeon of DATA.mythicPlusDungeons) {
       rows += rowDungeon(dungeon, chars);

@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T09:59:47.553440+00:00",
+ "generatedAt": "2026-09-10T10:03:32.572175+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4783,7 +4783,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 96,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 67,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2515523,
@@ -5163,7 +5175,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 35,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 58,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504374,
@@ -5584,7 +5608,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 100,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 75,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504379,
@@ -6007,7 +6043,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 1,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 55,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504380,
@@ -6461,7 +6509,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 1,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 61,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504364,
@@ -6912,7 +6972,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 100,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 71,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504378,
@@ -7266,7 +7338,14 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Enchanting",
+     "currentSkill": 57,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504377,
@@ -7630,7 +7709,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 1,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 21,
+     "maxSkill": 100
+    }
+   ]
   },
   {
    "id": 2504381,
@@ -8034,7 +8125,19 @@
       null
      ]
     }
-   }
+   },
+   "professions": [
+    {
+     "name": "Alchemy",
+     "currentSkill": 0,
+     "maxSkill": 100
+    },
+    {
+     "name": "Enchanting",
+     "currentSkill": 55,
+     "maxSkill": 100
+    }
+   ]
   }
  ]
 }

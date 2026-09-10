@@ -167,6 +167,9 @@ a { color: var(--gold-2); }
 .cell-keystone { color: var(--ink); }
 .keystone-level { color: var(--gold-2); font-weight: 700; margin-right: 0.3rem; }
 
+.cell-profession { color: var(--ink); }
+.profession-skill { color: var(--ink-faint); font-variant-numeric: tabular-nums; font-size: 0.8rem; }
+
 .vault-slot {
   display: inline-block;
   min-width: 1.5rem;

@@ -37,6 +37,10 @@ MYTHIC_PLUS_DUNGEONS = [
     (250, "Temple of Sethraliss"),
 ]
 
+# Expansion index into a profession's per-expansion subProfessions array
+# (0=Classic ... 11=Midnight). Bump this when a new expansion launches.
+CURRENT_EXPANSION_INDEX = 11
+
 RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "N", 234: "HC", 235: "M"}
 RAID_DIFFICULTY_ORDER = [17, 14, 15, 16, 233, 234, 235]
 
@@ -123,6 +127,21 @@ def main():
     for r in static_data.get("rawRealms", []):
         realms[r[0]] = {"name": r[3], "slug": r[4], "region": r[1]}
     dungeon_name_by_id = {d[0]: d[3] for d in static_data.get("rawChallengeDungeons", [])}
+
+    # Primary (type 0) professions only -- a character has at most 2 -- mapped
+    # to their current-expansion (Midnight = index 11) subprofession id/name,
+    # which is what actually tracks this season's skill level.
+    profession_meta = {}
+    for p in static_data.get("rawProfessions", []):
+        prof_id, prof_type, prof_name = p[0], p[1], p[2]
+        sub_professions = p[5]
+        current_exp_sub = sub_professions[CURRENT_EXPANSION_INDEX] if len(sub_professions) > CURRENT_EXPANSION_INDEX else None
+        if prof_type != 0 or not current_exp_sub:
+            continue
+        profession_meta[prof_id] = {
+            "name": prof_name.split("|")[0],
+            "subProfessionId": current_exp_sub[0],
+        }
 
     # --- Figure out which item ids we need names for -------------------
     needed_item_ids = set()
@@ -357,6 +376,21 @@ def main():
                 grid[diff["label"]] = row
             raid_grids[raid["name"]] = grid
 
+        # --- Primary professions (current-expansion skill level) --------
+        char_professions = []
+        for prof_id, subs in sorted((professions or {}).items(), key=lambda kv: int(kv[0])):
+            prof_id = int(prof_id)
+            meta = profession_meta.get(prof_id)
+            if not meta:
+                continue  # secondary profession (cooking/fishing/archaeology)
+            sub_data = (subs or {}).get(str(meta["subProfessionId"]))
+            char_professions.append({
+                "name": meta["name"],
+                "currentSkill": sub_data["currentSkill"] if sub_data else 0,
+                "maxSkill": sub_data["maxSkill"] if sub_data else 100,
+            })
+        char_professions.sort(key=lambda p: p["name"])
+
         characters_out.append({
             "id": char_id,
             "name": name,
@@ -386,6 +420,7 @@ def main():
                 "dungeon": vault_dungeon,
             },
             "raidGrids": raid_grids,
+            "professions": char_professions,
         })
 
     characters_out.sort(key=lambda c: (-c["itemLevel"]))

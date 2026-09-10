@@ -67,6 +67,11 @@ jobs:
       - name: Pull latest (in case update-data committed)
         run: git pull
 
+      - name: Stamp cache-busting build version
+        run: |
+          VERSION="$(git rev-parse --short HEAD)-$(date +%s)"
+          sed -i "s/BUILD_VERSION/${VERSION}/g" index.html
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

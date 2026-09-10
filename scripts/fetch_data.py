@@ -16,7 +16,7 @@ BASE = "https://wowthing.org"
 # These can drift each season -- update if wowthing adds a new crest tier.
 CREST_IDS = [3437, 3438, 3439, 3440, 3441]      # Adventurer..Myth Mistcrest
 CATALYST_IDS = [2167]                            # Catalyst Charges
-BONUS_ROLL_IDS = [3028, 3310]                    # Restored Coffer Key, Coffer Key Shards
+BONUS_ROLL_IDS = [3513, 3509]                    # Nebulous Voidcore, Tidal Spark Dust
 
 MIN_LEVEL = 90
 MIN_ITEM_LEVEL = 290
@@ -309,21 +309,34 @@ def main():
     item_set_by_id = {s[0]: s[2] for s in item_data.get("rawItemSets", [])}
 
     # --- Build character output ----------------------------------------
+    def short_currency_name(name):
+        # "Adventurer Mistcrest" -> "Adventurer", etc. No-op for names that
+        # don't end in a "...crest" word (Catalyst Charges, Nebulous Voidcore).
+        stripped = re.sub(r"\s+\S*[Cc]rest$", "", name).strip()
+        return stripped or name
+
     def currency_group(raw_currencies, ids):
         by_id = {rc[0]: rc for rc in (raw_currencies or [])}
         out = []
         for cid in ids:
             rc = by_id.get(cid)
             meta = currency_by_id.get(cid, {"name": f"Currency {cid}"})
+            wowhead_currency_url = f"https://www.wowhead.com/currency={cid}"
             if rc:
                 out.append({
                     "id": cid,
                     "name": meta["name"],
+                    "shortName": short_currency_name(meta["name"]),
                     "quantity": rc[1] if len(rc) > 1 else 0,
                     "max": rc[2] if len(rc) > 2 else 0,
+                    "wowheadUrl": wowhead_currency_url,
                 })
             elif cid in currency_by_id:
-                out.append({"id": cid, "name": meta["name"], "quantity": 0, "max": 0})
+                out.append({
+                    "id": cid, "name": meta["name"], "shortName": short_currency_name(meta["name"]),
+                    "quantity": 0, "max": 0,
+                    "wowheadUrl": wowhead_currency_url,
+                })
         return out
 
     characters_out = []
@@ -395,24 +408,6 @@ def main():
                     item_id, bonus_ids=bonus_ids, enchant_ids=enchant_ids,
                     gem_ids=gem_ids, item_level=arr[3] or None,
                 ),
-            })
-
-        bag_items_out = []
-        for item in (raw_items or []):
-            location, bag_id, slot, item_id, count = item[0], item[1], item[2], item[3], item[4]
-            if slot == 0:
-                continue  # this is a bag container itself, not contents
-            if location != 1:
-                continue  # only "Bags" location
-            bag_items_out.append({
-                "bagId": bag_id,
-                "slot": slot,
-                "itemId": item_id,
-                "itemName": item_names.get(item_id, f"Item #{item_id}"),
-                "count": count,
-                "itemLevel": item[8] if len(item) > 8 else 0,
-                "quality": item[9] if len(item) > 9 else 1,
-                "wowheadUrl": wowhead_url(item_id, item_level=(item[8] if len(item) > 8 else None)),
             })
 
         lockouts_out = []
@@ -536,7 +531,6 @@ def main():
             "gold": gold,
             "equipped": equipped_out,
             "tierPieceCount": tier_piece_count,
-            "bagItems": bag_items_out,
             "currencies": {
                 "crests": currency_group(raw_currencies, CREST_IDS),
                 "catalyst": currency_group(raw_currencies, CATALYST_IDS),

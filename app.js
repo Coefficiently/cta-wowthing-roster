@@ -282,27 +282,33 @@
     </li>`;
   }
 
-  function renderBagRow(item) {
-    const border = qualityColor(item.quality);
-    const countTxt = item.count > 1 ? ` \u00d7${item.count}` : "";
-    const ilvlTxt = item.itemLevel > 0 ? item.itemLevel : "\u2014";
-    return `<li class="gear-row" style="border-left-color:${border}">
-      <div class="gear-row-main">
-        <div class="gear-row-top">
-          <span class="slot">Bag ${item.bagId}</span>
-          <span class="item-name">${wowheadLink({ wowheadUrl: item.wowheadUrl, name: item.itemName }, "item-name-link")}${countTxt}</span>
-          <span class="item-ilvl">${ilvlTxt}</span>
-        </div>
-      </div>
-    </li>`;
-  }
+  function renderCurrencySection(title, items) {
+    if (!items || items.length === 0) return "";
 
-  function renderCurrencyRow(cur) {
-    const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)} / ${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
-    return `<li class="currency-row">
-      <span class="currency-name">${cur.name}</span>
-      <span class="currency-qty">${qty}</span>
-    </li>`;
+    if (items.length === 1) {
+      const cur = items[0];
+      const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)} / ${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
+      return `<div class="currency-section">
+        <h4>${title}</h4>
+        <div class="currency-stat">
+          ${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-stat-value")}
+        </div>
+      </div>`;
+    }
+
+    const chips = items.map((cur) => {
+      const empty = cur.quantity === 0 && cur.max === 0;
+      const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)}/${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
+      return `<div class="currency-chip${empty ? " currency-chip-empty" : ""}">
+        ${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: cur.shortName || cur.name }, "currency-chip-name")}
+        <span class="currency-chip-qty">${qty}</span>
+      </div>`;
+    }).join("");
+
+    return `<div class="currency-section">
+      <h4>${title}</h4>
+      <div class="currency-chips">${chips}</div>
+    </div>`;
   }
 
   function fillList(id, items, renderFn, emptyText) {
@@ -324,10 +330,11 @@
       `${classInfo(char).name} \u00b7 ${realmName(char)} \u00b7 level ${char.level} \u00b7 ilvl ${char.itemLevel} \u00b7 tier ${char.tierPieceCount}pc`;
 
     fillList("detail-equipped", char.equipped, renderGearRow, "No equipped gear data.");
-    fillList("detail-crests", char.currencies.crests, renderCurrencyRow, "None tracked.");
-    fillList("detail-catalyst", char.currencies.catalyst, renderCurrencyRow, "None tracked.");
-    fillList("detail-bonusrolls", char.currencies.bonusRolls, renderCurrencyRow, "None tracked.");
-    fillList("detail-bags", char.bagItems, renderBagRow, "Bags are empty.");
+
+    document.getElementById("detail-currencies").innerHTML =
+      renderCurrencySection("Crests", char.currencies.crests) +
+      renderCurrencySection("Catalyst charges", char.currencies.catalyst) +
+      renderCurrencySection("Bonus rolls", char.currencies.bonusRolls);
 
     detailPanel.hidden = false;
     if (typeof detailPanel.scrollIntoView === "function") {

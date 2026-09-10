@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T10:40:36.653882+00:00",
+ "generatedAt": "2026-09-10T10:48:06.130070+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4615,60 +4615,75 @@
     }
    ],
    "tierPieceCount": 4,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 120,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 1,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 3,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 427,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -5299,60 +5314,75 @@
     }
    ],
    "tierPieceCount": 4,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 120,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 5,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 1,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 200,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -5940,60 +5970,75 @@
     }
    ],
    "tierPieceCount": 4,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 100,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 3,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 0,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 179,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -6481,60 +6526,75 @@
     }
    ],
    "tierPieceCount": 4,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 100,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
       "quantity": 3,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 226,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -7185,60 +7245,75 @@
     }
    ],
    "tierPieceCount": 5,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 100,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 2,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 3,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 153,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -7833,60 +7908,75 @@
     }
    ],
    "tierPieceCount": 4,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 100,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 2,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 3,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 125,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -8312,60 +8402,75 @@
     }
    ],
    "tierPieceCount": 2,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 1,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 3,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 100,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -8812,60 +8917,75 @@
     }
    ],
    "tierPieceCount": 2,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 100,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 50,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 1,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 3,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 100,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 7,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },
@@ -9370,60 +9490,75 @@
     }
    ],
    "tierPieceCount": 2,
-   "bagItems": [],
    "currencies": {
     "crests": [
      {
       "id": 3437,
       "name": "Adventurer Mistcrest",
+      "shortName": "Adventurer",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
       "id": 3438,
       "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
       "quantity": 80,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
       "id": 3439,
       "name": "Champion Mistcrest",
+      "shortName": "Champion",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
       "id": 3440,
       "name": "Hero Mistcrest",
+      "shortName": "Hero",
       "quantity": 20,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
       "id": 3441,
       "name": "Myth Mistcrest",
+      "shortName": "Myth",
       "quantity": 20,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
     "catalyst": [
      {
       "id": 2167,
       "name": "Catalyst Charges",
+      "shortName": "Catalyst Charges",
       "quantity": 0,
-      "max": 0
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=2167"
      }
     ],
     "bonusRolls": [
      {
-      "id": 3028,
-      "name": "Restored Coffer Key",
-      "quantity": 1,
-      "max": 0
+      "id": 3513,
+      "name": "Nebulous Voidcore",
+      "shortName": "Nebulous Voidcore",
+      "quantity": 3,
+      "max": 0,
+      "wowheadUrl": "https://www.wowhead.com/currency=3513"
      },
      {
-      "id": 3310,
-      "name": "Coffer Key Shards",
-      "quantity": 100,
-      "max": 0
+      "id": 3509,
+      "name": "Tidal Spark Dust",
+      "shortName": "Tidal Spark Dust",
+      "quantity": 5,
+      "max": 7,
+      "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
    },

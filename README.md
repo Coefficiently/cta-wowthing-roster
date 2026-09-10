@@ -1,8 +1,15 @@
 # cta's Roster
 
 A small static dashboard showing [WoWthing](https://wowthing.org/user/cta) character
-data for level 90+ / item level 290+ characters: equipped gear, bag contents,
+data for level 90+ / item level 290+ characters: equipped gear,
 crest/catalyst/bonus-roll currencies, active lockouts, and gold.
+
+Bag/inventory contents are intentionally not shown -- wowthing's public API
+never includes them for any account (confirmed in their own backend source:
+the public item query only includes equipped bag containers and a small
+hardcoded set of currency/progress items, never general loose items). That's
+a hard restriction on their end, not a privacy setting the account owner can
+toggle, so there's nothing to fetch here.
 
 ## How it works
 

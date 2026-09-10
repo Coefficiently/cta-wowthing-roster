@@ -163,18 +163,26 @@
     </tr>`;
   }
 
-  function rowRaidDifficulty(raidName, difficultyLabel, chars) {
+  function escapeHtml(str) {
+    const div = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+    return String(str).replace(/[&<>"']/g, (ch) => div[ch]);
+  }
+
+  function rowRaidDifficulty(raidName, difficultyLabel, bosses, chars) {
     return `<tr>
       <td class="row-label row-label-sub">${difficultyLabel}</td>
       ${chars.map((c) => {
         const row = (c.raidGrids[raidName] || {})[difficultyLabel];
         if (!row) return `<td>\u2014</td>`;
         const squares = row
-          .map((dead) => {
+          .map((dead, i) => {
             let cls = "boss-square boss-unknown";
-            if (dead === true) cls = "boss-square boss-dead";
-            else if (dead === false) cls = "boss-square boss-alive";
-            return `<span class="${cls}"></span>`;
+            let status = "Not attempted";
+            if (dead === true) { cls = "boss-square boss-dead"; status = "Dead"; }
+            else if (dead === false) { cls = "boss-square boss-alive"; status = "Alive"; }
+            const bossName = bosses[i] || `Boss ${i + 1}`;
+            const title = escapeHtml(`${bossName} \u2014 ${status}`);
+            return `<span class="${cls}" title="${title}"></span>`;
           })
           .join("");
         return `<td><div class="boss-row">${squares}</div></td>`;
@@ -203,7 +211,7 @@
     for (const raid of DATA.raids || []) {
       rows += rowRaidSectionHeader(raid.name, chars);
       for (const diff of raid.difficulties) {
-        rows += rowRaidDifficulty(raid.name, diff.label, chars);
+        rows += rowRaidDifficulty(raid.name, diff.label, raid.bosses, chars);
       }
     }
 

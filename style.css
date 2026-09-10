@@ -196,6 +196,7 @@ a { color: var(--gold-2); }
   height: 14px;
   border-radius: 2px;
   display: inline-block;
+  cursor: help;
 }
 .boss-dead { background: var(--boss-dead); }
 .boss-alive { background: var(--boss-unknown); border: 1px solid var(--line); }

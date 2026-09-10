@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T10:48:17.302114+00:00",
+ "generatedAt": "2026-09-10T10:51:41.115721+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4670,12 +4670,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
-      "quantity": 3,
+      "quantity": 0,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -5369,12 +5369,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
-      "quantity": 1,
+      "quantity": 0,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -6025,12 +6025,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
       "quantity": 0,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -6581,12 +6581,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
-      "quantity": 3,
+      "quantity": 1,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -7300,12 +7300,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
-      "quantity": 3,
+      "quantity": 2,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -7963,12 +7963,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
-      "quantity": 3,
+      "quantity": 2,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -8457,12 +8457,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
-      "quantity": 3,
+      "quantity": 2,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -8972,12 +8972,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
       "quantity": 3,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,
@@ -9545,12 +9545,12 @@
     ],
     "bonusRolls": [
      {
-      "id": 3513,
+      "id": 3418,
       "name": "Nebulous Voidcore",
       "shortName": "Nebulous Voidcore",
       "quantity": 3,
       "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=3513"
+      "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
       "id": 3509,

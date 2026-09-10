@@ -16,7 +16,12 @@ BASE = "https://wowthing.org"
 # These can drift each season -- update if wowthing adds a new crest tier.
 CREST_IDS = [3437, 3438, 3439, 3440, 3441]      # Adventurer..Myth Mistcrest
 CATALYST_IDS = [2167]                            # Catalyst Charges
-BONUS_ROLL_IDS = [3513, 3509]                    # Nebulous Voidcore, Tidal Spark Dust
+# Two currency ids are BOTH named "Nebulous Voidcore" with identical
+# description text (3418 and 3513) -- a duplicate-naming pattern that also
+# shows up elsewhere in wowthing's data (see the upgrade-track note above).
+# 3418 is the one confirmed correct against real in-game/addon values;
+# 3513 tracked a consistently different (wrong) number for every character.
+BONUS_ROLL_IDS = [3418, 3509]                    # Nebulous Voidcore, Tidal Spark Dust
 
 MIN_LEVEL = 90
 MIN_ITEM_LEVEL = 290

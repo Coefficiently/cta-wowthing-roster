@@ -18,7 +18,6 @@
   --q5: #ff8000;
 
   --boss-dead: #6ab04c;
-  --boss-alive: #c0392b;
   --boss-unknown: #35311f;
 
   --serif: "Spectral", Georgia, serif;
@@ -199,7 +198,7 @@ a { color: var(--gold-2); }
   display: inline-block;
 }
 .boss-dead { background: var(--boss-dead); }
-.boss-alive { background: var(--boss-alive); }
+.boss-alive { background: var(--boss-unknown); border: 1px solid var(--line); }
 .boss-unknown { background: var(--boss-unknown); border: 1px solid var(--line); }
 
 /* ---------- Detail panel ---------- */

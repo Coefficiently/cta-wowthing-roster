@@ -294,8 +294,17 @@
   const ROW_LABEL_WIDTH = 240;
 
   function computeCharsPerPage() {
-    const scrollEl = document.querySelector(".table-scroll");
-    const containerWidth = (scrollEl && scrollEl.clientWidth) || window.innerWidth - 48;
+    // Deliberately NOT measuring .table-scroll here: it has width:fit-content
+    // so it shrinks to whatever was rendered last render, which would make
+    // this circular (each render measures a container sized by the
+    // previous render, spiraling toward 1 column). .page doesn't
+    // shrink-wrap -- it's max-width:1400px and fills available space up to
+    // that cap -- so it's a stable, non-circular measurement.
+    const PAGE_HORIZONTAL_PADDING = 48; // matches .page's CSS padding (1.5rem each side)
+    const pageEl = document.querySelector(".page");
+    const containerWidth = pageEl && pageEl.clientWidth
+      ? pageEl.clientWidth - PAGE_HORIZONTAL_PADDING
+      : window.innerWidth - PAGE_HORIZONTAL_PADDING;
     const available = containerWidth - ROW_LABEL_WIDTH - 4;
     return Math.max(1, Math.floor(available / CHAR_COLUMN_WIDTH));
   }

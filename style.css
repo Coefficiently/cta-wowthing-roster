@@ -163,6 +163,8 @@ a { color: var(--gold-2); }
 .cell-strong { font-weight: 700; }
 .cell-gold { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-rating { color: var(--gold-2); font-variant-numeric: tabular-nums; }
+.cell-currency { font-variant-numeric: tabular-nums; }
+.cell-currency .wh-item-link { color: var(--gold-2); }
 .cell-keystone { color: var(--ink); }
 .keystone-level { color: var(--gold-2); font-weight: 700; margin-right: 0.3rem; }
 
@@ -260,15 +262,6 @@ a { color: var(--gold-2); }
   margin: 0 0 0.2rem;
 }
 .detail-meta { margin: 0 0 1.25rem; color: var(--ink-dim); font-size: 0.88rem; }
-
-.detail-columns {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 2rem;
-}
-@media (max-width: 720px) {
-  .detail-columns { grid-template-columns: 1fr; }
-}
 
 .detail-block h3 {
   font-family: var(--serif);
@@ -377,51 +370,6 @@ a { color: var(--gold-2); }
   z-index: 20;
   pointer-events: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.currency-section { margin-bottom: 1.15rem; }
-.currency-section h4 {
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: 0 0 0.5rem;
-  color: var(--ink-dim);
-}
-
-.currency-stat {
-  background: var(--panel-2);
-  border-radius: 4px;
-  padding: 0.5rem 0.75rem;
-}
-.currency-stat .currency-stat-value {
-  font-family: var(--serif);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--gold-2);
-  font-variant-numeric: tabular-nums;
-}
-
-.currency-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-.currency-chip {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  background: var(--panel-2);
-  border-radius: 4px;
-  padding: 0.35rem 0.6rem;
-  font-size: 0.83rem;
-}
-.currency-chip-empty { opacity: 0.45; }
-.currency-chip .currency-chip-name { color: var(--ink); }
-.currency-chip .currency-chip-qty {
-  font-variant-numeric: tabular-nums;
-  color: var(--gold-2);
-  font-weight: 600;
 }
 
 .empty-msg { color: var(--ink-dim); font-size: 0.85rem; font-style: italic; }

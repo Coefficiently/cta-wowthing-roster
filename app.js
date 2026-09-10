@@ -100,6 +100,26 @@
     </tr>`;
   }
 
+  function rowCurrencySectionHeader(chars) {
+    return `<tr class="section-row">
+      <td class="row-label section-label">Currencies</td>
+      <td class="section-fill" colspan="${chars.length}"></td>
+    </tr>`;
+  }
+
+  function rowCurrency(label, items, chars) {
+    return `<tr>
+      <td class="row-label row-label-sub">${label}</td>
+      ${chars.map((c) => {
+        const cur = items(c);
+        if (!cur) return `<td class="cell-dim">\u2014</td>`;
+        const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)}/${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
+        const empty = cur.quantity === 0 && cur.max === 0;
+        return `<td class="${empty ? "cell-dim" : "cell-currency"}">${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-cell-link")}</td>`;
+      }).join("")}
+    </tr>`;
+  }
+
   function rowRating(chars) {
     return `<tr>
       <td class="row-label">Rating</td>
@@ -204,6 +224,24 @@
     rows += rowVault(chars);
     rows += rowProfession(0, chars);
     rows += rowProfession(1, chars);
+
+    rows += rowCurrencySectionHeader(chars);
+    const crestCount = Math.max(...chars.map((c) => c.currencies.crests.length), 0);
+    for (let i = 0; i < crestCount; i++) {
+      const label = chars.find((c) => c.currencies.crests[i])?.currencies.crests[i]?.shortName || "Crest";
+      rows += rowCurrency(label, (c) => c.currencies.crests[i], chars);
+    }
+    const catalystCount = Math.max(...chars.map((c) => c.currencies.catalyst.length), 0);
+    for (let i = 0; i < catalystCount; i++) {
+      const label = chars.find((c) => c.currencies.catalyst[i])?.currencies.catalyst[i]?.shortName || "Catalyst";
+      rows += rowCurrency(label, (c) => c.currencies.catalyst[i], chars);
+    }
+    const bonusRollCount = Math.max(...chars.map((c) => c.currencies.bonusRolls.length), 0);
+    for (let i = 0; i < bonusRollCount; i++) {
+      const label = chars.find((c) => c.currencies.bonusRolls[i])?.currencies.bonusRolls[i]?.shortName || "Bonus Roll";
+      rows += rowCurrency(label, (c) => c.currencies.bonusRolls[i], chars);
+    }
+
     rows += rowMythicPlusSectionHeader(chars);
     for (const dungeon of DATA.mythicPlusDungeons) {
       rows += rowDungeon(dungeon, chars);
@@ -282,35 +320,6 @@
     </li>`;
   }
 
-  function renderCurrencySection(title, items) {
-    if (!items || items.length === 0) return "";
-
-    if (items.length === 1) {
-      const cur = items[0];
-      const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)} / ${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
-      return `<div class="currency-section">
-        <h4>${title}</h4>
-        <div class="currency-stat">
-          ${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-stat-value")}
-        </div>
-      </div>`;
-    }
-
-    const chips = items.map((cur) => {
-      const empty = cur.quantity === 0 && cur.max === 0;
-      const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)}/${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
-      return `<div class="currency-chip${empty ? " currency-chip-empty" : ""}">
-        ${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: cur.shortName || cur.name }, "currency-chip-name")}
-        <span class="currency-chip-qty">${qty}</span>
-      </div>`;
-    }).join("");
-
-    return `<div class="currency-section">
-      <h4>${title}</h4>
-      <div class="currency-chips">${chips}</div>
-    </div>`;
-  }
-
   function fillList(id, items, renderFn, emptyText) {
     const el = document.getElementById(id);
     if (!items || items.length === 0) {
@@ -330,11 +339,6 @@
       `${classInfo(char).name} \u00b7 ${realmName(char)} \u00b7 level ${char.level} \u00b7 ilvl ${char.itemLevel} \u00b7 tier ${char.tierPieceCount}pc`;
 
     fillList("detail-equipped", char.equipped, renderGearRow, "No equipped gear data.");
-
-    document.getElementById("detail-currencies").innerHTML =
-      renderCurrencySection("Crests", char.currencies.crests) +
-      renderCurrencySection("Catalyst charges", char.currencies.catalyst) +
-      renderCurrencySection("Bonus rolls", char.currencies.bonusRolls);
 
     detailPanel.hidden = false;
     if (typeof detailPanel.scrollIntoView === "function") {

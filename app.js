@@ -135,6 +135,12 @@
     </tr>`;
   }
 
+  // Full-red flag (not a gradient) for currencies where the interesting
+  // signal is simply "did this cap out and start going to waste" --
+  // Venomblight Manaflux (catalyst) and Tidal Spark Dust.
+  const RED_AT_MAX_IDS = new Set([3465, 3509]);
+  const FULL_RED = "rgb(255, 60, 50)";
+
   function rowCurrency(label, items, chars, colorize) {
     return `<tr>
       <td class="row-label row-label-sub">${label}</td>
@@ -154,7 +160,10 @@
         // Restricted to crests specifically (colorize=true), even though
         // isMovingMax also appears on some other currencies (e.g. Tidal
         // Spark Dust) that shouldn't get this treatment.
-        const fillColor = colorize && cur.isMovingMax ? crestFillColor(cur.totalQuantity, cur.max) : null;
+        let fillColor = colorize && cur.isMovingMax ? crestFillColor(cur.totalQuantity, cur.max) : null;
+        if (!fillColor && RED_AT_MAX_IDS.has(cur.id) && cur.max > 0 && cur.quantity >= cur.max) {
+          fillColor = FULL_RED;
+        }
         const linkStyle = fillColor ? `color:${fillColor}` : null;
         return `<td class="${cellClass}"${tooltipAttr}>${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-cell-link", linkStyle)}</td>`;
       }).join("")}

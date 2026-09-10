@@ -14,20 +14,31 @@ BASE = "https://wowthing.org"
 
 # Currency IDs we care about (Midnight Season 2, as of this writing).
 # These can drift each season -- update if wowthing adds a new crest tier.
-CREST_IDS = [3437, 3438, 3439, 3440, 3441]      # Adventurer..Myth Mistcrest
+#
+# There are TWO sets of ids named "X Mistcrest": 3437-3441 (category 142,
+# "Hidden") and 3442-3446 (category 282, literally "Crests"). We originally
+# used 3437-3441 -- they returned plausible nonzero data, so the bug wasn't
+# obvious -- but 3442-3446 are the ones wowthing's own UI actually displays,
+# confirmed two ways: their descriptions' item-level ranges exactly match
+# what we independently derived from equipped gear (e.g. Myth 321-334), and
+# their per-character records have max/totalQuantity/isMovingMax properly
+# populated (3437-3441's are always 0), which let a user-reported real value
+# (10 current / 400 earned-this-season for a specific character) be matched
+# exactly. If crest numbers on the site ever look wrong again, this
+# duplicate-id trap is the first thing to re-check.
+CREST_IDS = [3442, 3443, 3444, 3445, 3446]      # Adventurer..Myth Mistcrest
 
-# Crest hold caps aren't in wowthing's public data at all (the per-character
-# `max` field is 0 for every crest, for every character, on this account --
-# confirmed directly against the raw API response, not guessed). In-game,
-# each crest's cap rises +100/week from season start, except Myth which
-# starts 100 lower than the rest. Update this every Tuesday reset:
-# non-Myth cap = 100 * weeks_since_season_start, Myth cap = that minus 100.
+# Fallback only. With the correct ids above, wowthing's own `max` field is
+# properly populated per character (varies: seen as high as 500, with
+# Hero/Myth 100 lower than Adventurer/Veteran/Champion) and is used
+# directly. This override is kept in case that field is ever 0 for some
+# character/reason -- shouldn't normally be hit anymore.
 CREST_MAX_OVERRIDE = {
-    3437: 500,  # Adventurer Mistcrest
-    3438: 500,  # Veteran Mistcrest
-    3439: 500,  # Champion Mistcrest
-    3440: 500,  # Hero Mistcrest
-    3441: 400,  # Myth Mistcrest (always 100 less than the others)
+    3442: 500,  # Adventurer Mistcrest
+    3443: 500,  # Veteran Mistcrest
+    3444: 500,  # Champion Mistcrest
+    3445: 400,  # Hero Mistcrest
+    3446: 400,  # Myth Mistcrest
 }
 # 2167 ("Catalyst Charges") is a Dragonflight-era id, explicitly commented
 # out as unused in wowthing's own currencies.ts, and shows zero data for
@@ -37,7 +48,7 @@ CREST_MAX_OVERRIDE = {
 CATALYST_IDS = [3465]                            # Venomblight Manaflux
 # Two currency ids are BOTH named "Nebulous Voidcore" with identical
 # description text (3418 and 3513) -- a duplicate-naming pattern that also
-# shows up elsewhere in wowthing's data (see the upgrade-track note above).
+# shows up elsewhere in wowthing's data (see the crest note above).
 # 3418 is the one confirmed correct against real in-game/addon values;
 # 3513 tracked a consistently different (wrong) number for every character.
 BONUS_ROLL_IDS = [3418, 3509]                    # Nebulous Voidcore, Tidal Spark Dust

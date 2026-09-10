@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T12:26:32.548930+00:00",
+ "generatedAt": "2026-09-10T12:34:03.976658+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4618,54 +4618,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 56,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 56,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 120,
+      "quantity": 145,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 25,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
+      "quantity": 460,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 460,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 120,
+      "max": 400,
+      "totalQuantity": 400,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 10,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 400,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -5201,54 +5201,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 215,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 215,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 120,
+      "quantity": 420,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 300,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
+      "quantity": 60,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 320,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 0,
+      "max": 400,
+      "totalQuantity": 300,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 72,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 262,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -5870,54 +5870,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 172,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 172,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 100,
+      "quantity": 280,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 200,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
+      "quantity": 125,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 305,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 30,
+      "max": 400,
+      "totalQuantity": 250,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 40,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 150,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -6455,54 +6455,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 39,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 39,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 100,
+      "quantity": 350,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 250,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
-     },
-     {
-      "id": 3440,
-      "name": "Hero Mistcrest",
-      "shortName": "Hero",
       "quantity": 80,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "totalQuantity": 300,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3441,
+      "id": 3445,
+      "name": "Hero Mistcrest",
+      "shortName": "Hero",
+      "quantity": 42,
+      "max": 400,
+      "totalQuantity": 252,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
+     },
+     {
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 218,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 248,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -7144,54 +7144,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 48,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 48,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 100,
+      "quantity": 280,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 200,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 240,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 100,
+      "max": 400,
+      "totalQuantity": 170,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 65,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 95,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -7836,54 +7836,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
-     },
-     {
-      "id": 3438,
-      "name": "Veteran Mistcrest",
-      "shortName": "Veteran",
       "quantity": 100,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 100,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3439,
+      "id": 3443,
+      "name": "Veteran Mistcrest",
+      "shortName": "Veteran",
+      "quantity": 273,
+      "max": 500,
+      "totalQuantity": 173,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
+     },
+     {
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
+      "quantity": 30,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 240,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 115,
+      "max": 400,
+      "totalQuantity": 225,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 110,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 140,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -8359,54 +8359,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 44,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 44,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 80,
+      "quantity": 40,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 20,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 10,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 30,
+      "max": 400,
+      "totalQuantity": 90,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 99,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 49,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -8903,54 +8903,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 25,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 25,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 100,
+      "quantity": 125,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 25,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
+      "quantity": 140,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 140,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 80,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 110,
+      "max": 400,
+      "totalQuantity": 30,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 50,
+      "quantity": 79,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 29,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [
@@ -9505,54 +9505,54 @@
    "currencies": {
     "crests": [
      {
-      "id": 3437,
+      "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 0,
+      "quantity": 25,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3437"
+      "totalQuantity": 25,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
      {
-      "id": 3438,
+      "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 80,
+      "quantity": 100,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3438"
+      "totalQuantity": 20,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
      {
-      "id": 3439,
+      "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 0,
+      "quantity": 56,
       "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3439"
+      "totalQuantity": 56,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
      {
-      "id": 3440,
+      "id": 3445,
       "name": "Hero Mistcrest",
       "shortName": "Hero",
-      "quantity": 20,
-      "max": 500,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3440"
+      "quantity": 37,
+      "max": 400,
+      "totalQuantity": 17,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3445"
      },
      {
-      "id": 3441,
+      "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 20,
+      "quantity": 32,
       "max": 400,
-      "totalQuantity": 0,
-      "isMovingMax": false,
-      "wowheadUrl": "https://www.wowhead.com/currency=3441"
+      "totalQuantity": 12,
+      "isMovingMax": true,
+      "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
     ],
     "catalyst": [

@@ -68,6 +68,30 @@ a { color: var(--gold-2); }
   letter-spacing: 0.01em;
 }
 
+.refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.refresh-btn:hover { border-color: var(--gold); color: var(--ink); }
+.refresh-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+.refresh-btn:disabled { cursor: default; opacity: 0.7; }
+.refresh-icon { display: inline-block; }
+.refresh-btn.is-refreshing .refresh-icon { animation: refresh-spin 0.8s linear infinite; }
+@keyframes refresh-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* ---------- Page ---------- */
 
 .page {

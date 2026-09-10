@@ -382,17 +382,37 @@
       "Last updated " + generated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
   }
 
-  async function init() {
+  async function loadAndRender() {
     try {
-      const res = await fetch("data.json", { cache: "no-store" });
+      // Cache-bust with a timestamp query param so a manual refresh always
+      // hits the network, even on browsers that ignore cache:"no-store".
+      const res = await fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
       DATA = await res.json();
     } catch (err) {
       tbodyEl.innerHTML = `<tr><td class="empty-msg">Could not load character data. Try again shortly.</td></tr>`;
       console.error(err);
-      return;
+      return false;
     }
     renderTopStats();
     render();
+    return true;
+  }
+
+  function wireRefreshButton() {
+    const btn = document.getElementById("refresh-btn");
+    if (!btn) return;
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      btn.classList.add("is-refreshing");
+      await loadAndRender();
+      btn.classList.remove("is-refreshing");
+      btn.disabled = false;
+    });
+  }
+
+  async function init() {
+    wireRefreshButton();
+    await loadAndRender();
   }
 
   init();

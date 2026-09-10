@@ -110,8 +110,11 @@
     `;
   }
 
-  function rowMythicPlusSectionHeader() {
-    return `<tr class="section-row"><td colspan="999">Mythic+</td></tr>`;
+  function rowMythicPlusSectionHeader(chars) {
+    return `<tr class="section-row">
+      <td class="row-label section-label">Mythic+</td>
+      <td class="section-fill" colspan="${chars.length}"></td>
+    </tr>`;
   }
 
   function rowDungeon(dungeon, chars) {
@@ -125,8 +128,11 @@
     </tr>`;
   }
 
-  function rowRaidSectionHeader(raidName) {
-    return `<tr class="section-row"><td colspan="999">${raidName}</td></tr>`;
+  function rowRaidSectionHeader(raidName, chars) {
+    return `<tr class="section-row">
+      <td class="row-label section-label">${raidName}</td>
+      <td class="section-fill" colspan="${chars.length}"></td>
+    </tr>`;
   }
 
   function rowRaidDifficulty(raidName, difficultyLabel, chars) {
@@ -159,12 +165,12 @@
     rows += rowRating(chars);
     rows += rowKeystone(chars);
     rows += rowVault(chars);
-    rows += rowMythicPlusSectionHeader();
+    rows += rowMythicPlusSectionHeader(chars);
     for (const dungeon of DATA.mythicPlusDungeons) {
       rows += rowDungeon(dungeon, chars);
     }
     for (const raid of DATA.raids || []) {
-      rows += rowRaidSectionHeader(raid.name);
+      rows += rowRaidSectionHeader(raid.name, chars);
       for (const diff of raid.difficulties) {
         rows += rowRaidDifficulty(raid.name, diff.label, chars);
       }

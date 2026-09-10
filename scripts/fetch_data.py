@@ -37,7 +37,7 @@ MYTHIC_PLUS_DUNGEONS = [
     (250, "Temple of Sethraliss"),
 ]
 
-RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "Normal", 234: "Heroic", 235: "Mythic"}
+RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "N", 234: "HC", 235: "M"}
 RAID_DIFFICULTY_ORDER = [17, 14, 15, 16, 233, 234, 235]
 
 # Some raids only have as many difficulty rows as wowthing has actually seen a

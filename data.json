@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T09:57:17.469800+00:00",
+ "generatedAt": "2026-09-10T09:59:36.336835+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4238,15 +4238,15 @@
    "difficulties": [
     {
      "id": 233,
-     "label": "Normal"
+     "label": "N"
     },
     {
      "id": 234,
-     "label": "Heroic"
+     "label": "HC"
     },
     {
      "id": 235,
-     "label": "Mythic"
+     "label": "M"
     }
    ]
   }
@@ -4773,13 +4773,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       true
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -5153,13 +5153,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       true
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -5574,13 +5574,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       null
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -5997,13 +5997,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       true
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -6451,13 +6451,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       null
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -6902,13 +6902,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       null
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -7256,13 +7256,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       null
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -7620,13 +7620,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       null
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }
@@ -8024,13 +8024,13 @@
      ]
     },
     "The Tidebound Grotto": {
-     "Normal": [
+     "N": [
       null
      ],
-     "Heroic": [
+     "HC": [
       null
      ],
-     "Mythic": [
+     "M": [
       null
      ]
     }

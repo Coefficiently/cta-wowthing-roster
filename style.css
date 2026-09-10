@@ -144,10 +144,7 @@ a { color: var(--gold-2); }
 .char-col:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
 .char-col-name { font-family: var(--serif); font-weight: 600; font-size: 1rem; }
 
-.section-row td {
-  position: sticky;
-  left: 0;
-  background: #241f14;
+.section-row .section-label {
   color: var(--gold-2);
   font-family: var(--serif);
   font-weight: 600;
@@ -155,9 +152,13 @@ a { color: var(--gold-2); }
   padding-top: 0.55rem;
   padding-bottom: 0.55rem;
   border-top: 1px solid var(--line);
+  background: #241f14;
 }
-.section-row .row-label,
-.section-row td:first-child { background: #241f14; }
+.section-row .section-fill {
+  background: #241f14;
+  border-top: 1px solid var(--line);
+  padding: 0;
+}
 
 .cell-dim { color: var(--ink-faint); }
 .cell-strong { font-weight: 700; }

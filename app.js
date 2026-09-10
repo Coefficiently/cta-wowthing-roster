@@ -177,8 +177,8 @@
         const squares = row
           .map((dead, i) => {
             let cls = "boss-square boss-unknown";
-            let status = "Not killed";
-            if (dead === true) { cls = "boss-square boss-dead"; status = "Killed"; }
+            let status = "Unsaved";
+            if (dead === true) { cls = "boss-square boss-dead"; status = "Saved"; }
             else if (dead === false) { cls = "boss-square boss-alive"; }
             const bossName = bosses[i] || `Boss ${i + 1}`;
             const tooltipText = escapeHtml(`${bossName} \u2014 ${status}`);

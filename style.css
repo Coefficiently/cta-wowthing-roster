@@ -10,17 +10,9 @@
   --gold: #c99a44;
   --gold-2: #e8c374;
 
-  --q0: #9d9d9d;
-  --q1: #ffffff;
-  --q2: #1eff00;
-  --q3: #0070dd;
-  --q4: #a335ee;
-  --q5: #ff8000;
-
   --boss-dead: #6ab04c;
   --boss-unknown: #35311f;
 
-  --serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -60,7 +52,7 @@ a { color: var(--gold-2); }
 }
 
 .brand h1 {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-weight: 700;
   font-size: 2.1rem;
   margin: 0;
@@ -149,11 +141,11 @@ a { color: var(--gold-2); }
 }
 .char-col:hover { background: #2c2718; }
 .char-col:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
-.char-col-name { font-family: var(--serif); font-weight: 600; font-size: 1rem; display: block; text-align: center; }
+.char-col-name { font-family: var(--sans); font-weight: 600; font-size: 1rem; display: block; text-align: center; }
 
 .section-row .section-label {
   color: var(--gold-2);
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-weight: 600;
   font-size: 0.88rem;
   padding-top: 0.55rem;
@@ -169,7 +161,6 @@ a { color: var(--gold-2); }
 
 .cell-dim { color: var(--ink-faint); }
 .cell-strong { font-weight: 700; font-variant-numeric: tabular-nums; }
-.cell-gold { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-rating { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-currency { font-variant-numeric: tabular-nums; }
 .cell-currency .wh-item-link { color: var(--gold-2); }
@@ -272,14 +263,14 @@ a { color: var(--gold-2); }
 .detail-close:hover { color: var(--ink); }
 
 #detail-name {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.5rem;
   margin: 0 0 0.2rem;
 }
 .detail-meta { margin: 0 0 1.25rem; color: var(--ink-dim); font-size: 0.88rem; }
 
 .detail-block h3 {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 0.6rem;

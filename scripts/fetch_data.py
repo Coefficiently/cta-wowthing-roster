@@ -435,6 +435,9 @@ def main():
                 ),
             })
 
+        # Used internally below to build raidGrids (the actual UI-facing
+        # boss-kill data); not shipped in the output itself, since raidGrids
+        # already covers everything the frontend needs from it.
         lockouts_out = []
         for key, lo in (lockouts or {}).items():
             lockouts_out.append({
@@ -463,7 +466,6 @@ def main():
                 tyrannical = entry[2] if len(entry) > 2 else None
                 best_affix = tyrannical or fortified
                 dungeon_level = best_affix[0] if best_affix else 0
-                timed = bool(best_affix[3] == 0) if best_affix and len(best_affix) > 3 else None
                 total_score += overall_score
                 dungeon_scores_out.append({
                     "mapId": map_id,
@@ -576,7 +578,6 @@ def main():
                 "catalyst": currency_group(raw_currencies, CATALYST_IDS),
                 "bonusRolls": currency_group(raw_currencies, BONUS_ROLL_IDS),
             },
-            "lockouts": lockouts_out,
             "mythicPlus": {
                 "rating": rating,
                 "currentKeystone": current_keystone,

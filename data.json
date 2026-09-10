@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T12:02:48.064787+00:00",
+ "generatedAt": "2026-09-10T12:09:06.048325+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4687,152 +4687,6 @@
      }
     ]
    },
-   "lockouts": [
-    {
-     "name": "The Tidebound Grotto",
-     "difficulty": 233,
-     "difficultyName": "Difficulty 233",
-     "defeatedBosses": 1,
-     "maxBosses": 1,
-     "resetTime": "2026-09-15T15:00:01Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": true,
-       "name": "Nymrissa Wavecaller"
-      }
-     ]
-    },
-    {
-     "name": "The Venomous Abyss",
-     "difficulty": 14,
-     "difficultyName": "Normal",
-     "defeatedBosses": 2,
-     "maxBosses": 8,
-     "resetTime": "2026-09-15T15:00:01Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": true,
-       "name": "Nek'zali the Soulcoiler"
-      },
-      {
-       "dead": false,
-       "name": "Entombed Sentinels"
-      },
-      {
-       "dead": false,
-       "name": "The Lost Explorers"
-      },
-      {
-       "dead": false,
-       "name": "Vashnik the Malignant"
-      },
-      {
-       "dead": false,
-       "name": "Sszorak"
-      },
-      {
-       "dead": false,
-       "name": "The Twin Fangs"
-      },
-      {
-       "dead": false,
-       "name": "The Coiled Altar"
-      },
-      {
-       "dead": true,
-       "name": "Ula'tek"
-      }
-     ]
-    },
-    {
-     "name": "The Venomous Abyss",
-     "difficulty": 15,
-     "difficultyName": "Heroic",
-     "defeatedBosses": 3,
-     "maxBosses": 8,
-     "resetTime": "2026-09-15T15:00:01Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": false,
-       "name": "Nek'zali the Soulcoiler"
-      },
-      {
-       "dead": false,
-       "name": "Entombed Sentinels"
-      },
-      {
-       "dead": false,
-       "name": "The Lost Explorers"
-      },
-      {
-       "dead": true,
-       "name": "Vashnik the Malignant"
-      },
-      {
-       "dead": false,
-       "name": "Sszorak"
-      },
-      {
-       "dead": false,
-       "name": "The Twin Fangs"
-      },
-      {
-       "dead": true,
-       "name": "The Coiled Altar"
-      },
-      {
-       "dead": true,
-       "name": "Ula'tek"
-      }
-     ]
-    },
-    {
-     "name": "The Venomous Abyss",
-     "difficulty": 16,
-     "difficultyName": "Mythic",
-     "defeatedBosses": 7,
-     "maxBosses": 8,
-     "resetTime": "2026-09-15T15:00:01Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": true,
-       "name": "Nek'zali the Soulcoiler"
-      },
-      {
-       "dead": true,
-       "name": "Entombed Sentinels"
-      },
-      {
-       "dead": true,
-       "name": "The Lost Explorers"
-      },
-      {
-       "dead": true,
-       "name": "Vashnik the Malignant"
-      },
-      {
-       "dead": true,
-       "name": "Sszorak"
-      },
-      {
-       "dead": true,
-       "name": "The Twin Fangs"
-      },
-      {
-       "dead": true,
-       "name": "The Coiled Altar"
-      },
-      {
-       "dead": false,
-       "name": "Ula'tek"
-      }
-     ]
-    }
-   ],
    "mythicPlus": {
     "rating": 2946,
     "currentKeystone": {
@@ -5400,23 +5254,6 @@
      }
     ]
    },
-   "lockouts": [
-    {
-     "name": "The Tidebound Grotto",
-     "difficulty": 233,
-     "difficultyName": "Difficulty 233",
-     "defeatedBosses": 1,
-     "maxBosses": 1,
-     "resetTime": "2026-09-15T15:00:08Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": true,
-       "name": "Nymrissa Wavecaller"
-      }
-     ]
-    }
-   ],
    "mythicPlus": {
     "rating": 2695,
     "currentKeystone": {
@@ -6070,7 +5907,6 @@
      }
     ]
    },
-   "lockouts": [],
    "mythicPlus": {
     "rating": 2660,
     "currentKeystone": null,
@@ -6640,66 +6476,6 @@
      }
     ]
    },
-   "lockouts": [
-    {
-     "name": "The Tidebound Grotto",
-     "difficulty": 233,
-     "difficultyName": "Difficulty 233",
-     "defeatedBosses": 1,
-     "maxBosses": 1,
-     "resetTime": "2026-09-15T15:00:04Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": true,
-       "name": "Nymrissa Wavecaller"
-      }
-     ]
-    },
-    {
-     "name": "The Venomous Abyss",
-     "difficulty": 15,
-     "difficultyName": "Heroic",
-     "defeatedBosses": 1,
-     "maxBosses": 8,
-     "resetTime": "2026-09-15T15:00:04Z",
-     "locked": true,
-     "bosses": [
-      {
-       "dead": false,
-       "name": "Nek'zali the Soulcoiler"
-      },
-      {
-       "dead": false,
-       "name": "Entombed Sentinels"
-      },
-      {
-       "dead": false,
-       "name": "The Lost Explorers"
-      },
-      {
-       "dead": false,
-       "name": "Vashnik the Malignant"
-      },
-      {
-       "dead": false,
-       "name": "Sszorak"
-      },
-      {
-       "dead": false,
-       "name": "The Twin Fangs"
-      },
-      {
-       "dead": false,
-       "name": "The Coiled Altar"
-      },
-      {
-       "dead": true,
-       "name": "Ula'tek"
-      }
-     ]
-    }
-   ],
    "mythicPlus": {
     "rating": 2060,
     "currentKeystone": {
@@ -7373,7 +7149,6 @@
      }
     ]
    },
-   "lockouts": [],
    "mythicPlus": {
     "rating": 1331,
     "currentKeystone": {
@@ -8050,7 +7825,6 @@
      }
     ]
    },
-   "lockouts": [],
    "mythicPlus": {
     "rating": 2360,
     "currentKeystone": null,
@@ -8558,7 +8332,6 @@
      }
     ]
    },
-   "lockouts": [],
    "mythicPlus": {
     "rating": 668,
     "currentKeystone": {
@@ -9087,7 +8860,6 @@
      }
     ]
    },
-   "lockouts": [],
    "mythicPlus": {
     "rating": 332,
     "currentKeystone": {
@@ -9674,7 +9446,6 @@
      }
     ]
    },
-   "lockouts": [],
    "mythicPlus": {
     "rating": 914,
     "currentKeystone": {

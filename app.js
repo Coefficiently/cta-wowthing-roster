@@ -408,6 +408,12 @@
       console.error(err);
       return false;
     }
+    // Close the detail panel rather than let it keep showing a character's
+    // now-possibly-stale gear -- the table underneath it is about to be
+    // fully rebuilt with fresh data, and re-opening is one click away.
+    if (!detailPanel.hidden) {
+      detailPanel.hidden = true;
+    }
     renderTopStats();
     render();
     return true;

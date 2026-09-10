@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T09:50:19.153927+00:00",
+ "generatedAt": "2026-09-10T09:52:48.206151+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4202,22 +4202,46 @@
   "6": "#e6cc80",
   "7": "#00ccff"
  },
- "raidName": "The Venomous Abyss",
- "raidBosses": [
-  "Nek'zali the Soulcoiler",
-  "Entombed Sentinels",
-  "The Lost Explorers",
-  "Vashnik the Malignant",
-  "Sszorak",
-  "The Twin Fangs",
-  "The Coiled Altar",
-  "Ula'tek"
- ],
- "raidDifficulties": [
-  "LFR",
-  "N",
-  "HC",
-  "M"
+ "raids": [
+  {
+   "name": "The Venomous Abyss",
+   "bosses": [
+    "Nek'zali the Soulcoiler",
+    "Entombed Sentinels",
+    "The Lost Explorers",
+    "Vashnik the Malignant",
+    "Sszorak",
+    "The Twin Fangs",
+    "The Coiled Altar",
+    "Ula'tek"
+   ],
+   "difficulties": [
+    {
+     "id": 14,
+     "label": "N"
+    },
+    {
+     "id": 15,
+     "label": "HC"
+    },
+    {
+     "id": 16,
+     "label": "M"
+    }
+   ]
+  },
+  {
+   "name": "The Tidebound Grotto",
+   "bosses": [
+    "Nymrissa Wavecaller"
+   ],
+   "difficulties": [
+    {
+     "id": 233,
+     "label": "Normal"
+    }
+   ]
+  }
  ],
  "mythicPlusDungeons": [
   {
@@ -4707,47 +4731,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     true,
-     false,
-     false,
-     false,
-     false,
-     false,
-     false,
-     true
-    ],
-    "HC": [
-     false,
-     false,
-     false,
-     true,
-     false,
-     false,
-     true,
-     true
-    ],
-    "M": [
-     true,
-     true,
-     true,
-     true,
-     true,
-     true,
-     true,
-     false
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+     ],
+     "HC": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true
+     ],
+     "M": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      true
+     ]
+    }
    }
   },
   {
@@ -5084,47 +5105,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      true
+     ]
+    }
    }
   },
   {
@@ -5502,47 +5520,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      null
+     ]
+    }
    }
   },
   {
@@ -5922,47 +5937,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     false,
-     false,
-     false,
-     false,
-     false,
-     false,
-     false,
-     true
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      true
+     ]
+    }
    }
   },
   {
@@ -6373,47 +6385,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      null
+     ]
+    }
    }
   },
   {
@@ -6821,47 +6830,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      null
+     ]
+    }
    }
   },
   {
@@ -7172,47 +7178,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      null
+     ]
+    }
    }
   },
   {
@@ -7533,47 +7536,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      null
+     ]
+    }
    }
   },
   {
@@ -7934,47 +7934,44 @@
      }
     ]
    },
-   "raidGrid": {
-    "LFR": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "N": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "HC": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
-    "M": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null
-    ]
+   "raidGrids": {
+    "The Venomous Abyss": {
+     "N": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "HC": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "M": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "The Tidebound Grotto": {
+     "Normal": [
+      null
+     ]
+    }
    }
   }
  ]

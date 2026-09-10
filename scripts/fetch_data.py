@@ -37,8 +37,8 @@ MYTHIC_PLUS_DUNGEONS = [
     (250, "Temple of Sethraliss"),
 ]
 
-RAID_DIFFICULTIES = [17, 14, 15, 16]  # LFR, Normal, Heroic, Mythic
-RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M"}
+RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "Normal"}
+RAID_DIFFICULTY_ORDER = [17, 14, 15, 16, 233]
 
 SLOT_NAMES = {
     0: "Ammo", 1: "Head", 2: "Neck", 3: "Shoulders", 4: "Shirt", 5: "Chest",
@@ -129,28 +129,39 @@ def main():
 
     print(f"{len(qualifying)} characters qualify (level>={MIN_LEVEL}, ilvl>={MIN_ITEM_LEVEL})")
 
-    # --- Identify the current raid + canonical boss order ---------------
-    # A "raid" lockout is one whose difficulties are all raid difficulties
-    # (LFR/Normal/Heroic/Mythic). Pick whichever raid name shows up on the
-    # most characters, and use the longest boss list seen for it as the
-    # canonical column order.
+    # --- Identify raids + canonical boss order ---------------------------
+    # Every distinct lockout name found is treated as its own raid, since
+    # WoW dungeons don't carry a persistent weekly "lockout" the way raids
+    # do (including smaller one-off raids that only have a single difficulty,
+    # e.g. a 1-boss mini raid). Difficulties are grouped per raid rather than
+    # assumed to always be the standard LFR/Normal/Heroic/Mythic four.
     from collections import Counter
-    raid_name_votes = Counter()
     raid_boss_lists = {}
+    raid_difficulties = {}
     for c in qualifying:
         for lo in (c[35] or {}).values():
             name = lo.get("name")
             difficulty = lo.get("difficulty")
-            if difficulty not in RAID_DIFFICULTY_SHORT:
-                continue
-            raid_name_votes[name] += 1
+            raid_difficulties.setdefault(name, set()).add(difficulty)
             bosses = [b.get("name") for b in lo.get("bosses", [])]
             if len(bosses) > len(raid_boss_lists.get(name, [])):
                 raid_boss_lists[name] = bosses
 
-    raid_name = raid_name_votes.most_common(1)[0][0] if raid_name_votes else None
-    raid_bosses = raid_boss_lists.get(raid_name, [])
-    print(f"Current raid detected as: {raid_name!r} ({len(raid_bosses)} bosses)")
+    def difficulty_sort_key(d):
+        return (RAID_DIFFICULTY_ORDER.index(d) if d in RAID_DIFFICULTY_ORDER else 99, d)
+
+    raids = []
+    for raid_name in sorted(raid_boss_lists, key=lambda n: (-len(raid_boss_lists[n]), n)):
+        difficulties = sorted(raid_difficulties[raid_name], key=difficulty_sort_key)
+        raids.append({
+            "name": raid_name,
+            "bosses": raid_boss_lists[raid_name],
+            "difficulties": [
+                {"id": d, "label": RAID_DIFFICULTY_SHORT.get(d, f"Diff {d}")}
+                for d in difficulties
+            ],
+        })
+    print(f"Raids detected: {[(r['name'], len(r['bosses'])) for r in raids]}")
 
     print(f"Fetching item names for {len(needed_item_ids)} items...")
 
@@ -315,23 +326,23 @@ def main():
                     "label": str(level) if met and level else None,
                 })
 
-        # --- Raid boss-kill grid (current raid, by difficulty) -----------
+        # --- Raid boss-kill grids (one per detected raid, by difficulty) -
         lockouts_by_name_diff = {}
         for lo in lockouts_out:
             lockouts_by_name_diff[(lo["name"], lo["difficulty"])] = lo
 
-        raid_grid = {}
-        if raid_name:
-            for difficulty in RAID_DIFFICULTIES:
-                lo = lockouts_by_name_diff.get((raid_name, difficulty))
-                row = []
+        raid_grids = {}
+        for raid in raids:
+            grid = {}
+            for diff in raid["difficulties"]:
+                lo = lockouts_by_name_diff.get((raid["name"], diff["id"]))
                 if lo:
                     dead_by_name = {b.get("name"): b.get("dead") for b in lo.get("bosses", [])}
-                    for boss_name in raid_bosses:
-                        row.append(dead_by_name.get(boss_name))
+                    row = [dead_by_name.get(boss_name) for boss_name in raid["bosses"]]
                 else:
-                    row = [None] * len(raid_bosses)
-                raid_grid[RAID_DIFFICULTY_SHORT[difficulty]] = row
+                    row = [None] * len(raid["bosses"])
+                grid[diff["label"]] = row
+            raid_grids[raid["name"]] = grid
 
         characters_out.append({
             "id": char_id,
@@ -361,7 +372,7 @@ def main():
                 "raid": vault_raid,
                 "dungeon": vault_dungeon,
             },
-            "raidGrid": raid_grid,
+            "raidGrids": raid_grids,
         })
 
     characters_out.sort(key=lambda c: (-c["itemLevel"]))
@@ -376,9 +387,7 @@ def main():
         "races": races,
         "realms": realms,
         "qualityColors": QUALITY_COLORS,
-        "raidName": raid_name,
-        "raidBosses": raid_bosses,
-        "raidDifficulties": [RAID_DIFFICULTY_SHORT[d] for d in RAID_DIFFICULTIES],
+        "raids": raids,
         "mythicPlusDungeons": [{"mapId": m, "name": n} for m, n in MYTHIC_PLUS_DUNGEONS],
         "characters": characters_out,
     }

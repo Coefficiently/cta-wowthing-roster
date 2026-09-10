@@ -125,16 +125,15 @@
     </tr>`;
   }
 
-  function rowRaidSectionHeader() {
-    if (!DATA.raidName) return "";
-    return `<tr class="section-row"><td colspan="999">${DATA.raidName}</td></tr>`;
+  function rowRaidSectionHeader(raidName) {
+    return `<tr class="section-row"><td colspan="999">${raidName}</td></tr>`;
   }
 
-  function rowRaidDifficulty(difficulty, chars) {
+  function rowRaidDifficulty(raidName, difficultyLabel, chars) {
     return `<tr>
-      <td class="row-label row-label-sub">${difficulty}</td>
+      <td class="row-label row-label-sub">${difficultyLabel}</td>
       ${chars.map((c) => {
-        const row = c.raidGrid[difficulty];
+        const row = (c.raidGrids[raidName] || {})[difficultyLabel];
         if (!row) return `<td>\u2014</td>`;
         const squares = row
           .map((dead) => {
@@ -164,10 +163,10 @@
     for (const dungeon of DATA.mythicPlusDungeons) {
       rows += rowDungeon(dungeon, chars);
     }
-    rows += rowRaidSectionHeader();
-    if (DATA.raidName) {
-      for (const difficulty of DATA.raidDifficulties) {
-        rows += rowRaidDifficulty(difficulty, chars);
+    for (const raid of DATA.raids || []) {
+      rows += rowRaidSectionHeader(raid.name);
+      for (const diff of raid.difficulties) {
+        rows += rowRaidDifficulty(raid.name, diff.label, chars);
       }
     }
 

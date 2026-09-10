@@ -348,18 +348,29 @@ def main():
             wowhead_currency_url = f"https://www.wowhead.com/currency={cid}"
             if rc:
                 api_max = rc[2] if len(rc) > 2 else 0
+                # Crests (and some other currencies) track a season-long
+                # "total earned" separately from what's currently banked --
+                # once you hit the season cap you can spend down without the
+                # total resetting. wowthing exposes this as totalQuantity +
+                # an isMovingMax flag; when present, show it as an extra
+                # tooltip alongside the current/cap number we already show.
+                total_quantity = rc[3] if len(rc) > 3 else 0
+                is_moving_max = bool(rc[4]) if len(rc) > 4 else False
                 out.append({
                     "id": cid,
                     "name": meta["name"],
                     "shortName": short_currency_name(meta["name"]),
                     "quantity": rc[1] if len(rc) > 1 else 0,
                     "max": api_max or CREST_MAX_OVERRIDE.get(cid, 0),
+                    "totalQuantity": total_quantity,
+                    "isMovingMax": is_moving_max,
                     "wowheadUrl": wowhead_currency_url,
                 })
             elif cid in currency_by_id:
                 out.append({
                     "id": cid, "name": meta["name"], "shortName": short_currency_name(meta["name"]),
                     "quantity": 0, "max": CREST_MAX_OVERRIDE.get(cid, 0),
+                    "totalQuantity": 0, "isMovingMax": False,
                     "wowheadUrl": wowhead_currency_url,
                 })
         return out

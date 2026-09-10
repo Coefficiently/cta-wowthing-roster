@@ -163,6 +163,7 @@ a { color: var(--gold-2); }
 .cell-strong { font-weight: 700; font-variant-numeric: tabular-nums; }
 .cell-rating { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-currency { font-variant-numeric: tabular-nums; }
+.cell-currency-tooltip { position: relative; cursor: help; }
 .cell-currency .wh-item-link { color: var(--gold-2); }
 .cell-keystone { color: var(--ink); }
 .keystone-level { color: var(--gold-2); font-weight: 700; margin-right: 0.3rem; }

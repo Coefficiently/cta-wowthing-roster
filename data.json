@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T12:09:40.412403+00:00",
+ "generatedAt": "2026-09-10T12:26:20.188644+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4623,6 +4623,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -4631,6 +4633,8 @@
       "shortName": "Veteran",
       "quantity": 120,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -4639,6 +4643,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -4647,6 +4653,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -4655,6 +4663,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -4665,6 +4675,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 0,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -4675,6 +4687,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 0,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -4683,6 +4697,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -5190,6 +5206,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -5198,6 +5216,8 @@
       "shortName": "Veteran",
       "quantity": 120,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -5206,6 +5226,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -5214,6 +5236,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -5222,6 +5246,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -5232,6 +5258,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 0,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -5242,6 +5270,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 0,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -5250,6 +5280,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -5843,6 +5875,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -5851,6 +5885,8 @@
       "shortName": "Veteran",
       "quantity": 100,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -5859,6 +5895,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -5867,6 +5905,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -5875,6 +5915,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -5885,6 +5927,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 2,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -5895,6 +5939,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 0,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -5903,6 +5949,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -6412,6 +6460,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -6420,6 +6470,8 @@
       "shortName": "Veteran",
       "quantity": 100,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -6428,6 +6480,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -6436,6 +6490,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -6444,6 +6500,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -6454,6 +6512,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 3,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -6464,6 +6524,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 1,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -6472,6 +6534,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -7085,6 +7149,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -7093,6 +7159,8 @@
       "shortName": "Veteran",
       "quantity": 100,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -7101,6 +7169,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -7109,6 +7179,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -7117,6 +7189,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -7127,6 +7201,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 2,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -7137,6 +7213,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 2,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -7145,6 +7223,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -7761,6 +7841,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -7769,6 +7851,8 @@
       "shortName": "Veteran",
       "quantity": 100,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -7777,6 +7861,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -7785,6 +7871,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -7793,6 +7881,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -7803,6 +7893,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 1,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -7813,6 +7905,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 2,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -7821,6 +7915,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -8268,6 +8364,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -8276,6 +8374,8 @@
       "shortName": "Veteran",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -8284,6 +8384,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -8292,6 +8394,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -8300,6 +8404,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -8310,6 +8416,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 0,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -8320,6 +8428,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 2,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -8328,6 +8438,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -8796,6 +8908,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -8804,6 +8918,8 @@
       "shortName": "Veteran",
       "quantity": 100,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -8812,6 +8928,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -8820,6 +8938,8 @@
       "shortName": "Hero",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -8828,6 +8948,8 @@
       "shortName": "Myth",
       "quantity": 50,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -8838,6 +8960,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 0,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -8848,6 +8972,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 3,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -8856,6 +8982,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 7,
       "max": 7,
+      "totalQuantity": 7,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]
@@ -9382,6 +9510,8 @@
       "shortName": "Adventurer",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3437"
      },
      {
@@ -9390,6 +9520,8 @@
       "shortName": "Veteran",
       "quantity": 80,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3438"
      },
      {
@@ -9398,6 +9530,8 @@
       "shortName": "Champion",
       "quantity": 0,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3439"
      },
      {
@@ -9406,6 +9540,8 @@
       "shortName": "Hero",
       "quantity": 20,
       "max": 500,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3440"
      },
      {
@@ -9414,6 +9550,8 @@
       "shortName": "Myth",
       "quantity": 20,
       "max": 400,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3441"
      }
     ],
@@ -9424,6 +9562,8 @@
       "shortName": "Venomblight Manaflux",
       "quantity": 0,
       "max": 8,
+      "totalQuantity": 0,
+      "isMovingMax": false,
       "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
@@ -9434,6 +9574,8 @@
       "shortName": "Nebulous Voidcore",
       "quantity": 3,
       "max": 0,
+      "totalQuantity": 0,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3418"
      },
      {
@@ -9442,6 +9584,8 @@
       "shortName": "Tidal Spark Dust",
       "quantity": 5,
       "max": 7,
+      "totalQuantity": 5,
+      "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3509"
      }
     ]

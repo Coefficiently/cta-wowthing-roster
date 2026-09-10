@@ -130,7 +130,12 @@
         if (!cur) return `<td class="cell-dim">\u2014</td>`;
         const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)}/${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
         const empty = cur.quantity === 0 && cur.max === 0;
-        return `<td class="${empty ? "cell-dim" : "cell-currency"}">${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-cell-link")}</td>`;
+        const showsTotal = cur.isMovingMax && cur.totalQuantity > 0;
+        const tooltipAttr = showsTotal
+          ? ` data-tooltip="Earned this season: ${fmtNumber(cur.totalQuantity)}/${fmtNumber(cur.max)}" aria-label="Earned this season: ${fmtNumber(cur.totalQuantity)} of ${fmtNumber(cur.max)}"`
+          : "";
+        const cellClass = `${empty ? "cell-dim" : "cell-currency"}${showsTotal ? " cell-currency-tooltip" : ""}`;
+        return `<td class="${cellClass}"${tooltipAttr}>${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-cell-link")}</td>`;
       }).join("")}
     </tr>`;
   }

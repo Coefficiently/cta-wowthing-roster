@@ -20,7 +20,7 @@
   --boss-dead: #6ab04c;
   --boss-unknown: #35311f;
 
-  --serif: "Spectral", Georgia, serif;
+  --serif: "Space Grotesk", "Inter", -apple-system, sans-serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 

@@ -232,15 +232,62 @@
 
   // ---------------- Detail panel (gear / currencies / bags) ----------------
 
+  function itemIconUrl(itemId, size) {
+    return `https://img.wowthing.org/${size || 64}/item/${itemId}.webp`;
+  }
+
+  function iconImg(itemId, size, cls) {
+    return `<img class="item-icon ${cls || ""}" width="${size}" height="${size}" loading="lazy" src="${itemIconUrl(itemId, size)}" alt="" onerror="this.style.visibility='hidden'" />`;
+  }
+
   function renderGearRow(item) {
+    const border = qualityColor(item.quality);
+    const ilvlTxt = item.itemLevel > 0 ? item.itemLevel : "\u2014";
+    const slotTxt = item.slotName || `Bag ${item.bagId}`;
+
+    const upgradeTxt = item.upgrade
+      ? `<span class="item-upgrade">${item.upgrade.track} ${item.upgrade.rank}/${item.upgrade.maxRank}</span>`
+      : "";
+    const craftedTxt = item.craftedQuality > 0
+      ? `<span class="item-crafted">Crafted Q${item.craftedQuality}</span>`
+      : "";
+    const tierTxt = item.isTierPiece ? `<span class="item-tier-badge" data-tooltip="Tier set piece" aria-label="Tier set piece">T</span>` : "";
+
+    const enchantLine = item.enchant
+      ? `<div class="item-subline item-enchant">${item.enchant}</div>`
+      : "";
+    const gemsLine = (item.gems && item.gems.length > 0)
+      ? `<div class="item-subline item-gems">${item.gems.map((g) => `${iconImg(g.itemId, 16, "gem-icon")}<span>${g.name}</span>`).join(" &nbsp; ")}</div>`
+      : "";
+
+    return `<li class="gear-row" style="border-left-color:${border}">
+      ${iconImg(item.itemId, 36, "gear-icon")}
+      <div class="gear-row-main">
+        <div class="gear-row-top">
+          <span class="slot">${slotTxt}</span>
+          <span class="item-name">${item.itemName}${tierTxt}</span>
+          <span class="item-ilvl">${ilvlTxt}</span>
+        </div>
+        <div class="gear-row-meta">${upgradeTxt}${craftedTxt}</div>
+        ${enchantLine}
+        ${gemsLine}
+      </div>
+    </li>`;
+  }
+
+  function renderBagRow(item) {
     const border = qualityColor(item.quality);
     const countTxt = item.count > 1 ? ` \u00d7${item.count}` : "";
     const ilvlTxt = item.itemLevel > 0 ? item.itemLevel : "\u2014";
-    const slotTxt = item.slotName || `Bag ${item.bagId}`;
     return `<li class="gear-row" style="border-left-color:${border}">
-      <span class="slot">${slotTxt}</span>
-      <span class="item-name">${item.itemName}${countTxt}</span>
-      <span class="item-ilvl">${ilvlTxt}</span>
+      ${iconImg(item.itemId, 28, "gear-icon-sm")}
+      <div class="gear-row-main">
+        <div class="gear-row-top">
+          <span class="slot">Bag ${item.bagId}</span>
+          <span class="item-name">${item.itemName}${countTxt}</span>
+          <span class="item-ilvl">${ilvlTxt}</span>
+        </div>
+      </div>
     </li>`;
   }
 
@@ -268,13 +315,13 @@
     document.getElementById("detail-name").textContent = char.name;
     document.getElementById("detail-name").style.color = classColor(char);
     document.getElementById("detail-meta").textContent =
-      `${classInfo(char).name} \u00b7 ${realmName(char)} \u00b7 level ${char.level} \u00b7 ilvl ${char.itemLevel}`;
+      `${classInfo(char).name} \u00b7 ${realmName(char)} \u00b7 level ${char.level} \u00b7 ilvl ${char.itemLevel} \u00b7 tier ${char.tierPieceCount}pc`;
 
     fillList("detail-equipped", char.equipped, renderGearRow, "No equipped gear data.");
     fillList("detail-crests", char.currencies.crests, renderCurrencyRow, "None tracked.");
     fillList("detail-catalyst", char.currencies.catalyst, renderCurrencyRow, "None tracked.");
     fillList("detail-bonusrolls", char.currencies.bonusRolls, renderCurrencyRow, "None tracked.");
-    fillList("detail-bags", char.bagItems, renderGearRow, "Bags are empty.");
+    fillList("detail-bags", char.bagItems, renderBagRow, "Bags are empty.");
 
     detailPanel.hidden = false;
     if (typeof detailPanel.scrollIntoView === "function") {

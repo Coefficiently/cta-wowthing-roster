@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T10:13:41.112220+00:00",
+ "generatedAt": "2026-09-10T10:22:20.378442+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4289,7 +4289,7 @@
   {
    "id": 2504376,
    "name": "Ctadruid",
-   "level": 0,
+   "level": 90,
    "itemLevel": 327,
    "classId": 11,
    "raceId": 4,
@@ -4306,7 +4306,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Rune of Avoidance",
+     "gems": [
+      {
+       "itemId": 240890,
+       "name": "Flawless Deadly Peridot"
+      }
+     ],
+     "isTierPiece": true
     },
     {
      "slot": 2,
@@ -4316,7 +4329,24 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 151,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      },
+      {
+       "itemId": 240916,
+       "name": "Flawless Quick Lapis"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -4326,7 +4356,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Amirdrassil's Grace",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 5,
@@ -4336,7 +4374,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -4346,7 +4392,20 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240967,
+       "name": "Powerful Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -4356,7 +4415,11 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 8,
@@ -4366,7 +4429,11 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -4376,7 +4443,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -4386,7 +4461,15 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 5,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -4396,7 +4479,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240900,
+       "name": "Flawless Quick Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -4406,7 +4502,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240900,
+       "name": "Flawless Quick Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -4416,7 +4525,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 33,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -4426,7 +4543,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -4436,7 +4561,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -4446,9 +4579,18 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Rite of the Hash'ey",
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 4,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -4800,7 +4942,7 @@
   {
    "id": 2515523,
    "name": "Gonexttier",
-   "level": 0,
+   "level": 90,
    "itemLevel": 321,
    "classId": 13,
    "raceId": 70,
@@ -4817,7 +4959,16 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "Enchant Helm - Empowered Rune of Avoidance",
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 2,
@@ -4827,7 +4978,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 95,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 2,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -4837,7 +5001,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Amirdrassil's Grace",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 5,
@@ -4847,7 +5019,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -4857,7 +5037,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -4867,7 +5060,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 8,
@@ -4877,7 +5078,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -4887,7 +5096,11 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -4897,7 +5110,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -4907,7 +5128,20 @@
      "itemLevel": 315,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 4,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Silvermoon's Alacrity",
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -4917,7 +5151,20 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Zul'jin's Mastery",
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -4927,7 +5174,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 33,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -4937,7 +5192,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -4947,7 +5210,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -4957,7 +5228,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Weapon - Arcane Mastery",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 17,
@@ -4967,9 +5246,14 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 4,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -5192,7 +5476,7 @@
   {
    "id": 2504374,
    "name": "Ctavoker",
-   "level": 0,
+   "level": 90,
    "itemLevel": 317,
    "classId": 13,
    "raceId": 70,
@@ -5209,7 +5493,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Blessing of Speed",
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 2,
@@ -5219,7 +5516,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -5229,7 +5539,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Amirdrassil's Grace",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 5,
@@ -5239,7 +5557,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 33,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -5249,7 +5575,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -5259,7 +5598,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 8,
@@ -5269,7 +5616,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -5279,7 +5634,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -5289,7 +5652,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -5299,7 +5670,20 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 23,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -5309,7 +5693,16 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -5319,7 +5712,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 110,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -5329,7 +5730,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 95,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -5339,7 +5748,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 95,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 2,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -5349,7 +5766,11 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 19,
@@ -5359,7 +5780,11 @@
      "itemLevel": 1,
      "quality": 2,
      "context": 26,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 20,
@@ -5369,7 +5794,11 @@
      "itemLevel": 206,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 21,
@@ -5379,7 +5808,11 @@
      "itemLevel": 193,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 22,
@@ -5389,7 +5822,11 @@
      "itemLevel": 206,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 23,
@@ -5399,7 +5836,11 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 24,
@@ -5409,7 +5850,11 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 25,
@@ -5419,9 +5864,14 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 4,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -5625,7 +6075,7 @@
   {
    "id": 2504379,
    "name": "Migwangomage",
-   "level": 0,
+   "level": 90,
    "itemLevel": 317,
    "classId": 8,
    "raceId": 25,
@@ -5642,7 +6092,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Rune of Avoidance",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 2,
@@ -5652,7 +6110,24 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      },
+      {
+       "itemId": 240894,
+       "name": "Flawless Versatile Peridot"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -5662,7 +6137,15 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Amirdrassil's Grace",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 4,
@@ -5672,7 +6155,11 @@
      "itemLevel": 1,
      "quality": 2,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 5,
@@ -5682,7 +6169,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -5692,7 +6187,20 @@
      "itemLevel": 334,
      "quality": 4,
      "context": 96,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240894,
+       "name": "Flawless Versatile Peridot"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -5702,7 +6210,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 8,
@@ -5712,7 +6228,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -5722,7 +6246,16 @@
      "itemLevel": 285,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240894,
+       "name": "Flawless Versatile Peridot"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -5732,7 +6265,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 11,
@@ -5742,7 +6283,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240894,
+       "name": "Flawless Versatile Peridot"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -5752,7 +6306,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240894,
+       "name": "Flawless Versatile Peridot"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -5762,7 +6329,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -5772,7 +6347,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -5782,7 +6365,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 23,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -5792,9 +6383,14 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Jan'alai's Precision",
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 4,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -6060,7 +6656,7 @@
   {
    "id": 2504380,
    "name": "Herimp",
-   "level": 0,
+   "level": 90,
    "itemLevel": 307,
    "classId": 9,
    "raceId": 25,
@@ -6077,7 +6673,15 @@
      "itemLevel": 318,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 2,
@@ -6087,7 +6691,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -6097,7 +6714,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Amirdrassil's Grace",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 4,
@@ -6107,7 +6732,11 @@
      "itemLevel": 1,
      "quality": 3,
      "context": 14,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 5,
@@ -6117,7 +6746,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 23,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -6127,7 +6764,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240910,
+       "name": "Flawless Versatile Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -6137,7 +6787,15 @@
      "itemLevel": 308,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 8,
@@ -6147,7 +6805,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Boots - Farstrider's Hunt",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -6157,7 +6819,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 81,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -6167,7 +6837,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 33,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -6177,7 +6855,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240910,
+       "name": "Flawless Versatile Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -6187,7 +6878,16 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240910,
+       "name": "Flawless Versatile Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -6197,7 +6897,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 110,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -6207,7 +6915,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -6217,7 +6929,11 @@
      "itemLevel": 285,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -6227,7 +6943,11 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 19,
@@ -6237,7 +6957,11 @@
      "itemLevel": 1,
      "quality": 4,
      "context": 11,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 20,
@@ -6247,7 +6971,11 @@
      "itemLevel": 218,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 3
+     "craftedQuality": 3,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 21,
@@ -6257,7 +6985,11 @@
      "itemLevel": 212,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 2
+     "craftedQuality": 2,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 22,
@@ -6267,7 +6999,11 @@
      "itemLevel": 212,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 2
+     "craftedQuality": 2,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 23,
@@ -6277,7 +7013,11 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 24,
@@ -6287,7 +7027,11 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 25,
@@ -6297,7 +7041,11 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 26,
@@ -6307,7 +7055,11 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 27,
@@ -6317,9 +7069,14 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 5,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -6526,7 +7283,7 @@
   {
    "id": 2504364,
    "name": "Cta",
-   "level": 0,
+   "level": 90,
    "itemLevel": 306,
    "classId": 8,
    "raceId": 25,
@@ -6543,7 +7300,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 33,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Rune of Avoidance",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 2,
@@ -6553,7 +7318,20 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -6563,7 +7341,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 4,
@@ -6573,7 +7359,11 @@
      "itemLevel": 1,
      "quality": 2,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 5,
@@ -6583,7 +7373,15 @@
      "itemLevel": 318,
      "quality": 4,
      "context": 95,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -6593,7 +7391,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240908,
+       "name": "Flawless Masterful Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -6603,7 +7414,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 81,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 8,
@@ -6613,7 +7432,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -6623,7 +7446,16 @@
      "itemLevel": 285,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240908,
+       "name": "Flawless Masterful Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -6633,7 +7465,15 @@
      "itemLevel": 295,
      "quality": 4,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 2,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -6643,7 +7483,16 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240906,
+       "name": "Flawless Quick Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -6653,7 +7502,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240908,
+       "name": "Flawless Masterful Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -6663,7 +7525,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -6673,7 +7539,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -6683,7 +7553,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 110,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -6693,7 +7571,11 @@
      "itemLevel": 331,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 20,
@@ -6703,7 +7585,11 @@
      "itemLevel": 212,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 2
+     "craftedQuality": 2,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 21,
@@ -6713,7 +7599,11 @@
      "itemLevel": 212,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 2
+     "craftedQuality": 2,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 22,
@@ -6723,7 +7613,11 @@
      "itemLevel": 212,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 2
+     "craftedQuality": 2,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 23,
@@ -6733,7 +7627,11 @@
      "itemLevel": 206,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 24,
@@ -6743,7 +7641,11 @@
      "itemLevel": 199,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 4
+     "craftedQuality": 4,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 25,
@@ -6753,7 +7655,11 @@
      "itemLevel": 218,
      "quality": 3,
      "context": 13,
-     "craftedQuality": 3
+     "craftedQuality": 3,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 26,
@@ -6763,7 +7669,11 @@
      "itemLevel": 206,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 27,
@@ -6773,7 +7683,11 @@
      "itemLevel": 206,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 28,
@@ -6783,9 +7697,14 @@
      "itemLevel": 1,
      "quality": 1,
      "context": 14,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 4,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -6989,7 +7908,7 @@
   {
    "id": 2504378,
    "name": "Herman",
-   "level": 0,
+   "level": 90,
    "itemLevel": 301,
    "classId": 9,
    "raceId": 2,
@@ -7006,7 +7925,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Rune of Avoidance",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 2,
@@ -7016,7 +7943,20 @@
      "itemLevel": 311,
      "quality": 4,
      "context": 33,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 3,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -7026,7 +7966,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 5,
@@ -7036,7 +7984,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -7046,7 +8002,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -7056,7 +8020,15 @@
      "itemLevel": 318,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 8,
@@ -7066,7 +8038,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -7076,7 +8052,15 @@
      "itemLevel": 321,
      "quality": 4,
      "context": 81,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -7086,7 +8070,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 5,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -7096,7 +8088,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240910,
+       "name": "Flawless Versatile Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -7106,7 +8111,16 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240910,
+       "name": "Flawless Versatile Garnet"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -7116,7 +8130,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -7126,7 +8144,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -7136,7 +8158,11 @@
      "itemLevel": 285,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -7146,9 +8172,14 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Jan'alai's Precision",
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 2,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -7350,7 +8381,7 @@
   {
    "id": 2504377,
    "name": "Ctasham",
-   "level": 0,
+   "level": 90,
    "itemLevel": 295,
    "classId": 7,
    "raceId": 2,
@@ -7367,7 +8398,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Blessing of Speed",
+     "gems": [
+      {
+       "itemId": 240898,
+       "name": "Flawless Deadly Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 2,
@@ -7377,7 +8421,20 @@
      "itemLevel": 292,
      "quality": 4,
      "context": 23,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -7387,7 +8444,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 4,
@@ -7397,7 +8462,11 @@
      "itemLevel": 1,
      "quality": 2,
      "context": 3,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 5,
@@ -7407,7 +8476,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 6,
@@ -7417,7 +8494,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -7427,7 +8512,15 @@
      "itemLevel": 302,
      "quality": 4,
      "context": 151,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 4,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 8,
@@ -7437,7 +8530,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Boots - Lynx's Dexterity",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -7447,7 +8544,15 @@
      "itemLevel": 311,
      "quality": 4,
      "context": 16,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 3,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -7457,7 +8562,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 150,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Veteran",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -7467,7 +8580,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240898,
+       "name": "Flawless Deadly Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -7477,7 +8603,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240898,
+       "name": "Flawless Deadly Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -7487,7 +8626,15 @@
      "itemLevel": 305,
      "quality": 4,
      "context": 110,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -7497,7 +8644,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -7507,7 +8658,15 @@
      "itemLevel": 305,
      "quality": 4,
      "context": 81,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -7517,9 +8676,14 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Arcane Mastery",
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 2,
    "bagItems": [],
    "currencies": {
     "crests": [
@@ -7726,7 +8890,7 @@
   {
    "id": 2504381,
    "name": "Ctadh",
-   "level": 0,
+   "level": 90,
    "itemLevel": 294,
    "classId": 12,
    "raceId": 4,
@@ -7743,7 +8907,15 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 179,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Champion",
+      "rank": 3,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Helm - Empowered Rune of Avoidance",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 2,
@@ -7753,7 +8925,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240983,
+       "name": "Indecipherable Eversong Diamond"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 3,
@@ -7763,7 +8948,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 4,
@@ -7773,7 +8966,11 @@
      "itemLevel": 1,
      "quality": 2,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 5,
@@ -7783,7 +8980,15 @@
      "itemLevel": 305,
      "quality": 4,
      "context": 110,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Chest - Mark of the Worldsoul",
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 6,
@@ -7793,7 +8998,11 @@
      "itemLevel": 285,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 7,
@@ -7803,7 +9012,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "+4668 Intellect & +13093 Stamina",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 8,
@@ -7813,7 +9030,15 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Boots - Farstrider's Hunt",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 9,
@@ -7823,7 +9048,16 @@
      "itemLevel": 285,
      "quality": 4,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [
+      {
+       "itemId": 240898,
+       "name": "Flawless Deadly Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 10,
@@ -7833,7 +9067,15 @@
      "itemLevel": 0,
      "quality": 4,
      "context": 152,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 3,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": true
     },
     {
      "slot": 11,
@@ -7843,7 +9085,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240900,
+       "name": "Flawless Quick Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 12,
@@ -7853,7 +9108,20 @@
      "itemLevel": 289,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Myth",
+      "rank": 6,
+      "maxRank": 6
+     },
+     "enchant": "Enchant Ring - Eyes of the Eagle",
+     "gems": [
+      {
+       "itemId": 240898,
+       "name": "Flawless Deadly Amethyst"
+      }
+     ],
+     "isTierPiece": false
     },
     {
      "slot": 13,
@@ -7863,7 +9131,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 14,
@@ -7873,7 +9145,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 35,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 15,
@@ -7883,7 +9159,15 @@
      "itemLevel": 305,
      "quality": 4,
      "context": 81,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": {
+      "track": "Hero",
+      "rank": 1,
+      "maxRank": 6
+     },
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 16,
@@ -7893,7 +9177,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Arcane Mastery",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 17,
@@ -7903,7 +9191,11 @@
      "itemLevel": 298,
      "quality": 4,
      "context": 6,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 19,
@@ -7913,7 +9205,11 @@
      "itemLevel": 10,
      "quality": 2,
      "context": 14,
-     "craftedQuality": 0
+     "craftedQuality": 0,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 24,
@@ -7923,7 +9219,11 @@
      "itemLevel": 72,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 3
+     "craftedQuality": 3,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     },
     {
      "slot": 25,
@@ -7933,9 +9233,14 @@
      "itemLevel": 74,
      "quality": 2,
      "context": 13,
-     "craftedQuality": 5
+     "craftedQuality": 5,
+     "upgrade": null,
+     "enchant": null,
+     "gems": [],
+     "isTierPiece": false
     }
    ],
+   "tierPieceCount": 2,
    "bagItems": [],
    "currencies": {
     "crests": [

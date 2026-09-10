@@ -73,6 +73,30 @@ QUALITY_COLORS = {
     4: "#a335ee", 5: "#ff8000", 6: "#e6cc80", 7: "#00ccff",
 }
 
+# Current raid tier's class set-item ids, hand-pinned from
+# apps/frontend/data/gear.ts `currentTier` (update every new raid tier).
+TIER_SET_BY_CLASS = {
+    6: 2055,   # Death Knight
+    12: 2056,  # Demon Hunter
+    11: 2057,  # Druid
+    13: 2058,  # Evoker
+    3: 2059,   # Hunter
+    8: 2060,   # Mage
+    10: 2061,  # Monk
+    2: 2062,   # Paladin
+    5: 2063,   # Priest
+    4: 2064,   # Rogue
+    7: 2065,   # Shaman
+    9: 2066,   # Warlock
+    1: 2067,   # Warrior
+}
+
+WOW_MARKUP_RE = re.compile(r"\|[Aa]:[^|]*\|a|\|T[^|]*\|t|\|c[0-9A-Fa-f]{8}|\|r")
+
+
+def clean_wow_text(text):
+    return WOW_MARKUP_RE.sub("", text).strip()
+
 
 def fetch_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "wowthing-site-builder/1.0"})
@@ -155,6 +179,8 @@ def main():
         equipped = c[30] or {}
         for arr in equipped.values():
             needed_item_ids.add(arr[2])
+            for gem_id in (arr[7] or []):
+                needed_item_ids.add(gem_id)
         for item in (c[50] or []):
             needed_item_ids.add(item[3])
 
@@ -197,10 +223,11 @@ def main():
 
     print(f"Fetching item names for {len(needed_item_ids)} items...")
 
+    item_data = fetch_json(BASE + paths["data-item"])
+    names_array = item_data.get("names", [])
+
     item_names = {}
     if needed_item_ids:
-        item_data = fetch_json(BASE + paths["data-item"])
-        names_array = item_data.get("names", [])
         # rawItems is delta-encoded: running item id = sum of arr[0] so far,
         # and the item's name is names_array[arr[1]] (arr[1] is a *name index*,
         # not the item id).
@@ -215,6 +242,38 @@ def main():
                 remaining.discard(running_id)
                 if not remaining:
                     break
+
+    # --- Gear upgrade tracks (Explorer..Myth) decoded from bonus ids -----
+    # itemBonusListGroups[groupId][sharedStringId] = [bonusId rank1, rank2, ...]
+    # sharedStrings[sharedStringId] is the track's display name ("Hero", etc).
+    item_bonus_to_upgrade = {}
+    for bonus_groups in item_data.get("itemBonusListGroups", {}).values():
+        for shared_id_str, bonus_ids in bonus_groups.items():
+            if len(bonus_ids) > 1:
+                shared_id = int(shared_id_str)
+                for i, bonus_id in enumerate(bonus_ids):
+                    item_bonus_to_upgrade[bonus_id] = (shared_id, i + 1, len(bonus_ids))
+    shared_strings = static_data.get("sharedStrings", {})
+
+    # --- Enchant text, decoded from bonus/enchant ids ---------------------
+    enchant_name = {}
+    enchant_values = {}
+    for text, ids in static_data.get("enchantmentStrings", {}).items():
+        for eid in ids:
+            enchant_name[eid] = text
+    for eid_str, values in static_data.get("enchantmentValues", {}).items():
+        eid = int(eid_str)
+        enchant_values.setdefault(eid, values)
+        enchant_name.setdefault(eid, f"Enchant #{eid}")
+
+    def get_enchant_text(enchant_id):
+        text = enchant_name.get(enchant_id, f"Enchant #{enchant_id}")
+        for i, v in enumerate(enchant_values.get(enchant_id, [])):
+            text = text.replace(f"$k{i + 1}", str(v))
+        return clean_wow_text(text)
+
+    # --- Current tier set item ids, per class -----------------------------
+    item_set_by_id = {s[0]: s[2] for s in item_data.get("rawItemSets", [])}
 
     # --- Build character output ----------------------------------------
     def currency_group(raw_currencies, ids):
@@ -251,10 +310,34 @@ def main():
             raw_items, raw_mythic_plus_weeks, specializations, raw_statistics,
         ) = c
 
+        tier_set_id = TIER_SET_BY_CLASS.get(class_id)
+        tier_set_item_ids = set(item_set_by_id.get(tier_set_id, [])) if tier_set_id else set()
+
         equipped_out = []
+        tier_piece_count = 0
         for slot_str, arr in sorted((raw_equipped_items or {}).items(), key=lambda kv: int(kv[0])):
             slot = int(slot_str)
             item_id = arr[2]
+            bonus_ids = arr[5] or []
+            enchant_ids = arr[6] or []
+            gem_ids = arr[7] or []
+
+            upgrade = None
+            for bonus_id in bonus_ids:
+                match = item_bonus_to_upgrade.get(bonus_id)
+                if match:
+                    shared_id, rank, max_rank = match
+                    upgrade = {
+                        "track": shared_strings.get(str(shared_id), f"Track {shared_id}"),
+                        "rank": rank,
+                        "maxRank": max_rank,
+                    }
+                    break
+
+            is_tier_piece = item_id in tier_set_item_ids
+            if is_tier_piece:
+                tier_piece_count += 1
+
             equipped_out.append({
                 "slot": slot,
                 "slotName": SLOT_NAMES.get(slot, f"Slot {slot}"),
@@ -264,6 +347,13 @@ def main():
                 "quality": arr[4],
                 "context": arr[0],
                 "craftedQuality": arr[1],
+                "upgrade": upgrade,
+                "enchant": get_enchant_text(enchant_ids[0]) if enchant_ids else None,
+                "gems": [
+                    {"itemId": gid, "name": item_names.get(gid, f"Item #{gid}")}
+                    for gid in gem_ids
+                ],
+                "isTierPiece": is_tier_piece,
             })
 
         bag_items_out = []
@@ -310,13 +400,13 @@ def main():
                 fortified = entry[1] if len(entry) > 1 else None
                 tyrannical = entry[2] if len(entry) > 2 else None
                 best_affix = tyrannical or fortified
-                level = best_affix[0] if best_affix else 0
+                dungeon_level = best_affix[0] if best_affix else 0
                 timed = bool(best_affix[3] == 0) if best_affix and len(best_affix) > 3 else None
                 total_score += overall_score
                 dungeon_scores_out.append({
                     "mapId": map_id,
                     "name": dungeon_name,
-                    "level": level,
+                    "level": dungeon_level,
                     "score": round(overall_score),
                 })
             else:
@@ -342,20 +432,20 @@ def main():
 
             raid_progress = raw_weekly[11] if len(raw_weekly) > 11 else []
             for slot in (raid_progress or []):
-                level, tier, progress, threshold = slot[0], slot[1], slot[2], slot[3]
-                met = progress >= threshold and threshold > 0
+                slot_level, slot_tier, slot_progress, slot_threshold = slot[0], slot[1], slot[2], slot[3]
+                met = slot_progress >= slot_threshold and slot_threshold > 0
                 vault_raid.append({
                     "met": met,
-                    "label": RAID_DIFFICULTY_SHORT.get(level, str(level)) if met else None,
+                    "label": RAID_DIFFICULTY_SHORT.get(slot_level, str(slot_level)) if met else None,
                 })
 
             dungeon_progress = raw_weekly[10] if len(raw_weekly) > 10 else []
             for slot in (dungeon_progress or []):
-                level, tier, progress, threshold = slot[0], slot[1], slot[2], slot[3]
-                met = progress >= threshold and threshold > 0
+                slot_level, slot_tier, slot_progress, slot_threshold = slot[0], slot[1], slot[2], slot[3]
+                met = slot_progress >= slot_threshold and slot_threshold > 0
                 vault_dungeon.append({
                     "met": met,
-                    "label": str(level) if met and level else None,
+                    "label": str(slot_level) if met and slot_level else None,
                 })
 
         # --- Raid boss-kill grids (one per detected raid, by difficulty) -
@@ -403,6 +493,7 @@ def main():
             "faction": faction,
             "gold": gold,
             "equipped": equipped_out,
+            "tierPieceCount": tier_piece_count,
             "bagItems": bag_items_out,
             "currencies": {
                 "crests": currency_group(raw_currencies, CREST_IDS),

@@ -289,16 +289,94 @@ a { color: var(--gold-2); }
 
 .gear-row {
   display: flex;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.3rem 0.1rem 0.3rem 0.6rem;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.4rem 0.5rem 0.4rem 0.6rem;
   border-left: 3px solid var(--line);
   font-size: 0.87rem;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
+  background: var(--panel-2);
+  border-radius: 0 4px 4px 0;
 }
-.gear-row .slot { color: var(--ink-dim); flex-shrink: 0; width: 6.5rem; }
-.gear-row .item-name { flex: 1; }
-.gear-row .item-ilvl { color: var(--ink-dim); flex-shrink: 0; font-variant-numeric: tabular-nums; }
+
+.item-icon {
+  flex-shrink: 0;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  object-fit: cover;
+}
+
+.gear-row-main { flex: 1; min-width: 0; }
+
+.gear-row-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+.gear-row-top .slot { color: var(--ink-dim); flex-shrink: 0; width: 5.5rem; font-size: 0.78rem; }
+.gear-row-top .item-name { flex: 1; min-width: 0; overflow-wrap: break-word; }
+.gear-row-top .item-ilvl { color: var(--gold-2); flex-shrink: 0; font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.item-tier-badge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 3px;
+  background: var(--gold);
+  color: #1a1710;
+  cursor: default;
+  position: relative;
+}
+
+.gear-row-meta { display: flex; gap: 0.6rem; margin-top: 0.15rem; }
+.item-upgrade {
+  font-size: 0.76rem;
+  color: var(--gold-2);
+  background: rgba(201, 154, 68, 0.12);
+  border-radius: 3px;
+  padding: 0.05rem 0.35rem;
+}
+.item-crafted {
+  font-size: 0.76rem;
+  color: #7fd0e0;
+  background: rgba(127, 208, 224, 0.1);
+  border-radius: 3px;
+  padding: 0.05rem 0.35rem;
+}
+
+.item-subline {
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+  margin-top: 0.2rem;
+}
+.item-enchant { color: #9fd67a; }
+.item-gems { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+.gem-icon { vertical-align: middle; margin-right: 0.15rem; }
+
+/* generic instant tooltip, same pattern as boss squares */
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d0b07;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 
 .currency-group { margin-bottom: 0.9rem; }
 .currency-row {

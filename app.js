@@ -84,9 +84,9 @@
 
   // Red (291) -> Yellow (mid) -> bright green (331), clamped at the ends.
   function itemLevelColor(ilvl) {
-    const RED = [214, 90, 80];
-    const YELLOW = [224, 196, 90];
-    const GREEN = [126, 224, 96];
+    const RED = [255, 60, 50];
+    const YELLOW = [255, 205, 30];
+    const GREEN = [70, 240, 70];
     const min = 291, max = 331;
     let t = (ilvl - min) / (max - min);
     t = Math.max(0, Math.min(1, t));

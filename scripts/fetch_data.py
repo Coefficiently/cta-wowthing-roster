@@ -15,7 +15,12 @@ BASE = "https://wowthing.org"
 # Currency IDs we care about (Midnight Season 2, as of this writing).
 # These can drift each season -- update if wowthing adds a new crest tier.
 CREST_IDS = [3437, 3438, 3439, 3440, 3441]      # Adventurer..Myth Mistcrest
-CATALYST_IDS = [2167]                            # Catalyst Charges
+# 2167 ("Catalyst Charges") is a Dragonflight-era id, explicitly commented
+# out as unused in wowthing's own currencies.ts, and shows zero data for
+# every character on this account -- it's dead. The actual current-season
+# catalyst-charge currency is "Venomblight Manaflux", confirmed against a
+# real in-game value the user provided.
+CATALYST_IDS = [3465]                            # Venomblight Manaflux
 # Two currency ids are BOTH named "Nebulous Voidcore" with identical
 # description text (3418 and 3513) -- a duplicate-naming pattern that also
 # shows up elsewhere in wowthing's data (see the upgrade-track note above).

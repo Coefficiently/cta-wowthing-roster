@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T10:51:51.600968+00:00",
+ "generatedAt": "2026-09-10T10:54:41.346400+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4660,12 +4660,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
       "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -5359,12 +5359,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
       "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -6015,12 +6015,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
-      "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
+      "quantity": 2,
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -6571,12 +6571,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
-      "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
+      "quantity": 3,
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -7290,12 +7290,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
-      "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
+      "quantity": 2,
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -7953,12 +7953,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
-      "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
+      "quantity": 1,
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -8447,12 +8447,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
       "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -8962,12 +8962,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
       "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [
@@ -9535,12 +9535,12 @@
     ],
     "catalyst": [
      {
-      "id": 2167,
-      "name": "Catalyst Charges",
-      "shortName": "Catalyst Charges",
+      "id": 3465,
+      "name": "Venomblight Manaflux",
+      "shortName": "Venomblight Manaflux",
       "quantity": 0,
-      "max": 0,
-      "wowheadUrl": "https://www.wowhead.com/currency=2167"
+      "max": 8,
+      "wowheadUrl": "https://www.wowhead.com/currency=3465"
      }
     ],
     "bonusRolls": [

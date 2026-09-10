@@ -31,6 +31,16 @@
     return realm ? realm.name : "\u2014";
   }
 
+  function raceName(char) {
+    const race = DATA.races[char.raceId];
+    return race ? race.name : "\u2014";
+  }
+
+  const FACTION_NAMES = { 0: "Alliance", 1: "Horde" };
+  function factionName(char) {
+    return FACTION_NAMES[char.faction] || "\u2014";
+  }
+
   function qualityColor(quality) {
     return (DATA.qualityColors && DATA.qualityColors[quality]) || "#3a3427";
   }
@@ -55,6 +65,20 @@
     return `<tr>
       <td class="row-label">Realm</td>
       ${chars.map((c) => `<td class="cell-dim">${realmName(c)}</td>`).join("")}
+    </tr>`;
+  }
+
+  function rowFaction(chars) {
+    return `<tr>
+      <td class="row-label">Faction</td>
+      ${chars.map((c) => `<td class="cell-dim">${factionName(c)}</td>`).join("")}
+    </tr>`;
+  }
+
+  function rowRace(chars) {
+    return `<tr>
+      <td class="row-label">Race</td>
+      ${chars.map((c) => `<td class="cell-dim">${raceName(c)}</td>`).join("")}
     </tr>`;
   }
 
@@ -164,6 +188,8 @@
 
     let rows = "";
     rows += rowRealm(chars);
+    rows += rowFaction(chars);
+    rows += rowRace(chars);
     rows += rowItemLevel(chars);
     rows += rowRating(chars);
     rows += rowKeystone(chars);

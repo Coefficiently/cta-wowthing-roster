@@ -245,7 +245,12 @@
 
   function renderGearRow(item) {
     const border = qualityColor(item.quality);
-    const ilvlTxt = item.itemLevel > 0 ? item.itemLevel : "\u2014";
+    const ilvlTxt = item.itemLevel > 0
+      ? (item.itemLevelEstimated ? `~${item.itemLevel}` : item.itemLevel)
+      : "\u2014";
+    const ilvlTooltip = item.itemLevelEstimated
+      ? ` data-tooltip="Not reported by the API directly -- inferred from this item's upgrade rank" aria-label="Estimated item level"`
+      : "";
     const slotTxt = item.slotName || `Bag ${item.bagId}`;
 
     const upgradeTxt = item.upgrade
@@ -268,7 +273,7 @@
         <div class="gear-row-top">
           <span class="slot">${slotTxt}</span>
           <span class="item-name">${wowheadLink({ wowheadUrl: item.wowheadUrl, name: item.itemName }, "item-name-link")}${tierTxt}</span>
-          <span class="item-ilvl">${ilvlTxt}</span>
+          <span class="item-ilvl"${ilvlTooltip}>${ilvlTxt}</span>
         </div>
         <div class="gear-row-meta">${upgradeTxt}${craftedTxt}</div>
         ${enchantLine}

@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T10:35:41.432424+00:00",
+ "generatedAt": "2026-09-10T10:40:26.277992+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4358,7 +4358,7 @@
      "slotName": "Shoulders",
      "itemId": 271526,
      "itemName": "Enigmatic Dreamwatcher's Plumage",
-     "itemLevel": 0,
+     "itemLevel": 334,
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
@@ -4370,7 +4370,8 @@
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001"
+     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001",
+     "itemLevelEstimated": true
     },
     {
      "slot": 5,
@@ -4396,7 +4397,7 @@
      "slotName": "Waist",
      "itemId": 271525,
      "itemName": "Enigmatic Dreamwatcher's Sigiled Cincture",
-     "itemLevel": 0,
+     "itemLevel": 334,
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
@@ -4414,7 +4415,8 @@
       }
      ],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967"
+     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967",
+     "itemLevelEstimated": true
     },
     {
      "slot": 7,
@@ -4451,7 +4453,7 @@
      "slotName": "Wrist",
      "itemId": 271524,
      "itemName": "Enigmatic Dreamwatcher's Wraps",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 5,
      "craftedQuality": 0,
@@ -4463,7 +4465,8 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574"
+     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574",
+     "itemLevelEstimated": true
     },
     {
      "slot": 10,
@@ -5536,11 +5539,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Helm - Empowered Blessing of Speed",
      "gems": [
       {
@@ -5561,11 +5560,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [
       {
@@ -5582,7 +5577,7 @@
      "slotName": "Shoulders",
      "itemId": 271499,
      "itemName": "Calamitous Echo's Sundered Peaks",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 5,
      "craftedQuality": 0,
@@ -5594,14 +5589,15 @@
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271499?bonus=12846:13334:6652:13694:13697:1574&ench=8001"
+     "wowheadUrl": "https://www.wowhead.com/item=271499?bonus=12846:13334:6652:13694:13697:1574&ench=8001",
+     "itemLevelEstimated": true
     },
     {
      "slot": 5,
      "slotName": "Chest",
      "itemId": 271504,
      "itemName": "Searing Caldera of Calamity",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 33,
      "craftedQuality": 0,
@@ -5613,7 +5609,8 @@
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271504?bonus=6652:13440:13690:13698:12846&ench=7987"
+     "wowheadUrl": "https://www.wowhead.com/item=271504?bonus=6652:13440:13690:13698:12846&ench=7987",
+     "itemLevelEstimated": true
     },
     {
      "slot": 6,
@@ -5645,7 +5642,7 @@
      "slotName": "Legs",
      "itemId": 271500,
      "itemName": "Earthen Pillars of Calamity",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 16,
      "craftedQuality": 0,
@@ -5657,7 +5654,8 @@
      "enchant": "+ Intellect & + Stamina",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=6652:13440:13693:13698:12846&ench=7935"
+     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=6652:13440:13693:13698:12846&ench=7935",
+     "itemLevelEstimated": true
     },
     {
      "slot": 8,
@@ -5702,7 +5700,7 @@
      "slotName": "Hands",
      "itemId": 271502,
      "itemName": "Calamitous Echo's Ebon Greathorns",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 16,
      "craftedQuality": 0,
@@ -5714,7 +5712,8 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271502?bonus=6652:13440:13691:13697:12846"
+     "wowheadUrl": "https://www.wowhead.com/item=271502?bonus=6652:13440:13691:13697:12846",
+     "itemLevelEstimated": true
     },
     {
      "slot": 11,
@@ -6784,11 +6783,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [
       {
@@ -6839,7 +6834,7 @@
      "slotName": "Chest",
      "itemId": 271549,
      "itemName": "Damned Necrolyte's Rattling Robes",
-     "itemLevel": 0,
+     "itemLevel": 308,
      "quality": 4,
      "context": 23,
      "craftedQuality": 0,
@@ -6851,7 +6846,8 @@
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271549?bonus=6652:13439:13690:13698:12838&ench=7987"
+     "wowheadUrl": "https://www.wowhead.com/item=271549?bonus=6652:13439:13690:13698:12838&ench=7987",
+     "itemLevelEstimated": true
     },
     {
      "slot": 6,
@@ -6862,11 +6858,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [
       {
@@ -6959,11 +6951,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {
@@ -7417,7 +7405,7 @@
      "slotName": "Head",
      "itemId": 271564,
      "itemName": "Crown of the Primal Leywarden",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 33,
      "craftedQuality": 0,
@@ -7429,7 +7417,8 @@
      "enchant": "Enchant Helm - Empowered Rune of Avoidance",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271564?bonus=12846:6652:13696:13440:13692:13698:1574&ench=8017"
+     "wowheadUrl": "https://www.wowhead.com/item=271564?bonus=12846:6652:13696:13440:13692:13698:1574&ench=8017",
+     "itemLevelEstimated": true
     },
     {
      "slot": 2,
@@ -7465,11 +7454,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
      "isTierPiece": false,
@@ -7518,11 +7503,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [
       {
@@ -7539,7 +7520,7 @@
      "slotName": "Legs",
      "itemId": 271563,
      "itemName": "Primal Leywarden's Tailored Legwraps",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 81,
      "craftedQuality": 0,
@@ -7551,7 +7532,8 @@
      "enchant": "+ Intellect & + Stamina",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271563?bonus=12846:13693:13698:1574&ench=7935"
+     "wowheadUrl": "https://www.wowhead.com/item=271563?bonus=12846:13693:13698:1574&ench=7935",
+     "itemLevelEstimated": true
     },
     {
      "slot": 8,
@@ -7638,11 +7620,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {
@@ -8076,11 +8054,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Helm - Empowered Rune of Avoidance",
      "gems": [],
      "isTierPiece": false,
@@ -8120,11 +8094,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
      "isTierPiece": false,
@@ -8135,7 +8105,7 @@
      "slotName": "Chest",
      "itemId": 271549,
      "itemName": "Damned Necrolyte's Rattling Robes",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 5,
      "craftedQuality": 0,
@@ -8147,7 +8117,8 @@
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271549?bonus=12846:13334:6652:13690:13698:1574&ench=7987"
+     "wowheadUrl": "https://www.wowhead.com/item=271549?bonus=12846:13334:6652:13690:13698:1574&ench=7987",
+     "itemLevelEstimated": true
     },
     {
      "slot": 6,
@@ -8158,11 +8129,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
@@ -8226,7 +8193,7 @@
      "slotName": "Hands",
      "itemId": 271547,
      "itemName": "Damned Necrolyte's Charred Grasps",
-     "itemLevel": 0,
+     "itemLevel": 321,
      "quality": 4,
      "context": 5,
      "craftedQuality": 0,
@@ -8238,7 +8205,8 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271547?bonus=12846:13334:6652:13691:13697:1574"
+     "wowheadUrl": "https://www.wowhead.com/item=271547?bonus=12846:13334:6652:13691:13697:1574",
+     "itemLevelEstimated": true
     },
     {
      "slot": 11,
@@ -8249,11 +8217,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {
@@ -8567,11 +8531,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Helm - Empowered Blessing of Speed",
      "gems": [
       {
@@ -8617,11 +8577,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
      "isTierPiece": false,
@@ -8651,11 +8607,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
      "isTierPiece": false,
@@ -8670,11 +8622,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
@@ -8761,11 +8709,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {
@@ -8786,11 +8730,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {
@@ -9115,11 +9055,7 @@
      "quality": 4,
      "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [
       {
@@ -9140,11 +9076,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
      "isTierPiece": false,
@@ -9208,11 +9140,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "+ Intellect & + Stamina",
      "gems": [],
      "isTierPiece": false,
@@ -9227,11 +9155,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Boots - Farstrider's Hunt",
      "gems": [],
      "isTierPiece": false,
@@ -9263,7 +9187,7 @@
      "slotName": "Hands",
      "itemId": 271538,
      "itemName": "Abyssal Doomhound's Studded Gauntlets",
-     "itemLevel": 0,
+     "itemLevel": 311,
      "quality": 4,
      "context": 152,
      "craftedQuality": 0,
@@ -9275,7 +9199,8 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271538?bonus=13334:6652:12843:13691:13697:1564"
+     "wowheadUrl": "https://www.wowhead.com/item=271538?bonus=13334:6652:12843:13691:13697:1564",
+     "itemLevelEstimated": true
     },
     {
      "slot": 11,
@@ -9286,11 +9211,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {
@@ -9311,11 +9232,7 @@
      "quality": 4,
      "context": 35,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Myth",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": "Enchant Ring - Eyes of the Eagle",
      "gems": [
       {

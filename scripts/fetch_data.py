@@ -41,6 +41,14 @@ MYTHIC_PLUS_DUNGEONS = [
 # (0=Classic ... 11=Midnight). Bump this when a new expansion launches.
 CURRENT_EXPANSION_INDEX = 11
 
+# Current-season gear-upgrade-track bonus groups, hand-pinned from
+# apps/frontend/data/constants.ts `seasonItemBonusListGroups`. Multiple
+# groups across seasons/sources can all display the same track name (e.g.
+# "Myth") while representing different, incompatible rank curves -- without
+# this filter, a rank/track pair can silently resolve to the wrong item
+# level. Update this set each season.
+CURRENT_SEASON_BONUS_GROUPS = {613, 614, 615, 616, 617, 618}
+
 RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "N", 234: "HC", 235: "M"}
 RAID_DIFFICULTY_ORDER = [17, 14, 15, 16, 233, 234, 235]
 
@@ -246,8 +254,11 @@ def main():
     # --- Gear upgrade tracks (Explorer..Myth) decoded from bonus ids -----
     # itemBonusListGroups[groupId][sharedStringId] = [bonusId rank1, rank2, ...]
     # sharedStrings[sharedStringId] is the track's display name ("Hero", etc).
+    # Only current-season groups are considered -- see CURRENT_SEASON_BONUS_GROUPS.
     item_bonus_to_upgrade = {}
-    for bonus_groups in item_data.get("itemBonusListGroups", {}).values():
+    for group_id_str, bonus_groups in item_data.get("itemBonusListGroups", {}).items():
+        if int(group_id_str) not in CURRENT_SEASON_BONUS_GROUPS:
+            continue
         for shared_id_str, bonus_ids in bonus_groups.items():
             if len(bonus_ids) > 1:
                 shared_id = int(shared_id_str)
@@ -544,6 +555,34 @@ def main():
             "raidGrids": raid_grids,
             "professions": char_professions,
         })
+
+    # --- Backfill missing item levels from other items' known track/rank --
+    # The addon API sometimes reports itemLevel as 0 for a random equipped
+    # item (a known wowthing/Blizzard-API quirk, not something specific to
+    # any one item). Rather than guess at hardcoded per-track ranges, derive
+    # the real rank->itemLevel mapping empirically from every OTHER item in
+    # this same dataset that reports both its upgrade rank and a correct
+    # (non-zero) item level -- then use that table to fill in the gaps.
+    # Filled-in values are marked itemLevelEstimated so the UI can be
+    # transparent about which numbers came directly from the API.
+    track_rank_ilvl = {}
+    for c_out in characters_out:
+        for e in c_out["equipped"]:
+            if e["itemLevel"] > 0 and e["upgrade"]:
+                key = (e["upgrade"]["track"], e["upgrade"]["rank"])
+                track_rank_ilvl.setdefault(key, e["itemLevel"])
+
+    backfilled = 0
+    for c_out in characters_out:
+        for e in c_out["equipped"]:
+            if e["itemLevel"] == 0 and e["upgrade"]:
+                key = (e["upgrade"]["track"], e["upgrade"]["rank"])
+                if key in track_rank_ilvl:
+                    e["itemLevel"] = track_rank_ilvl[key]
+                    e["itemLevelEstimated"] = True
+                    backfilled += 1
+    if backfilled:
+        print(f"Backfilled {backfilled} missing item levels from track/rank data")
 
     characters_out.sort(key=lambda c: (-c["itemLevel"]))
 

@@ -15,6 +15,20 @@ BASE = "https://wowthing.org"
 # Currency IDs we care about (Midnight Season 2, as of this writing).
 # These can drift each season -- update if wowthing adds a new crest tier.
 CREST_IDS = [3437, 3438, 3439, 3440, 3441]      # Adventurer..Myth Mistcrest
+
+# Crest hold caps aren't in wowthing's public data at all (the per-character
+# `max` field is 0 for every crest, for every character, on this account --
+# confirmed directly against the raw API response, not guessed). In-game,
+# each crest's cap rises +100/week from season start, except Myth which
+# starts 100 lower than the rest. Update this every Tuesday reset:
+# non-Myth cap = 100 * weeks_since_season_start, Myth cap = that minus 100.
+CREST_MAX_OVERRIDE = {
+    3437: 500,  # Adventurer Mistcrest
+    3438: 500,  # Veteran Mistcrest
+    3439: 500,  # Champion Mistcrest
+    3440: 500,  # Hero Mistcrest
+    3441: 400,  # Myth Mistcrest (always 100 less than the others)
+}
 # 2167 ("Catalyst Charges") is a Dragonflight-era id, explicitly commented
 # out as unused in wowthing's own currencies.ts, and shows zero data for
 # every character on this account -- it's dead. The actual current-season
@@ -333,18 +347,19 @@ def main():
             meta = currency_by_id.get(cid, {"name": f"Currency {cid}"})
             wowhead_currency_url = f"https://www.wowhead.com/currency={cid}"
             if rc:
+                api_max = rc[2] if len(rc) > 2 else 0
                 out.append({
                     "id": cid,
                     "name": meta["name"],
                     "shortName": short_currency_name(meta["name"]),
                     "quantity": rc[1] if len(rc) > 1 else 0,
-                    "max": rc[2] if len(rc) > 2 else 0,
+                    "max": api_max or CREST_MAX_OVERRIDE.get(cid, 0),
                     "wowheadUrl": wowhead_currency_url,
                 })
             elif cid in currency_by_id:
                 out.append({
                     "id": cid, "name": meta["name"], "shortName": short_currency_name(meta["name"]),
-                    "quantity": 0, "max": 0,
+                    "quantity": 0, "max": CREST_MAX_OVERRIDE.get(cid, 0),
                     "wowheadUrl": wowhead_currency_url,
                 })
         return out

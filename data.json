@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T09:53:34.255045+00:00",
+ "generatedAt": "2026-09-10T09:57:02.383935+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4239,6 +4239,14 @@
     {
      "id": 233,
      "label": "Normal"
+    },
+    {
+     "id": 234,
+     "label": "Heroic"
+    },
+    {
+     "id": 235,
+     "label": "Mythic"
     }
    ]
   }
@@ -4767,6 +4775,12 @@
     "The Tidebound Grotto": {
      "Normal": [
       true
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
+      null
      ]
     }
    }
@@ -5141,6 +5155,12 @@
     "The Tidebound Grotto": {
      "Normal": [
       true
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
+      null
      ]
     }
    }
@@ -5555,6 +5575,12 @@
     },
     "The Tidebound Grotto": {
      "Normal": [
+      null
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
       null
      ]
     }
@@ -5973,6 +5999,12 @@
     "The Tidebound Grotto": {
      "Normal": [
       true
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
+      null
      ]
     }
    }
@@ -6421,6 +6453,12 @@
     "The Tidebound Grotto": {
      "Normal": [
       null
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
+      null
      ]
     }
    }
@@ -6866,6 +6904,12 @@
     "The Tidebound Grotto": {
      "Normal": [
       null
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
+      null
      ]
     }
    }
@@ -7213,6 +7257,12 @@
     },
     "The Tidebound Grotto": {
      "Normal": [
+      null
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
       null
      ]
     }
@@ -7571,6 +7621,12 @@
     },
     "The Tidebound Grotto": {
      "Normal": [
+      null
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
       null
      ]
     }
@@ -7969,6 +8025,12 @@
     },
     "The Tidebound Grotto": {
      "Normal": [
+      null
+     ],
+     "Heroic": [
+      null
+     ],
+     "Mythic": [
       null
      ]
     }

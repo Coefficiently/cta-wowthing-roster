@@ -37,8 +37,20 @@ MYTHIC_PLUS_DUNGEONS = [
     (250, "Temple of Sethraliss"),
 ]
 
-RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "Normal"}
-RAID_DIFFICULTY_ORDER = [17, 14, 15, 16, 233]
+RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M", 233: "Normal", 234: "Heroic", 235: "Mythic"}
+RAID_DIFFICULTY_ORDER = [17, 14, 15, 16, 233, 234, 235]
+
+# Some raids only have as many difficulty rows as wowthing has actually seen a
+# character enter (a lockout only exists once someone's killed something on
+# that difficulty). For small/new raids where nobody in the account has
+# touched every tier yet, hand-pin the full known difficulty list here so all
+# rows show up (as dashes) even before anyone's attempted them. Difficulty
+# ids for untried tiers are a best guess (sequential from the observed one);
+# if wrong, the real id will just show up as an extra row once someone runs
+# it, self-correcting.
+RAID_DIFFICULTY_FORCE = {
+    "The Tidebound Grotto": [233, 234, 235],  # Normal, Heroic, Mythic
+}
 
 SLOT_NAMES = {
     0: "Ammo", 1: "Head", 2: "Neck", 3: "Shoulders", 4: "Shirt", 5: "Chest",
@@ -152,7 +164,8 @@ def main():
 
     raids = []
     for raid_name in sorted(raid_boss_lists, key=lambda n: (-len(raid_boss_lists[n]), n)):
-        difficulties = sorted(raid_difficulties[raid_name], key=difficulty_sort_key)
+        difficulty_ids = set(raid_difficulties[raid_name]) | set(RAID_DIFFICULTY_FORCE.get(raid_name, []))
+        difficulties = sorted(difficulty_ids, key=difficulty_sort_key)
         raids.append({
             "name": raid_name,
             "bosses": raid_boss_lists[raid_name],

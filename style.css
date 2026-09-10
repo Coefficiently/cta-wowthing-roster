@@ -121,6 +121,8 @@ a { color: var(--gold-2); }
   border-radius: 6px;
   background: var(--panel);
   padding-bottom: 14px; /* keeps the native scrollbar from overlapping the last row */
+  width: fit-content;
+  max-width: 100%; /* falls back to horizontal scroll rather than overflow the viewport */
 }
 
 .roster-table {

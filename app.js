@@ -2,6 +2,8 @@
   "use strict";
 
   let DATA = null;
+  let currentPage = 0;
+  let charsPerPage = 4; // recalculated after first render, this is just a starting guess
 
   const theadEl = document.getElementById("roster-thead");
   const tbodyEl = document.getElementById("roster-tbody");
@@ -284,8 +286,66 @@
     </tr>`;
   }
 
+  // ---------------- Pagination ----------------
+  // Matches .char-col's CSS min-width -- keep these in sync.
+  const CHAR_COLUMN_WIDTH = 150;
+  const DEFAULT_ROW_LABEL_WIDTH = 170;
+
+  function measureRowLabelWidth() {
+    const el = document.querySelector("#roster-tbody .row-label, #roster-thead .row-label");
+    return el ? Math.ceil(el.getBoundingClientRect().width) : DEFAULT_ROW_LABEL_WIDTH;
+  }
+
+  function computeCharsPerPage() {
+    const scrollEl = document.querySelector(".table-scroll");
+    const containerWidth = (scrollEl && scrollEl.clientWidth) || window.innerWidth - 48;
+    const rowLabelWidth = measureRowLabelWidth();
+    const available = containerWidth - rowLabelWidth - 4;
+    return Math.max(1, Math.floor(available / CHAR_COLUMN_WIDTH));
+  }
+
+  function renderPaginationControls(totalChars, totalPages) {
+    const controls = document.getElementById("page-controls");
+    if (!controls) return;
+    if (totalPages <= 1) {
+      controls.hidden = true;
+      return;
+    }
+    controls.hidden = false;
+    document.getElementById("page-indicator").textContent =
+      `Page ${currentPage + 1} of ${totalPages} (${totalChars} characters)`;
+    document.getElementById("page-prev").disabled = currentPage === 0;
+    document.getElementById("page-next").disabled = currentPage >= totalPages - 1;
+  }
+
+  function wirePaginationControls() {
+    const prev = document.getElementById("page-prev");
+    const next = document.getElementById("page-next");
+    if (prev) prev.addEventListener("click", () => { currentPage -= 1; render(); });
+    if (next) next.addEventListener("click", () => { currentPage += 1; render(); });
+
+    let resizeTimer = null;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const newCharsPerPage = computeCharsPerPage();
+        if (newCharsPerPage !== charsPerPage) {
+          charsPerPage = newCharsPerPage;
+          currentPage = 0;
+          render();
+        }
+      }, 150);
+    });
+  }
+
   function render() {
-    const chars = DATA.characters;
+    if (!DATA) return;
+    const allChars = DATA.characters;
+    const totalPages = Math.max(1, Math.ceil(allChars.length / charsPerPage));
+    currentPage = Math.min(Math.max(currentPage, 0), totalPages - 1);
+    const start = currentPage * charsPerPage;
+    const chars = allChars.slice(start, start + charsPerPage);
+
     renderHeader(chars);
 
     let rows = "";
@@ -340,6 +400,21 @@
         }
       });
     });
+
+    renderPaginationControls(allChars.length, totalPages);
+
+    // First render used a guessed charsPerPage (no rendered .row-label to
+    // measure yet); now that real cells exist, correct it and re-render
+    // once if the guess was off. Guarded against oscillation.
+    if (!render._correcting) {
+      const measured = computeCharsPerPage();
+      if (measured !== charsPerPage) {
+        charsPerPage = measured;
+        render._correcting = true;
+        render();
+        render._correcting = false;
+      }
+    }
   }
 
   // ---------------- Detail panel (gear / currencies / bags) ----------------
@@ -511,6 +586,7 @@
 
   async function init() {
     wireRefreshButton();
+    wirePaginationControls();
     await loadAndRender();
     setInterval(renderResetCountdown, 60000);
   }

@@ -1,8 +1,9 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T09:27:10.321224+00:00",
+ "generatedAt": "2026-09-10T09:33:42.578385+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
+ "warbandGold": 0,
  "classes": {
   "1": {
    "name": "Warrior",

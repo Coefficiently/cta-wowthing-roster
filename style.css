@@ -173,11 +173,15 @@ a { color: var(--gold-2); }
 .cell-profession { color: var(--ink); }
 .profession-skill { color: var(--ink-faint); font-variant-numeric: tabular-nums; font-size: 0.8rem; }
 
+.vault-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .vault-slot {
   display: inline-block;
   min-width: 1.5rem;
   text-align: center;
-  margin: 0 0.175rem;
   padding: 0.05rem 0.35rem;
   border-radius: 3px;
   font-variant-numeric: tabular-nums;

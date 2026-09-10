@@ -144,11 +144,12 @@
   }
 
   function vaultCellHtml(slots, status) {
-    if (!slots || slots.length === 0) return `<span class="vault-slot vault-empty">\u2014</span>`;
+    if (!slots || slots.length === 0) return `<div class="vault-row"><span class="vault-slot vault-empty">\u2014</span></div>`;
     const metClass = status === "full" ? "vault-met-full" : "vault-met";
-    return slots
+    const spans = slots
       .map((s) => `<span class="vault-slot ${s.met ? metClass : "vault-empty"}">${s.met ? s.label : "\u2014"}</span>`)
       .join("");
+    return `<div class="vault-row">${spans}</div>`;
   }
 
   function rowVault(chars) {

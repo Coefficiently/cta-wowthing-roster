@@ -427,10 +427,52 @@
 
   // ---------------- Header stats + init ----------------
 
+  // Weekly reset: Tuesday 10:00 AM America/Chicago. Vault progress and raid
+  // saved/unsaved status all reset at this moment -- everything shown here
+  // is "as of" whatever the most recent one was.
+  function getTimeZoneOffsetMinutes(date, timeZone) {
+    const utcStr = date.toLocaleString("en-US", { timeZone: "UTC" });
+    const tzStr = date.toLocaleString("en-US", { timeZone });
+    return (new Date(tzStr) - new Date(utcStr)) / 60000;
+  }
+
+  function nextWeeklyReset(now) {
+    now = now || new Date();
+    const TARGET_WEEKDAY = 2; // Tuesday
+    const TARGET_HOUR = 10;
+    const offsetMin = getTimeZoneOffsetMinutes(now, "America/Chicago");
+    const chiNow = new Date(now.getTime() + offsetMin * 60000);
+    const chiWeekday = chiNow.getUTCDay();
+    let daysUntil = (TARGET_WEEKDAY - chiWeekday + 7) % 7;
+    const candidate = new Date(Date.UTC(
+      chiNow.getUTCFullYear(), chiNow.getUTCMonth(), chiNow.getUTCDate() + daysUntil, TARGET_HOUR, 0, 0
+    ));
+    if (daysUntil === 0 && chiNow.getUTCHours() >= TARGET_HOUR) {
+      candidate.setUTCDate(candidate.getUTCDate() + 7);
+    }
+    const realOffsetMin = getTimeZoneOffsetMinutes(new Date(candidate.getTime() - offsetMin * 60000), "America/Chicago");
+    return new Date(candidate.getTime() - realOffsetMin * 60000);
+  }
+
+  function renderResetCountdown() {
+    const el = document.getElementById("reset-countdown");
+    if (!el) return;
+    const reset = nextWeeklyReset();
+    const diffMs = reset - new Date();
+    const days = Math.floor(diffMs / 86400000);
+    const hours = Math.floor((diffMs % 86400000) / 3600000);
+    const minutes = Math.floor((diffMs % 3600000) / 60000);
+    const parts = [];
+    if (days > 0) parts.push(`${days}d`);
+    parts.push(`${hours}h`, `${minutes}m`);
+    el.textContent = `Vault/raid saves reset in ${parts.join(" ")} (Tue 10am Central)`;
+  }
+
   function renderTopStats() {
     const generated = new Date(DATA.generatedAt);
     document.getElementById("generated-at").textContent =
       "Last updated " + generated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+    renderResetCountdown();
   }
 
   async function loadAndRender() {
@@ -470,6 +512,7 @@
   async function init() {
     wireRefreshButton();
     await loadAndRender();
+    setInterval(renderResetCountdown, 60000);
   }
 
   init();

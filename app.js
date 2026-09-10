@@ -82,10 +82,25 @@
     </tr>`;
   }
 
+  // Red (291) -> Yellow (mid) -> bright green (331), clamped at the ends.
+  function itemLevelColor(ilvl) {
+    const RED = [214, 90, 80];
+    const YELLOW = [224, 196, 90];
+    const GREEN = [126, 224, 96];
+    const min = 291, max = 331;
+    let t = (ilvl - min) / (max - min);
+    t = Math.max(0, Math.min(1, t));
+    const [c1, c2, localT] = t < 0.5
+      ? [RED, YELLOW, t / 0.5]
+      : [YELLOW, GREEN, (t - 0.5) / 0.5];
+    const mix = (i) => Math.round(c1[i] + (c2[i] - c1[i]) * localT);
+    return `rgb(${mix(0)}, ${mix(1)}, ${mix(2)})`;
+  }
+
   function rowItemLevel(chars) {
     return `<tr>
       <td class="row-label">Item Level</td>
-      ${chars.map((c) => `<td class="cell-gold cell-strong">${c.itemLevel}</td>`).join("")}
+      ${chars.map((c) => `<td class="cell-strong" style="color:${itemLevelColor(c.itemLevel)}">${c.itemLevel}</td>`).join("")}
     </tr>`;
   }
 

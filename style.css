@@ -168,7 +168,7 @@ a { color: var(--gold-2); }
 }
 
 .cell-dim { color: var(--ink-faint); }
-.cell-strong { font-weight: 700; }
+.cell-strong { font-weight: 700; font-variant-numeric: tabular-nums; }
 .cell-gold { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-rating { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-currency { font-variant-numeric: tabular-nums; }

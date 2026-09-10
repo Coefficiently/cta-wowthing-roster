@@ -3,7 +3,7 @@
 
   let DATA = null;
   let currentPage = 0;
-  let charsPerPage = 4; // recalculated after first render, this is just a starting guess
+  let charsPerPage = 4; // always recomputed at the top of render(), this is just the pre-first-render placeholder
 
   const theadEl = document.getElementById("roster-thead");
   const tbodyEl = document.getElementById("roster-tbody");
@@ -287,20 +287,16 @@
   }
 
   // ---------------- Pagination ----------------
-  // Matches .char-col's CSS min-width -- keep these in sync.
+  // These must match the .row-label / .char-col fixed widths in CSS exactly
+  // -- with table-layout:fixed, the table no longer auto-sizes, so if these
+  // drift out of sync with the CSS the page-size math will be wrong.
   const CHAR_COLUMN_WIDTH = 150;
-  const DEFAULT_ROW_LABEL_WIDTH = 170;
-
-  function measureRowLabelWidth() {
-    const el = document.querySelector("#roster-tbody .row-label, #roster-thead .row-label");
-    return el ? Math.ceil(el.getBoundingClientRect().width) : DEFAULT_ROW_LABEL_WIDTH;
-  }
+  const ROW_LABEL_WIDTH = 240;
 
   function computeCharsPerPage() {
     const scrollEl = document.querySelector(".table-scroll");
     const containerWidth = (scrollEl && scrollEl.clientWidth) || window.innerWidth - 48;
-    const rowLabelWidth = measureRowLabelWidth();
-    const available = containerWidth - rowLabelWidth - 4;
+    const available = containerWidth - ROW_LABEL_WIDTH - 4;
     return Math.max(1, Math.floor(available / CHAR_COLUMN_WIDTH));
   }
 
@@ -328,9 +324,7 @@
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
-        const newCharsPerPage = computeCharsPerPage();
-        if (newCharsPerPage !== charsPerPage) {
-          charsPerPage = newCharsPerPage;
+        if (computeCharsPerPage() !== charsPerPage) {
           currentPage = 0;
           render();
         }
@@ -340,6 +334,7 @@
 
   function render() {
     if (!DATA) return;
+    charsPerPage = computeCharsPerPage();
     const allChars = DATA.characters;
     const totalPages = Math.max(1, Math.ceil(allChars.length / charsPerPage));
     currentPage = Math.min(Math.max(currentPage, 0), totalPages - 1);
@@ -402,19 +397,6 @@
     });
 
     renderPaginationControls(allChars.length, totalPages);
-
-    // First render used a guessed charsPerPage (no rendered .row-label to
-    // measure yet); now that real cells exist, correct it and re-render
-    // once if the guess was off. Guarded against oscillation.
-    if (!render._correcting) {
-      const measured = computeCharsPerPage();
-      if (measured !== charsPerPage) {
-        charsPerPage = measured;
-        render._correcting = true;
-        render();
-        render._correcting = false;
-      }
-    }
   }
 
   // ---------------- Detail panel (gear / currencies / bags) ----------------

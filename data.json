@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T10:22:32.628950+00:00",
+ "generatedAt": "2026-09-10T10:30:27.891596+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4316,10 +4316,12 @@
      "gems": [
       {
        "itemId": 240890,
-       "name": "Flawless Deadly Peridot"
+       "name": "Flawless Deadly Peridot",
+       "wowheadUrl": "https://www.wowhead.com/item=240890"
       }
      ],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271528?bonus=12846:13334:6652:13696:13847:13692:13698:1574:13695&ench=8017&gems=240890&ilvl=321"
     },
     {
      "slot": 2,
@@ -4339,14 +4341,17 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       },
       {
        "itemId": 240916,
-       "name": "Flawless Quick Lapis"
+       "name": "Flawless Quick Lapis",
+       "wowheadUrl": "https://www.wowhead.com/item=240916"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268265?bonus=6652:13668:13333:11215:13987:12838&gems=240906:240916&ilvl=308"
     },
     {
      "slot": 3,
@@ -4364,7 +4369,8 @@
      },
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001"
     },
     {
      "slot": 5,
@@ -4382,7 +4388,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271531?bonus=6652:13335:12854:13690:13698:1587:13696&ench=7987&ilvl=334"
     },
     {
      "slot": 6,
@@ -4402,10 +4409,12 @@
      "gems": [
       {
        "itemId": 240967,
-       "name": "Powerful Eversong Diamond"
+       "name": "Powerful Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240967"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967"
     },
     {
      "slot": 7,
@@ -4417,9 +4426,10 @@
      "context": 13,
      "craftedQuality": 5,
      "upgrade": null,
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244574?bonus=12214:13667:12497:13751:14001:8960:12384:8791:13836&ench=7935&ilvl=331"
     },
     {
      "slot": 8,
@@ -4433,7 +4443,8 @@
      "upgrade": null,
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244569?bonus=12214:13667:12497:13751:14001:8960:12384:8791:13836&ench=7963&ilvl=331"
     },
     {
      "slot": 9,
@@ -4451,7 +4462,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574"
     },
     {
      "slot": 10,
@@ -4469,7 +4481,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271529?bonus=13335:13691:6652:13697:12853&ilvl=331"
     },
     {
      "slot": 11,
@@ -4489,10 +4502,12 @@
      "gems": [
       {
        "itemId": 240900,
-       "name": "Flawless Quick Amethyst"
+       "name": "Flawless Quick Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240900"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=162544?bonus=13440:6652:13668:12699:12846&ench=7967&gems=240900&ilvl=321"
     },
     {
      "slot": 12,
@@ -4512,10 +4527,12 @@
      "gems": [
       {
        "itemId": 240900,
-       "name": "Flawless Quick Amethyst"
+       "name": "Flawless Quick Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240900"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=158366?bonus=13440:6652:13668:12699:12846&ench=7967&gems=240900&ilvl=321"
     },
     {
      "slot": 13,
@@ -4533,7 +4550,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250215?bonus=13440:6652:12699:12846&ilvl=321"
     },
     {
      "slot": 14,
@@ -4551,7 +4569,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=270164?bonus=6652:13335:12854&ilvl=334"
     },
     {
      "slot": 15,
@@ -4569,7 +4588,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268248?bonus=6652:13662:13335:12854&ilvl=334"
     },
     {
      "slot": 16,
@@ -4587,7 +4607,8 @@
      },
      "enchant": "Rite of the Hash'ey",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268205?bonus=6652:13335:12854:13696&ench=8689&ilvl=334"
     }
    ],
    "tierPieceCount": 4,
@@ -4965,10 +4986,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244579?bonus=12214:13667:13695:12497:13751:14001:8960:12384:8791:13836:13696&ench=8017&gems=240983&ilvl=331"
     },
     {
      "slot": 2,
@@ -4988,10 +5011,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268251?bonus=6652:13668:13334:12850&gems=240906&ilvl=321"
     },
     {
      "slot": 3,
@@ -5009,7 +5034,8 @@
      },
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271499?bonus=43:13440:13694:13697:12846&ench=8001&ilvl=321"
     },
     {
      "slot": 5,
@@ -5027,7 +5053,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271504?bonus=13334:6652:13846:13690:13698:12846&ench=7987&ilvl=321"
     },
     {
      "slot": 6,
@@ -5047,10 +5074,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268254?bonus=6652:13695:13662:13334:12846&gems=240906&ilvl=321"
     },
     {
      "slot": 7,
@@ -5066,9 +5095,10 @@
       "rank": 6,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=13334:42:13693:13698:12846&ench=7935&ilvl=321"
     },
     {
      "slot": 8,
@@ -5086,7 +5116,8 @@
      },
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268258?bonus=6652:13662:13334:12846&ench=7963&ilvl=321"
     },
     {
      "slot": 9,
@@ -5100,7 +5131,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244584?bonus=12214:13667:12497:13751:14001:12715:8791:13836:13696&ilvl=331"
     },
     {
      "slot": 10,
@@ -5118,7 +5150,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271502?bonus=13333:13691:6652:13697:12838&ilvl=308"
     },
     {
      "slot": 11,
@@ -5138,10 +5171,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=158366?bonus=13440:6652:13668:12699:12844&ench=8025&gems=240906&ilvl=315"
     },
     {
      "slot": 12,
@@ -5161,10 +5196,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268249?bonus=6652:13668:13333:12838&ench=7969&gems=240906&ilvl=308"
     },
     {
      "slot": 13,
@@ -5182,7 +5219,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250215?bonus=13440:41:12699:12846&ilvl=321"
     },
     {
      "slot": 14,
@@ -5200,7 +5238,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=270168?bonus=6652:13334:12846&ilvl=321"
     },
     {
      "slot": 15,
@@ -5218,7 +5257,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268253?bonus=6652:13662:13334:12846&ilvl=321"
     },
     {
      "slot": 16,
@@ -5236,7 +5276,8 @@
      },
      "enchant": "Enchant Weapon - Arcane Mastery",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268210?bonus=13335:12854:13696&ench=8041&ilvl=334"
     },
     {
      "slot": 17,
@@ -5250,7 +5291,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245769?bonus=12214:13667:12497:13751:14001:13771:8960:8791:13836&ilvl=331"
     }
    ],
    "tierPieceCount": 4,
@@ -5503,10 +5545,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=49824?bonus=13440:40:13534:13577:12699:12806&ench=7991&gems=240906&ilvl=289"
     },
     {
      "slot": 2,
@@ -5526,10 +5570,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249337?bonus=6652:13668:13335:12806&gems=240906&ilvl=289"
     },
     {
      "slot": 3,
@@ -5547,7 +5593,8 @@
      },
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271499?bonus=12846:13334:6652:13694:13697:1574&ench=8001"
     },
     {
      "slot": 5,
@@ -5565,7 +5612,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271504?bonus=6652:13440:13690:13698:12846&ench=7987"
     },
     {
      "slot": 6,
@@ -5585,10 +5633,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251155?bonus=13440:6652:13695:13662:12699:12846&gems=240906&ilvl=321"
     },
     {
      "slot": 7,
@@ -5604,9 +5654,10 @@
       "rank": 6,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=6652:13440:13693:13698:12846&ench=7935"
     },
     {
      "slot": 8,
@@ -5624,7 +5675,8 @@
      },
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268258?bonus=13335:12854:13662:13696&ench=7963&ilvl=334"
     },
     {
      "slot": 9,
@@ -5642,7 +5694,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251200?bonus=13440:6652:13696:13662:12699:12846&ilvl=321"
     },
     {
      "slot": 10,
@@ -5660,7 +5713,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271502?bonus=6652:13440:13691:13697:12846"
     },
     {
      "slot": 11,
@@ -5680,10 +5734,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=158366?bonus=13439:6652:13668:12699:12838&ench=7967&gems=240983&ilvl=308"
     },
     {
      "slot": 12,
@@ -5699,10 +5755,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268290?bonus=6652:13668:13335:13786&ench=7967&gems=240906&ilvl=298"
     },
     {
      "slot": 13,
@@ -5720,7 +5778,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251785?bonus=6652:12846&ilvl=321"
     },
     {
      "slot": 14,
@@ -5738,7 +5797,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=270167?bonus=6652:13334:12854&ilvl=334"
     },
     {
      "slot": 15,
@@ -5756,7 +5816,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268253?bonus=6652:13662:13334:12850&ilvl=321"
     },
     {
      "slot": 16,
@@ -5770,7 +5831,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245770?bonus=12214:13667:12497:13751:14004:13771:8960:8791:13836&ench=8039&ilvl=331"
     },
     {
      "slot": 19,
@@ -5784,7 +5846,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=202197?ilvl=1"
     },
     {
      "slot": 20,
@@ -5798,7 +5861,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244175?bonus=12252:12251:12502&ilvl=206"
     },
     {
      "slot": 21,
@@ -5812,7 +5876,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=240956?bonus=12252:12251:12497&ilvl=193"
     },
     {
      "slot": 22,
@@ -5826,7 +5891,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239643?bonus=12252:12251:12502&ilvl=206"
     },
     {
      "slot": 23,
@@ -5840,7 +5906,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=191234?bonus=8841:8842:8807&ilvl=74"
     },
     {
      "slot": 24,
@@ -5854,7 +5921,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193487?bonus=8841:8842:8807&ilvl=74"
     },
     {
      "slot": 25,
@@ -5868,7 +5936,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193528?bonus=8841:8842:8807&ilvl=74"
     }
    ],
    "tierPieceCount": 4,
@@ -6100,7 +6169,8 @@
      },
      "enchant": "Enchant Helm - Empowered Rune of Avoidance",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271564?bonus=6652:13846:13333:13696:13692:13698:12838&ench=8017&ilvl=308"
     },
     {
      "slot": 2,
@@ -6120,14 +6190,17 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       },
       {
        "itemId": 240894,
-       "name": "Flawless Versatile Peridot"
+       "name": "Flawless Versatile Peridot",
+       "wowheadUrl": "https://www.wowhead.com/item=240894"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268265?bonus=6652:13668:13334:13987:12846&gems=240983:240894&ilvl=321"
     },
     {
      "slot": 3,
@@ -6145,7 +6218,8 @@
      },
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271562?bonus=12854:13335:13694:6652:13697:13696&ench=8001&ilvl=334"
     },
     {
      "slot": 4,
@@ -6159,7 +6233,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268274?ilvl=1"
     },
     {
      "slot": 5,
@@ -6177,7 +6252,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271567?bonus=13334:13690:6652:13698:12846&ench=7987&ilvl=321"
     },
     {
      "slot": 6,
@@ -6197,10 +6273,12 @@
      "gems": [
       {
        "itemId": 240894,
-       "name": "Flawless Versatile Peridot"
+       "name": "Flawless Versatile Peridot",
+       "wowheadUrl": "https://www.wowhead.com/item=240894"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268232?bonus=6652:13695:13662:13335:12854&gems=240894&ilvl=334"
     },
     {
      "slot": 7,
@@ -6216,9 +6294,10 @@
       "rank": 6,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271563?bonus=13334:13693:6652:13698:12846&ench=7935&ilvl=321"
     },
     {
      "slot": 8,
@@ -6236,7 +6315,8 @@
      },
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268255?bonus=6652:13662:13333:12838&ench=7963&ilvl=308"
     },
     {
      "slot": 9,
@@ -6252,10 +6332,12 @@
      "gems": [
       {
        "itemId": 240894,
-       "name": "Flawless Versatile Peridot"
+       "name": "Flawless Versatile Peridot",
+       "wowheadUrl": "https://www.wowhead.com/item=240894"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239648?bonus=12214:13667:12497:12066:8960:12384:8791:13622:12666&gems=240894&ilvl=285"
     },
     {
      "slot": 10,
@@ -6273,7 +6355,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268243?bonus=40:13662:13333:12838&ilvl=308"
     },
     {
      "slot": 11,
@@ -6293,10 +6376,12 @@
      "gems": [
       {
        "itemId": 240894,
-       "name": "Flawless Versatile Peridot"
+       "name": "Flawless Versatile Peridot",
+       "wowheadUrl": "https://www.wowhead.com/item=240894"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251136?bonus=13440:6652:13668:12699:12846&ench=7967&gems=240894&ilvl=321"
     },
     {
      "slot": 12,
@@ -6316,10 +6401,12 @@
      "gems": [
       {
        "itemId": 240894,
-       "name": "Flawless Versatile Peridot"
+       "name": "Flawless Versatile Peridot",
+       "wowheadUrl": "https://www.wowhead.com/item=240894"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=252258?bonus=13440:6652:13668:12699:12846&ench=7967&gems=240894&ilvl=321"
     },
     {
      "slot": 13,
@@ -6337,7 +6424,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=270164?bonus=6652:13334:12846&ilvl=321"
     },
     {
      "slot": 14,
@@ -6355,7 +6443,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=270169?bonus=6652:13333:12838&ilvl=308"
     },
     {
      "slot": 15,
@@ -6373,7 +6462,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251190?bonus=13439:6652:13662:12699:12838&ilvl=308"
     },
     {
      "slot": 16,
@@ -6387,7 +6477,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Jan'alai's Precision",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245770?bonus=12214:12497:13751:14004:13771:8960:8792:13836&ench=7981&ilvl=331"
     }
    ],
    "tierPieceCount": 4,
@@ -6681,7 +6772,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271546?bonus=13692:12849:13440:6652:13696:13698&ilvl=318"
     },
     {
      "slot": 2,
@@ -6701,10 +6793,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249337?bonus=6652:13668:13335:12806&gems=240983&ilvl=289"
     },
     {
      "slot": 3,
@@ -6722,7 +6816,8 @@
      },
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271544?bonus=13333:13694:6652:13697:12838&ench=8001&ilvl=308"
     },
     {
      "slot": 4,
@@ -6736,7 +6831,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=151116?ilvl=1"
     },
     {
      "slot": 5,
@@ -6754,7 +6850,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271549?bonus=6652:13439:13690:13698:12838&ench=7987"
     },
     {
      "slot": 6,
@@ -6774,10 +6871,12 @@
      "gems": [
       {
        "itemId": 240910,
-       "name": "Flawless Versatile Garnet"
+       "name": "Flawless Versatile Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240910"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250039?bonus=6652:13335:12806:13534&gems=240910&ilvl=289"
     },
     {
      "slot": 7,
@@ -6793,9 +6892,10 @@
       "rank": 6,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271545?bonus=13333:13693:6652:13698:12838&ench=7935&ilvl=308"
     },
     {
      "slot": 8,
@@ -6809,7 +6909,8 @@
      "upgrade": null,
      "enchant": "Enchant Boots - Farstrider's Hunt",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268282?bonus=6652:13577:13335:13786&ench=8019&ilvl=298"
     },
     {
      "slot": 9,
@@ -6827,7 +6928,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=156011?bonus=8902:7756:13696:13662:12699:12846&ilvl=321"
     },
     {
      "slot": 10,
@@ -6845,7 +6947,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271547?bonus=6652:13440:13691:13697:12846&ilvl=321"
     },
     {
      "slot": 11,
@@ -6865,10 +6968,12 @@
      "gems": [
       {
        "itemId": 240910,
-       "name": "Flawless Versatile Garnet"
+       "name": "Flawless Versatile Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240910"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249919?bonus=6652:13668:13335:12806&ench=7967&gems=240910&ilvl=289"
     },
     {
      "slot": 12,
@@ -6884,10 +6989,12 @@
      "gems": [
       {
        "itemId": 240910,
-       "name": "Flawless Versatile Garnet"
+       "name": "Flawless Versatile Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240910"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268290?bonus=6652:13668:13335:13786&ench=7967&gems=240910&ilvl=298"
     },
     {
      "slot": 13,
@@ -6905,7 +7012,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251784?bonus=6652:12846&ilvl=321"
     },
     {
      "slot": 14,
@@ -6919,7 +7027,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250144?bonus=13440:6652:12699:13654&ilvl=298"
     },
     {
      "slot": 15,
@@ -6933,7 +7042,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239656?bonus=12214:13667:12497:12066:8960:12384:8790:13622&ilvl=285"
     },
     {
      "slot": 16,
@@ -6947,7 +7057,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245770?bonus=12214:12497:13751:14004:13771:8960:8790:13836&ench=8039&ilvl=331"
     },
     {
      "slot": 19,
@@ -6961,7 +7072,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=198731?ilvl=1"
     },
     {
      "slot": 20,
@@ -6975,7 +7087,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244176?bonus=12253:12251:12500&ilvl=218"
     },
     {
      "slot": 21,
@@ -6989,7 +7102,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239637?bonus=12253:12251:12499&ilvl=212"
     },
     {
      "slot": 22,
@@ -7003,7 +7117,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=240960?bonus=12253:12251:12499&ilvl=212"
     },
     {
      "slot": 23,
@@ -7017,7 +7132,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=191234?bonus=8841:8842:8807&ilvl=74"
     },
     {
      "slot": 24,
@@ -7031,7 +7147,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193528?bonus=8841:8842:8807&ilvl=74"
     },
     {
      "slot": 25,
@@ -7045,7 +7162,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193487?bonus=8841:8842:8807&ilvl=74"
     },
     {
      "slot": 26,
@@ -7059,7 +7177,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=191233?bonus=8841:8842:8807&ilvl=74"
     },
     {
      "slot": 27,
@@ -7073,7 +7192,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193534?bonus=8841:8842:8807&ilvl=74"
     }
    ],
    "tierPieceCount": 5,
@@ -7308,7 +7428,8 @@
      },
      "enchant": "Enchant Helm - Empowered Rune of Avoidance",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271564?bonus=12846:6652:13696:13440:13692:13698:1574&ench=8017"
     },
     {
      "slot": 2,
@@ -7328,10 +7449,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251173?bonus=13440:6652:13668:12699:12846&gems=240983&ilvl=321"
     },
     {
      "slot": 3,
@@ -7349,7 +7472,8 @@
      },
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250058?bonus=13335:13340:6652:13574:12806&ench=7973&ilvl=289"
     },
     {
      "slot": 4,
@@ -7363,7 +7487,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268274?ilvl=1"
     },
     {
      "slot": 5,
@@ -7381,7 +7506,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271567?bonus=12849:13334:13690:6652:13698&ilvl=318"
     },
     {
      "slot": 6,
@@ -7401,10 +7527,12 @@
      "gems": [
       {
        "itemId": 240908,
-       "name": "Flawless Masterful Garnet"
+       "name": "Flawless Masterful Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240908"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250057?bonus=6652:13335:12806:13534&gems=240908&ilvl=289"
     },
     {
      "slot": 7,
@@ -7420,9 +7548,10 @@
       "rank": 6,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271563?bonus=12846:13693:13698:1574&ench=7935"
     },
     {
      "slot": 8,
@@ -7436,7 +7565,8 @@
      "upgrade": null,
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268282?bonus=6652:13577:13335:13786&ench=7963&ilvl=298"
     },
     {
      "slot": 9,
@@ -7452,10 +7582,12 @@
      "gems": [
       {
        "itemId": 240908,
-       "name": "Flawless Masterful Garnet"
+       "name": "Flawless Masterful Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240908"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239648?bonus=12214:13667:12497:12066:8960:12384:8791:13622:12666&gems=240908&ilvl=285"
     },
     {
      "slot": 10,
@@ -7473,7 +7605,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271565?bonus=12834:13333:13691:6652:13697&ilvl=295"
     },
     {
      "slot": 11,
@@ -7489,10 +7622,12 @@
      "gems": [
       {
        "itemId": 240906,
-       "name": "Flawless Quick Garnet"
+       "name": "Flawless Quick Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240906"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268290?bonus=6652:13668:13335:13786&ench=7967&gems=240906&ilvl=298"
     },
     {
      "slot": 12,
@@ -7512,10 +7647,12 @@
      "gems": [
       {
        "itemId": 240908,
-       "name": "Flawless Masterful Garnet"
+       "name": "Flawless Masterful Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240908"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249336?bonus=41:13668:13335:12806&ench=7967&gems=240908&ilvl=289"
     },
     {
      "slot": 13,
@@ -7529,7 +7666,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249343?bonus=6652:13335:13654&ilvl=298"
     },
     {
      "slot": 14,
@@ -7543,7 +7681,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249346?bonus=42:13335:13654&ilvl=298"
     },
     {
      "slot": 15,
@@ -7561,7 +7700,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=272227?bonus=6652:13662:12846&ilvl=321"
     },
     {
      "slot": 16,
@@ -7575,7 +7715,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245770?bonus=12214:12497:13751:14004:13771:8960:8792:13836&ench=8039&ilvl=331"
     },
     {
      "slot": 20,
@@ -7589,7 +7730,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244176?bonus=12253:12251:12499&ilvl=212"
     },
     {
      "slot": 21,
@@ -7603,7 +7745,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239637?bonus=12253:12251:12499&ilvl=212"
     },
     {
      "slot": 22,
@@ -7617,7 +7760,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=240960?bonus=12253:12251:12499&ilvl=212"
     },
     {
      "slot": 23,
@@ -7631,7 +7775,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245777?bonus=12252:12251:12502&ilvl=206"
     },
     {
      "slot": 24,
@@ -7645,7 +7790,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239641?bonus=12252:12251:12501&ilvl=199"
     },
     {
      "slot": 25,
@@ -7659,7 +7805,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244626?bonus=12253:12251:12500&ilvl=218"
     },
     {
      "slot": 26,
@@ -7673,7 +7820,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=245779?bonus=12252:12251:12502&ilvl=206"
     },
     {
      "slot": 27,
@@ -7687,7 +7835,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239642?bonus=12252:12251:12502&ilvl=206"
     },
     {
      "slot": 28,
@@ -7701,7 +7850,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=6256?ilvl=1"
     }
    ],
    "tierPieceCount": 4,
@@ -7933,7 +8083,8 @@
      },
      "enchant": "Enchant Helm - Empowered Rune of Avoidance",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250042?bonus=12806:6652:13335:12667:13338:13575:3174&ench=8017&ilvl=289"
     },
     {
      "slot": 2,
@@ -7953,10 +8104,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251173?bonus=12843:13440:6652:13668:12699&gems=240983&ilvl=311"
     },
     {
      "slot": 3,
@@ -7974,7 +8127,8 @@
      },
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251213?bonus=13440:6652:13577:12699:12806&ench=7973&ilvl=289"
     },
     {
      "slot": 5,
@@ -7992,7 +8146,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271549?bonus=12846:13334:6652:13690:13698:1574&ench=7987"
     },
     {
      "slot": 6,
@@ -8010,7 +8165,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249319?bonus=6652:12667:13577:13335:12806&ilvl=289"
     },
     {
      "slot": 7,
@@ -8026,9 +8182,10 @@
       "rank": 1,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=159234?bonus=12849:13440:6652:13662:12699&ench=7935&ilvl=318"
     },
     {
      "slot": 8,
@@ -8042,7 +8199,8 @@
      "upgrade": null,
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268282?bonus=6652:13577:13335:13786&ench=7963&ilvl=298"
     },
     {
      "slot": 9,
@@ -8060,7 +8218,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=156146?bonus=8902:7756:13696:13662:12699:12846&ilvl=321"
     },
     {
      "slot": 10,
@@ -8078,7 +8237,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271547?bonus=12846:13334:6652:13691:13697:1574"
     },
     {
      "slot": 11,
@@ -8098,10 +8258,12 @@
      "gems": [
       {
        "itemId": 240910,
-       "name": "Flawless Versatile Garnet"
+       "name": "Flawless Versatile Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240910"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251217?bonus=13440:6652:13668:12699:12806&ench=7967&gems=240910&ilvl=289"
     },
     {
      "slot": 12,
@@ -8117,10 +8279,12 @@
      "gems": [
       {
        "itemId": 240910,
-       "name": "Flawless Versatile Garnet"
+       "name": "Flawless Versatile Garnet",
+       "wowheadUrl": "https://www.wowhead.com/item=240910"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268290?bonus=6652:13668:13335:13786&ench=7967&gems=240910&ilvl=298"
     },
     {
      "slot": 13,
@@ -8134,7 +8298,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268292?bonus=6652:13335:13786&ilvl=298"
     },
     {
      "slot": 14,
@@ -8148,7 +8313,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250144?bonus=13440:40:12699:13654&ilvl=298"
     },
     {
      "slot": 15,
@@ -8162,7 +8328,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=239656?bonus=12214:13667:12497:12066:8960:12384:8790:13622&ilvl=285"
     },
     {
      "slot": 16,
@@ -8176,7 +8343,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Jan'alai's Precision",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251201?bonus=13440:42:12701:13654&ench=7981&ilvl=298"
     }
    ],
    "tierPieceCount": 2,
@@ -8408,10 +8576,12 @@
      "gems": [
       {
        "itemId": 240898,
-       "name": "Flawless Deadly Amethyst"
+       "name": "Flawless Deadly Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240898"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249979?bonus=13335:13338:6652:13534:13575:12806&ench=7991&gems=240898&ilvl=289"
     },
     {
      "slot": 2,
@@ -8431,10 +8601,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=273781?bonus=12833:13439:41:13668:12699&gems=240983&ilvl=292"
     },
     {
      "slot": 3,
@@ -8452,7 +8624,8 @@
      },
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249977?bonus=6652:13440:13340:13574:12806&ench=7973&ilvl=289"
     },
     {
      "slot": 4,
@@ -8466,7 +8639,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268274?ilvl=1"
     },
     {
      "slot": 5,
@@ -8484,7 +8658,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249982?bonus=13335:13336:6652:13575:12806&ench=7987&ilvl=289"
     },
     {
      "slot": 6,
@@ -8502,7 +8677,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249371?bonus=6652:12667:13577:13335:12806&ilvl=289"
     },
     {
      "slot": 7,
@@ -8518,9 +8694,10 @@
       "rank": 4,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271482?bonus=13333:12836:43:13693:13698:1555&ench=7935&ilvl=302"
     },
     {
      "slot": 8,
@@ -8534,7 +8711,8 @@
      "upgrade": null,
      "enchant": "Enchant Boots - Lynx's Dexterity",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268287?bonus=6652:13577:13335:13786&ench=7963&ilvl=298"
     },
     {
      "slot": 9,
@@ -8552,7 +8730,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251200?bonus=12843:13440:6652:13696:13662:12699&ilvl=311"
     },
     {
      "slot": 10,
@@ -8570,7 +8749,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271484?bonus=6652:12825:13332:13691:13697:1532"
     },
     {
      "slot": 11,
@@ -8590,10 +8770,12 @@
      "gems": [
       {
        "itemId": 240898,
-       "name": "Flawless Deadly Amethyst"
+       "name": "Flawless Deadly Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240898"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193708?bonus=13440:6652:13668:12699:12806&ench=7967&gems=240898&ilvl=289"
     },
     {
      "slot": 12,
@@ -8613,10 +8795,12 @@
      "gems": [
       {
        "itemId": 240898,
-       "name": "Flawless Deadly Amethyst"
+       "name": "Flawless Deadly Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240898"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249336?bonus=40:13668:13335:12806&ench=7967&gems=240898&ilvl=289"
     },
     {
      "slot": 13,
@@ -8634,7 +8818,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251792?bonus=12841:40&ilvl=305"
     },
     {
      "slot": 14,
@@ -8648,7 +8833,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250144?bonus=13440:6652:12699:13654&ilvl=298"
     },
     {
      "slot": 15,
@@ -8666,7 +8852,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=156045?bonus=8902:12841:7756:13662:12699&ilvl=305"
     },
     {
      "slot": 16,
@@ -8680,7 +8867,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Arcane Mastery",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193707?bonus=13440:6652:12701:13654&ench=8041&ilvl=298"
     }
    ],
    "tierPieceCount": 2,
@@ -8915,7 +9103,8 @@
      },
      "enchant": "Enchant Helm - Empowered Rune of Avoidance",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=273791?bonus=12835:6652:13696:13662:12699:11215&ench=8017&ilvl=298"
     },
     {
      "slot": 2,
@@ -8935,10 +9124,12 @@
      "gems": [
       {
        "itemId": 240983,
-       "name": "Indecipherable Eversong Diamond"
+       "name": "Indecipherable Eversong Diamond",
+       "wowheadUrl": "https://www.wowhead.com/item=240983"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249368?bonus=6652:13668:13335:12806&gems=240983&ilvl=289"
     },
     {
      "slot": 3,
@@ -8956,7 +9147,8 @@
      },
      "enchant": "Enchant Shoulders - Akil'zon's Swiftness",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250031?bonus=6652:13440:13340:13574:12806&ench=7973&ilvl=289"
     },
     {
      "slot": 4,
@@ -8970,7 +9162,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=268274?ilvl=1"
     },
     {
      "slot": 5,
@@ -8988,7 +9181,8 @@
      },
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271540?bonus=6652:12841:13690:13698:1558&ench=7987&ilvl=305"
     },
     {
      "slot": 6,
@@ -9002,7 +9196,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244573?bonus=12214:13667:12497:12066:8960:12384:8793:13622:12667&ilvl=285"
     },
     {
      "slot": 7,
@@ -9018,9 +9213,10 @@
       "rank": 6,
       "maxRank": 6
      },
-     "enchant": "+4668 Intellect & +13093 Stamina",
+     "enchant": "+ Intellect & + Stamina",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250032?bonus=13339:13440:42:13575:12806&ench=7935&ilvl=289"
     },
     {
      "slot": 8,
@@ -9038,7 +9234,8 @@
      },
      "enchant": "Enchant Boots - Farstrider's Hunt",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=258577?bonus=13440:6652:13577:12699:12806&ench=8019&ilvl=289"
     },
     {
      "slot": 9,
@@ -9054,10 +9251,12 @@
      "gems": [
       {
        "itemId": 240898,
-       "name": "Flawless Deadly Amethyst"
+       "name": "Flawless Deadly Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240898"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=244576?bonus=12214:13667:12497:12066:8960:12384:8793:13622:12666&gems=240898&ilvl=285"
     },
     {
      "slot": 10,
@@ -9075,7 +9274,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": true
+     "isTierPiece": true,
+     "wowheadUrl": "https://www.wowhead.com/item=271538?bonus=13334:6652:12843:13691:13697:1564"
     },
     {
      "slot": 11,
@@ -9095,10 +9295,12 @@
      "gems": [
       {
        "itemId": 240900,
-       "name": "Flawless Quick Amethyst"
+       "name": "Flawless Quick Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240900"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251093?bonus=13440:6652:13668:12699:12806&ench=7967&gems=240900&ilvl=289"
     },
     {
      "slot": 12,
@@ -9118,10 +9320,12 @@
      "gems": [
       {
        "itemId": 240898,
-       "name": "Flawless Deadly Amethyst"
+       "name": "Flawless Deadly Amethyst",
+       "wowheadUrl": "https://www.wowhead.com/item=240898"
       }
      ],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=251217?bonus=13440:6652:13668:12699:12806&ench=7967&gems=240898&ilvl=289"
     },
     {
      "slot": 13,
@@ -9135,7 +9339,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249343?bonus=6652:13335:13654&ilvl=298"
     },
     {
      "slot": 14,
@@ -9149,7 +9354,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=250144?bonus=13440:6652:12699:13654&ilvl=298"
     },
     {
      "slot": 15,
@@ -9167,7 +9373,8 @@
      },
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=156339?bonus=8902:12841:7756:13662:12699&ilvl=305"
     },
     {
      "slot": 16,
@@ -9181,7 +9388,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Arcane Mastery",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249280?bonus=6652:13335:13654&ench=8041&ilvl=298"
     },
     {
      "slot": 17,
@@ -9195,7 +9403,8 @@
      "upgrade": null,
      "enchant": "Enchant Weapon - Acuity of the Ren'dorei",
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=249280?bonus=6652:13335:13654&ench=8039&ilvl=298"
     },
     {
      "slot": 19,
@@ -9209,7 +9418,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=234860?ilvl=10"
     },
     {
      "slot": 24,
@@ -9223,7 +9433,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193528?bonus=8841:8842:8805&ilvl=72"
     },
     {
      "slot": 25,
@@ -9237,7 +9448,8 @@
      "upgrade": null,
      "enchant": null,
      "gems": [],
-     "isTierPiece": false
+     "isTierPiece": false,
+     "wowheadUrl": "https://www.wowhead.com/item=193487?bonus=8841:8842:8807&ilvl=74"
     }
    ],
    "tierPieceCount": 2,

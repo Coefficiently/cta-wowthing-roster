@@ -255,22 +255,44 @@ def main():
                     item_bonus_to_upgrade[bonus_id] = (shared_id, i + 1, len(bonus_ids))
     shared_strings = static_data.get("sharedStrings", {})
 
-    # --- Enchant text, decoded from bonus/enchant ids ---------------------
+    # --- Enchant text, decoded from enchant ids ---------------------------
+    # We only use this for a quick-glance label -- NOT for the actual stat
+    # numbers. enchantmentValues often needs item-level-scaled curve math to
+    # fill in $k1/$k2 placeholders correctly, which we don't have, so
+    # substituting them produced wrong (wildly inflated) numbers. Strip any
+    # unresolved $k placeholders instead of guessing at them; the Wowhead
+    # tooltip (added client-side) is the source of truth for exact stats.
     enchant_name = {}
-    enchant_values = {}
     for text, ids in static_data.get("enchantmentStrings", {}).items():
         for eid in ids:
             enchant_name[eid] = text
-    for eid_str, values in static_data.get("enchantmentValues", {}).items():
+    for eid_str in static_data.get("enchantmentValues", {}):
         eid = int(eid_str)
-        enchant_values.setdefault(eid, values)
         enchant_name.setdefault(eid, f"Enchant #{eid}")
 
     def get_enchant_text(enchant_id):
         text = enchant_name.get(enchant_id, f"Enchant #{enchant_id}")
-        for i, v in enumerate(enchant_values.get(enchant_id, [])):
-            text = text.replace(f"$k{i + 1}", str(v))
+        text = re.sub(r"\$k\d+", "", text)
         return clean_wow_text(text)
+
+    # --- Wowhead links (mirrors wowthing's own get-item-url.ts) -----------
+    # Wowhead's tooltip widget (loaded client-side) renders the full,
+    # authoritative live tooltip -- icon, stats, everything -- for any link
+    # built this way. We don't compute item stats ourselves.
+    def wowhead_url(item_id, bonus_ids=None, enchant_ids=None, gem_ids=None, item_level=None):
+        params = []
+        if bonus_ids:
+            params.append(f"bonus={':'.join(str(b) for b in bonus_ids)}")
+        if enchant_ids:
+            params.append(f"ench={enchant_ids[0]}")
+        if gem_ids:
+            params.append(f"gems={':'.join(str(g) for g in gem_ids)}")
+        if item_level:
+            params.append(f"ilvl={item_level}")
+        url = f"https://www.wowhead.com/item={item_id}"
+        if params:
+            url += "?" + "&".join(params)
+        return url
 
     # --- Current tier set item ids, per class -----------------------------
     item_set_by_id = {s[0]: s[2] for s in item_data.get("rawItemSets", [])}
@@ -350,10 +372,18 @@ def main():
                 "upgrade": upgrade,
                 "enchant": get_enchant_text(enchant_ids[0]) if enchant_ids else None,
                 "gems": [
-                    {"itemId": gid, "name": item_names.get(gid, f"Item #{gid}")}
+                    {
+                        "itemId": gid,
+                        "name": item_names.get(gid, f"Item #{gid}"),
+                        "wowheadUrl": wowhead_url(gid),
+                    }
                     for gid in gem_ids
                 ],
                 "isTierPiece": is_tier_piece,
+                "wowheadUrl": wowhead_url(
+                    item_id, bonus_ids=bonus_ids, enchant_ids=enchant_ids,
+                    gem_ids=gem_ids, item_level=arr[3] or None,
+                ),
             })
 
         bag_items_out = []
@@ -371,6 +401,7 @@ def main():
                 "count": count,
                 "itemLevel": item[8] if len(item) > 8 else 0,
                 "quality": item[9] if len(item) > 9 else 1,
+                "wowheadUrl": wowhead_url(item_id, item_level=(item[8] if len(item) > 8 else None)),
             })
 
         lockouts_out = []

@@ -306,21 +306,8 @@ a { color: var(--gold-2); }
 .wh-item-link:hover { text-decoration: underline; }
 .wh-item-link.item-name-link { color: var(--ink); }
 .wh-item-link.item-name-link:hover { color: var(--gold-2); }
-
-/* <ins> is where Wowhead's tooltip widget injects the real item icon as a
-   background-image once power.js loads. These sizes/borders are a sane
-   fallback box so layout doesn't jump and a broken/blocked icon still
-   reads as a slot, not a glitch. */
-ins.gear-icon, ins.gear-icon-sm, ins.gem-icon, ins[class*="icon"] {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 3px;
-  border: 1px solid var(--line);
-  background-color: var(--bg);
-}
-ins.iconlarge { width: 36px; height: 36px; }
-ins.iconmedium { width: 28px; height: 28px; }
-ins.iconsmall { width: 16px; height: 16px; margin-right: 0.2rem; }
+.wh-item-link.gem-link { color: var(--ink-dim); }
+.item-gems { color: var(--ink-dim); }
 
 .gear-row-main { flex: 1; min-width: 0; }
 

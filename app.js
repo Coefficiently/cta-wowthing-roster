@@ -232,14 +232,15 @@
 
   // ---------------- Detail panel (gear / currencies / bags) ----------------
 
-  // Wowhead's tooltip widget (power.js, loaded in index.html) auto-injects
-  // the correct icon into any <ins> placed as the first child of a Wowhead
-  // item link, and shows the full authoritative tooltip on hover -- we
-  // don't compute item stats or host icons ourselves.
-  function wowheadLink(item, sizeClass, extraCls) {
-    const cls = [sizeClass, extraCls].filter(Boolean).join(" ");
-    const ins = sizeClass ? `<ins class="${sizeClass}"></ins>` : "";
-    return `<a href="${item.wowheadUrl}" class="wh-item-link ${cls}" target="_blank" rel="noopener">${ins}${item.name}</a>`;
+  // Wowhead's tooltip widget (power.js, loaded in index.html) shows the
+  // full authoritative tooltip -- icon included -- when hovering any of
+  // these links. We tried also auto-injecting a standalone icon via <ins>
+  // per Wowhead's "iconizelinks" feature, but that rendered blank for most
+  // items and overlapped adjacent text for gems, so we dropped it: the
+  // hover tooltip is the one mechanism that's actually confirmed working.
+  function wowheadLink(item, extraCls) {
+    const cls = extraCls || "";
+    return `<a href="${item.wowheadUrl}" class="wh-item-link ${cls}" target="_blank" rel="noopener">${item.name}</a>`;
   }
 
   function renderGearRow(item) {
@@ -259,15 +260,14 @@
       ? `<div class="item-subline item-enchant">${item.enchant}</div>`
       : "";
     const gemsLine = (item.gems && item.gems.length > 0)
-      ? `<div class="item-subline item-gems">${item.gems.map((g) => wowheadLink({ wowheadUrl: g.wowheadUrl, name: g.name }, "iconsmall", "gem-link")).join(" &nbsp; ")}</div>`
+      ? `<div class="item-subline item-gems">${item.gems.map((g) => `\u25c6 ${wowheadLink({ wowheadUrl: g.wowheadUrl, name: g.name }, "gem-link")}`).join(" &nbsp; ")}</div>`
       : "";
 
     return `<li class="gear-row" style="border-left-color:${border}">
-      <a href="${item.wowheadUrl}" class="wh-item-link" target="_blank" rel="noopener"><ins class="iconlarge gear-icon"></ins></a>
       <div class="gear-row-main">
         <div class="gear-row-top">
           <span class="slot">${slotTxt}</span>
-          <span class="item-name">${wowheadLink({ wowheadUrl: item.wowheadUrl, name: item.itemName }, "", "item-name-link")}${tierTxt}</span>
+          <span class="item-name">${wowheadLink({ wowheadUrl: item.wowheadUrl, name: item.itemName }, "item-name-link")}${tierTxt}</span>
           <span class="item-ilvl">${ilvlTxt}</span>
         </div>
         <div class="gear-row-meta">${upgradeTxt}${craftedTxt}</div>
@@ -282,11 +282,10 @@
     const countTxt = item.count > 1 ? ` \u00d7${item.count}` : "";
     const ilvlTxt = item.itemLevel > 0 ? item.itemLevel : "\u2014";
     return `<li class="gear-row" style="border-left-color:${border}">
-      <a href="${item.wowheadUrl}" class="wh-item-link" target="_blank" rel="noopener"><ins class="iconmedium gear-icon-sm"></ins></a>
       <div class="gear-row-main">
         <div class="gear-row-top">
           <span class="slot">Bag ${item.bagId}</span>
-          <span class="item-name">${wowheadLink({ wowheadUrl: item.wowheadUrl, name: item.itemName }, "", "item-name-link")}${countTxt}</span>
+          <span class="item-name">${wowheadLink({ wowheadUrl: item.wowheadUrl, name: item.itemName }, "item-name-link")}${countTxt}</span>
           <span class="item-ilvl">${ilvlTxt}</span>
         </div>
       </div>

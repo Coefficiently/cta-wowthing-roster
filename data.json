@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T11:06:12.733080+00:00",
+ "generatedAt": "2026-09-10T11:12:39.314022+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4918,6 +4918,20 @@
       "met": false,
       "label": null
      }
+    ],
+    "world": [
+     {
+      "met": false,
+      "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     }
     ]
    },
    "raidGrids": {
@@ -5483,6 +5497,20 @@
      {
       "met": false,
       "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
      },
      {
       "met": false,
@@ -6125,6 +6153,20 @@
       "met": false,
       "label": null
      }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": false,
+      "label": null
+     }
     ]
    },
    "raidGrids": {
@@ -6738,6 +6780,20 @@
      {
       "met": false,
       "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
      },
      {
       "met": false,
@@ -7403,6 +7459,20 @@
       "met": false,
       "label": null
      }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": false,
+      "label": null
+     }
     ]
    },
    "raidGrids": {
@@ -8063,6 +8133,20 @@
       "met": false,
       "label": null
      }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": false,
+      "label": null
+     }
     ]
    },
    "raidGrids": {
@@ -8555,6 +8639,20 @@
      {
       "met": false,
       "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
      },
      {
       "met": false,
@@ -9070,6 +9168,20 @@
      {
       "met": false,
       "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
      },
      {
       "met": false,
@@ -9643,6 +9755,20 @@
      {
       "met": false,
       "label": null
+     },
+     {
+      "met": false,
+      "label": null
+     }
+    ],
+    "world": [
+     {
+      "met": true,
+      "label": "279"
+     },
+     {
+      "met": true,
+      "label": "279"
      },
      {
       "met": false,

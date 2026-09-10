@@ -155,6 +155,10 @@
         <td class="row-label">Vault: Dungeons</td>
         ${chars.map((c) => `<td>${vaultCellHtml(c.vault.dungeon)}</td>`).join("")}
       </tr>
+      <tr>
+        <td class="row-label">Vault: World</td>
+        ${chars.map((c) => `<td>${vaultCellHtml(c.vault.world)}</td>`).join("")}
+      </tr>
     `;
   }
 

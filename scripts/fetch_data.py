@@ -483,6 +483,7 @@ def main():
         current_keystone = None
         vault_raid = []
         vault_dungeon = []
+        vault_world = []
         if raw_weekly:
             keystone_dungeon = raw_weekly[5] if len(raw_weekly) > 5 else 0
             keystone_level = raw_weekly[6] if len(raw_weekly) > 6 else 0
@@ -508,6 +509,20 @@ def main():
                 vault_dungeon.append({
                     "met": met,
                     "label": str(slot_level) if met and slot_level else None,
+                })
+
+            # World content (Delves, World Quests, etc). Unlike raid/dungeon,
+            # "level" here isn't a difficulty or keystone level we can map to
+            # a clean label, so we show the reward item level instead --
+            # unambiguous and directly useful, rather than guessing at what
+            # a raw numeric "level" means for this category.
+            world_progress = raw_weekly[12] if len(raw_weekly) > 12 else []
+            for slot in (world_progress or []):
+                slot_item_level, slot_progress, slot_threshold = slot[4], slot[2], slot[3]
+                met = slot_progress >= slot_threshold and slot_threshold > 0
+                vault_world.append({
+                    "met": met,
+                    "label": str(slot_item_level) if met and slot_item_level else None,
                 })
 
         # --- Raid boss-kill grids (one per detected raid, by difficulty) -
@@ -570,6 +585,7 @@ def main():
             "vault": {
                 "raid": vault_raid,
                 "dungeon": vault_dungeon,
+                "world": vault_world,
             },
             "raidGrids": raid_grids,
             "professions": char_professions,

@@ -182,7 +182,10 @@ a { color: var(--gold-2); }
   font-size: 0.8rem;
 }
 .vault-met { background: #2f4a2a; color: #a7e39a; }
+.vault-met-full { background: #23425c; color: #9fd4ff; }
 .vault-empty { color: var(--ink-faint); }
+.vault-cell-low { background: rgba(192, 57, 43, 0.22); }
+.vault-cell-low .vault-empty { color: #e8a49c; }
 
 .cell-dungeon { font-variant-numeric: tabular-nums; }
 .dungeon-level {

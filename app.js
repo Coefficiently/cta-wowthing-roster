@@ -138,28 +138,47 @@
     </tr>`;
   }
 
-  function vaultCellHtml(slots) {
+  function vaultTotalMet(char) {
+    const rows = [char.vault.raid, char.vault.dungeon, char.vault.world];
+    return rows.reduce((sum, slots) => sum + (slots || []).filter((s) => s.met).length, 0);
+  }
+
+  function vaultCellHtml(slots, status) {
     if (!slots || slots.length === 0) return `<span class="vault-slot vault-empty">\u2014</span>`;
+    const metClass = status === "full" ? "vault-met-full" : "vault-met";
     return slots
-      .map((s) => `<span class="vault-slot ${s.met ? "vault-met" : "vault-empty"}">${s.met ? s.label : "\u2014"}</span>`)
+      .map((s) => `<span class="vault-slot ${s.met ? metClass : "vault-empty"}">${s.met ? s.label : "\u2014"}</span>`)
       .join("");
   }
 
   function rowVault(chars) {
-    return `
+    // Aggregate vault health across all 3 categories (9 slots total) per
+    // character: fully capped (9/9) highlights met slots light blue instead
+    // of green; below one full category's worth (<3) flags the whole 3x3
+    // grid red as a "not vault-ready" warning, regardless of which
+    // individual slots are met.
+    const statusFor = (char) => {
+      const total = vaultTotalMet(char);
+      if (total >= 9) return "full";
+      if (total < 3) return "low";
+      return "normal";
+    };
+
+    const rowHtml = (label, getSlots) => `
       <tr>
-        <td class="row-label">Vault: Raid</td>
-        ${chars.map((c) => `<td>${vaultCellHtml(c.vault.raid)}</td>`).join("")}
-      </tr>
-      <tr>
-        <td class="row-label">Vault: Dungeons</td>
-        ${chars.map((c) => `<td>${vaultCellHtml(c.vault.dungeon)}</td>`).join("")}
-      </tr>
-      <tr>
-        <td class="row-label">Vault: World</td>
-        ${chars.map((c) => `<td>${vaultCellHtml(c.vault.world)}</td>`).join("")}
-      </tr>
-    `;
+        <td class="row-label">${label}</td>
+        ${chars.map((c) => {
+          const status = statusFor(c);
+          const cellClass = status === "low" ? "vault-cell-low" : "";
+          return `<td class="${cellClass}">${vaultCellHtml(getSlots(c), status)}</td>`;
+        }).join("")}
+      </tr>`;
+
+    return (
+      rowHtml("Vault: Raid", (c) => c.vault.raid) +
+      rowHtml("Vault: Dungeons", (c) => c.vault.dungeon) +
+      rowHtml("Vault: World", (c) => c.vault.world)
+    );
   }
 
   function rowMythicPlusSectionHeader(chars) {

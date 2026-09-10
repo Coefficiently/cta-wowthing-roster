@@ -619,6 +619,33 @@ def main():
     if backfilled:
         print(f"Backfilled {backfilled} missing item levels from track/rank data")
 
+    # --- Convert World vault reward item levels into track letters --------
+    # "level" doesn't map cleanly to a readable label for world content, but
+    # the reward *item level* corresponds to a gear upgrade track, which
+    # matches the single-letter badges used elsewhere on this page (Hero,
+    # Myth, etc). Track floors are derived from this account's own equipped
+    # gear where possible (same table as the item-level backfill above);
+    # Veteran's floor (279) is hand-confirmed since no character currently
+    # has Veteran-track gear equipped to derive it from automatically.
+    TRACK_LETTER = {"Veteran": "V", "Champion": "C", "Hero": "H", "Myth": "M"}
+    track_floor = {"Veteran": 279}
+    for (track, rank), ilvl in track_rank_ilvl.items():
+        track_floor[track] = min(track_floor.get(track, ilvl), ilvl)
+
+    def ilvl_to_track_letter(ilvl):
+        candidates = [(floor, track) for track, floor in track_floor.items() if ilvl >= floor]
+        if not candidates:
+            return None
+        _, best_track = max(candidates)
+        return TRACK_LETTER.get(best_track)
+
+    for c_out in characters_out:
+        for slot in c_out["vault"]["world"]:
+            if slot["met"] and slot["label"]:
+                letter = ilvl_to_track_letter(int(slot["label"]))
+                if letter:
+                    slot["label"] = letter
+
     characters_out.sort(key=lambda c: (-c["itemLevel"]))
 
     output = {

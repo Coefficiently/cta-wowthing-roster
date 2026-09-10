@@ -82,19 +82,32 @@
     </tr>`;
   }
 
-  // Red (291) -> Yellow (mid) -> bright green (331), clamped at the ends.
-  function itemLevelColor(ilvl) {
-    const RED = [255, 60, 50];
+  // Interpolates red -> yellow -> green (or reverse) across t in [0, 1].
+  function gradientColor(t, lowColor, highColor) {
     const YELLOW = [255, 205, 30];
-    const GREEN = [70, 240, 70];
-    const min = 291, max = 331;
-    let t = (ilvl - min) / (max - min);
     t = Math.max(0, Math.min(1, t));
     const [c1, c2, localT] = t < 0.5
-      ? [RED, YELLOW, t / 0.5]
-      : [YELLOW, GREEN, (t - 0.5) / 0.5];
+      ? [lowColor, YELLOW, t / 0.5]
+      : [YELLOW, highColor, (t - 0.5) / 0.5];
     const mix = (i) => Math.round(c1[i] + (c2[i] - c1[i]) * localT);
     return `rgb(${mix(0)}, ${mix(1)}, ${mix(2)})`;
+  }
+
+  const RED = [255, 60, 50];
+  const GREEN = [70, 240, 70];
+
+  // Red (291) -> Yellow (mid) -> bright green (331), clamped at the ends.
+  function itemLevelColor(ilvl) {
+    const min = 291, max = 331;
+    return gradientColor((ilvl - min) / (max - min), RED, GREEN);
+  }
+
+  // Inverted: green when nothing earned yet this season (plenty of
+  // headroom), red when the season-earn cap is fully hit (crests about to
+  // go to waste until next week's cap increase).
+  function crestFillColor(totalQuantity, max) {
+    if (!max) return null;
+    return gradientColor(totalQuantity / max, GREEN, RED);
   }
 
   function rowItemLevel(chars) {
@@ -122,7 +135,7 @@
     </tr>`;
   }
 
-  function rowCurrency(label, items, chars) {
+  function rowCurrency(label, items, chars, colorize) {
     return `<tr>
       <td class="row-label row-label-sub">${label}</td>
       ${chars.map((c) => {
@@ -135,7 +148,15 @@
           ? ` data-tooltip="Earned this season: ${fmtNumber(cur.totalQuantity)}/${fmtNumber(cur.max)}" aria-label="Earned this season: ${fmtNumber(cur.totalQuantity)} of ${fmtNumber(cur.max)}"`
           : "";
         const cellClass = `${empty ? "cell-dim" : "cell-currency"}${showsTotal ? " cell-currency-tooltip" : ""}`;
-        return `<td class="${cellClass}"${tooltipAttr}>${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-cell-link")}</td>`;
+        // Color by how much of the season-earn cap has been used up --
+        // green (nothing earned yet, plenty of headroom) to red (fully
+        // capped, earning nothing more until next week's cap increase).
+        // Restricted to crests specifically (colorize=true), even though
+        // isMovingMax also appears on some other currencies (e.g. Tidal
+        // Spark Dust) that shouldn't get this treatment.
+        const fillColor = colorize && cur.isMovingMax ? crestFillColor(cur.totalQuantity, cur.max) : null;
+        const linkStyle = fillColor ? `color:${fillColor}` : null;
+        return `<td class="${cellClass}"${tooltipAttr}>${wowheadLink({ wowheadUrl: cur.wowheadUrl, name: qty }, "currency-cell-link", linkStyle)}</td>`;
       }).join("")}
     </tr>`;
   }
@@ -273,7 +294,7 @@
     const crestCount = Math.max(...chars.map((c) => c.currencies.crests.length), 0);
     for (let i = 0; i < crestCount; i++) {
       const label = chars.find((c) => c.currencies.crests[i])?.currencies.crests[i]?.shortName || "Crest";
-      rows += rowCurrency(label, (c) => c.currencies.crests[i], chars);
+      rows += rowCurrency(label, (c) => c.currencies.crests[i], chars, true);
     }
     const catalystCount = Math.max(...chars.map((c) => c.currencies.catalyst.length), 0);
     for (let i = 0; i < catalystCount; i++) {
@@ -320,9 +341,10 @@
   // per Wowhead's "iconizelinks" feature, but that rendered blank for most
   // items and overlapped adjacent text for gems, so we dropped it: the
   // hover tooltip is the one mechanism that's actually confirmed working.
-  function wowheadLink(item, extraCls) {
+  function wowheadLink(item, extraCls, extraStyle) {
     const cls = extraCls || "";
-    return `<a href="${item.wowheadUrl}" class="wh-item-link ${cls}" target="_blank" rel="noopener">${item.name}</a>`;
+    const styleAttr = extraStyle ? ` style="${extraStyle}"` : "";
+    return `<a href="${item.wowheadUrl}" class="wh-item-link ${cls}"${styleAttr} target="_blank" rel="noopener">${item.name}</a>`;
   }
 
   function renderGearRow(item) {

@@ -21,6 +21,25 @@ BONUS_ROLL_IDS = [3028, 3310]                    # Restored Coffer Key, Coffer K
 MIN_LEVEL = 90
 MIN_ITEM_LEVEL = 290
 
+# Current Mythic+ season, hand-pinned (Midnight Season 2). Update each
+# season: season id from apps/frontend/data/mythic-plus.ts `seasonMap`,
+# dungeon map ids from the matching `order...` array + MapChallengeMode enum,
+# names looked up in rawChallengeDungeons.
+MYTHIC_PLUS_SEASON_ID = 18
+MYTHIC_PLUS_DUNGEONS = [
+    (588, "Altar of Fangs"),
+    (586, "Den of Nalorakk"),
+    (587, "Murder Row"),
+    (584, "The Blinding Vale"),
+    (585, "Voidscar Arena"),
+    (399, "Ruby Life Pools"),
+    (249, "Kings' Rest"),
+    (250, "Temple of Sethraliss"),
+]
+
+RAID_DIFFICULTIES = [17, 14, 15, 16]  # LFR, Normal, Heroic, Mythic
+RAID_DIFFICULTY_SHORT = {17: "LFR", 14: "N", 15: "HC", 16: "M"}
+
 SLOT_NAMES = {
     0: "Ammo", 1: "Head", 2: "Neck", 3: "Shoulders", 4: "Shirt", 5: "Chest",
     6: "Waist", 7: "Legs", 8: "Feet", 9: "Wrist", 10: "Hands", 11: "Ring 1",
@@ -91,6 +110,7 @@ def main():
     realms = {}
     for r in static_data.get("rawRealms", []):
         realms[r[0]] = {"name": r[3], "slug": r[4], "region": r[1]}
+    dungeon_name_by_id = {d[0]: d[3] for d in static_data.get("rawChallengeDungeons", [])}
 
     # --- Figure out which item ids we need names for -------------------
     needed_item_ids = set()
@@ -108,6 +128,30 @@ def main():
             needed_item_ids.add(item[3])
 
     print(f"{len(qualifying)} characters qualify (level>={MIN_LEVEL}, ilvl>={MIN_ITEM_LEVEL})")
+
+    # --- Identify the current raid + canonical boss order ---------------
+    # A "raid" lockout is one whose difficulties are all raid difficulties
+    # (LFR/Normal/Heroic/Mythic). Pick whichever raid name shows up on the
+    # most characters, and use the longest boss list seen for it as the
+    # canonical column order.
+    from collections import Counter
+    raid_name_votes = Counter()
+    raid_boss_lists = {}
+    for c in qualifying:
+        for lo in (c[35] or {}).values():
+            name = lo.get("name")
+            difficulty = lo.get("difficulty")
+            if difficulty not in RAID_DIFFICULTY_SHORT:
+                continue
+            raid_name_votes[name] += 1
+            bosses = [b.get("name") for b in lo.get("bosses", [])]
+            if len(bosses) > len(raid_boss_lists.get(name, [])):
+                raid_boss_lists[name] = bosses
+
+    raid_name = raid_name_votes.most_common(1)[0][0] if raid_name_votes else None
+    raid_bosses = raid_boss_lists.get(raid_name, [])
+    print(f"Current raid detected as: {raid_name!r} ({len(raid_bosses)} bosses)")
+
     print(f"Fetching item names for {len(needed_item_ids)} items...")
 
     item_names = {}
@@ -210,6 +254,85 @@ def main():
             })
         lockouts_out.sort(key=lambda x: (x["name"] or "", x["difficulty"] or 0))
 
+        # --- Mythic+ dungeon scores for the current season --------------
+        season_key = str(MYTHIC_PLUS_SEASON_ID)
+        season_scores = (raw_mythic_plus_seasons or {}).get(season_key, {})
+        dungeon_scores_out = []
+        total_score = 0
+        for map_id, dungeon_name in MYTHIC_PLUS_DUNGEONS:
+            entry = season_scores.get(str(map_id))
+            if entry:
+                overall_score = entry[0] or 0
+                # entry[1] = fortified [level,score,duration,overTime], entry[2] = tyrannical
+                fortified = entry[1] if len(entry) > 1 else None
+                tyrannical = entry[2] if len(entry) > 2 else None
+                best_affix = tyrannical or fortified
+                level = best_affix[0] if best_affix else 0
+                timed = bool(best_affix[3] == 0) if best_affix and len(best_affix) > 3 else None
+                total_score += overall_score
+                dungeon_scores_out.append({
+                    "mapId": map_id,
+                    "name": dungeon_name,
+                    "level": level,
+                    "score": round(overall_score),
+                })
+            else:
+                dungeon_scores_out.append({
+                    "mapId": map_id, "name": dungeon_name, "level": 0, "score": 0,
+                })
+
+        rio = (raider_io or {}).get(season_key, {})
+        rating = rio.get("all") if rio.get("all") else round(total_score)
+
+        # --- Current keystone + weekly vault -----------------------------
+        current_keystone = None
+        vault_raid = []
+        vault_dungeon = []
+        if raw_weekly:
+            keystone_dungeon = raw_weekly[5] if len(raw_weekly) > 5 else 0
+            keystone_level = raw_weekly[6] if len(raw_weekly) > 6 else 0
+            if keystone_dungeon:
+                current_keystone = {
+                    "dungeonName": dungeon_name_by_id.get(keystone_dungeon, f"Dungeon #{keystone_dungeon}"),
+                    "level": keystone_level,
+                }
+
+            raid_progress = raw_weekly[11] if len(raw_weekly) > 11 else []
+            for slot in (raid_progress or []):
+                level, tier, progress, threshold = slot[0], slot[1], slot[2], slot[3]
+                met = progress >= threshold and threshold > 0
+                vault_raid.append({
+                    "met": met,
+                    "label": RAID_DIFFICULTY_SHORT.get(level, str(level)) if met else None,
+                })
+
+            dungeon_progress = raw_weekly[10] if len(raw_weekly) > 10 else []
+            for slot in (dungeon_progress or []):
+                level, tier, progress, threshold = slot[0], slot[1], slot[2], slot[3]
+                met = progress >= threshold and threshold > 0
+                vault_dungeon.append({
+                    "met": met,
+                    "label": str(level) if met and level else None,
+                })
+
+        # --- Raid boss-kill grid (current raid, by difficulty) -----------
+        lockouts_by_name_diff = {}
+        for lo in lockouts_out:
+            lockouts_by_name_diff[(lo["name"], lo["difficulty"])] = lo
+
+        raid_grid = {}
+        if raid_name:
+            for difficulty in RAID_DIFFICULTIES:
+                lo = lockouts_by_name_diff.get((raid_name, difficulty))
+                row = []
+                if lo:
+                    dead_by_name = {b.get("name"): b.get("dead") for b in lo.get("bosses", [])}
+                    for boss_name in raid_bosses:
+                        row.append(dead_by_name.get(boss_name))
+                else:
+                    row = [None] * len(raid_bosses)
+                raid_grid[RAID_DIFFICULTY_SHORT[difficulty]] = row
+
         characters_out.append({
             "id": char_id,
             "name": name,
@@ -229,6 +352,16 @@ def main():
                 "bonusRolls": currency_group(raw_currencies, BONUS_ROLL_IDS),
             },
             "lockouts": lockouts_out,
+            "mythicPlus": {
+                "rating": rating,
+                "currentKeystone": current_keystone,
+                "dungeonScores": dungeon_scores_out,
+            },
+            "vault": {
+                "raid": vault_raid,
+                "dungeon": vault_dungeon,
+            },
+            "raidGrid": raid_grid,
         })
 
     characters_out.sort(key=lambda c: (-c["itemLevel"]))
@@ -243,6 +376,10 @@ def main():
         "races": races,
         "realms": realms,
         "qualityColors": QUALITY_COLORS,
+        "raidName": raid_name,
+        "raidBosses": raid_bosses,
+        "raidDifficulties": [RAID_DIFFICULTY_SHORT[d] for d in RAID_DIFFICULTIES],
+        "mythicPlusDungeons": [{"mapId": m, "name": n} for m, n in MYTHIC_PLUS_DUNGEONS],
         "characters": characters_out,
     }
 

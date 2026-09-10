@@ -15,7 +15,7 @@
   <div class="topbar-inner">
     <div class="brand">
       <h1><span class="brand-name">cta</span>'s Roster</h1>
-      <p class="brand-sub">Level 90 &middot; item level 290+ characters, pulled from <a href="https://wowthing.org/user/cta" target="_blank" rel="noopener">WoWthing</a></p>
+      <p class="brand-sub">Level 90 &middot; item level 290+, pulled from <a href="https://wowthing.org/user/cta" target="_blank" rel="noopener">WoWthing</a></p>
     </div>
     <div class="topbar-stats">
       <div class="stat">
@@ -32,83 +32,52 @@
 
 <main class="page">
 
-  <section class="controls" aria-label="Filter and sort characters">
-    <input id="search" type="search" placeholder="Search characters..." aria-label="Search characters" />
-    <div class="sort-group" role="group" aria-label="Sort characters">
-      <button class="sort-btn is-active" data-sort="itemLevel">Item level</button>
-      <button class="sort-btn" data-sort="name">Name</button>
-      <button class="sort-btn" data-sort="level">Level</button>
-    </div>
-  </section>
+  <div class="table-scroll">
+    <table id="roster-table" class="roster-table">
+      <thead id="roster-thead"></thead>
+      <tbody id="roster-tbody"></tbody>
+    </table>
+  </div>
 
-  <section id="roster" class="roster" aria-label="Character roster">
-    <!-- character cards injected here -->
-  </section>
+  <section id="detail-panel" class="detail-panel" hidden>
+    <div class="detail-panel-inner">
+      <button id="detail-close" class="detail-close" aria-label="Close">&times;</button>
+      <h2 id="detail-name"></h2>
+      <p id="detail-meta" class="detail-meta"></p>
 
-  <p id="empty-state" class="empty-state" hidden>No characters match your search.</p>
-
-  <footer class="page-footer">
-    <p id="generated-at">—</p>
-    <p class="footer-note">Data refreshes automatically on a schedule via GitHub Actions. Crest/catalyst/bonus-roll currency IDs are hand-pinned to the current season and may need updating after a new patch.</p>
-  </footer>
-
-</main>
-
-<template id="character-card-template">
-  <article class="char-card" tabindex="0" role="button" aria-expanded="false">
-    <div class="char-card-head">
-      <div class="char-id">
-        <h2 class="char-name"></h2>
-        <p class="char-meta"></p>
-      </div>
-      <div class="char-stats">
-        <div class="char-ilvl">
-          <span class="ilvl-value"></span>
-          <span class="ilvl-label">ilvl</span>
-        </div>
-        <div class="char-gold">
-          <span class="gold-value"></span>
-          <span class="gold-label">gold</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="char-detail">
-      <div class="detail-grid">
-
+      <div class="detail-columns">
         <section class="detail-block">
           <h3>Equipped gear</h3>
-          <ul class="gear-list equipped-list"></ul>
+          <ul id="detail-equipped" class="gear-list"></ul>
         </section>
 
         <section class="detail-block">
           <h3>Currencies</h3>
           <div class="currency-group">
             <h4>Crests</h4>
-            <ul class="currency-list crests-list"></ul>
+            <ul id="detail-crests" class="currency-list"></ul>
           </div>
           <div class="currency-group">
             <h4>Catalyst charges</h4>
-            <ul class="currency-list catalyst-list"></ul>
+            <ul id="detail-catalyst" class="currency-list"></ul>
           </div>
           <div class="currency-group">
             <h4>Bonus rolls</h4>
-            <ul class="currency-list bonusrolls-list"></ul>
+            <ul id="detail-bonusrolls" class="currency-list"></ul>
           </div>
-
           <h3 class="bag-heading">Bag items</h3>
-          <ul class="gear-list bag-list"></ul>
+          <ul id="detail-bags" class="gear-list"></ul>
         </section>
-
-        <section class="detail-block">
-          <h3>Lockouts</h3>
-          <ul class="lockout-list"></ul>
-        </section>
-
       </div>
     </div>
-  </article>
-</template>
+  </section>
+
+  <footer class="page-footer">
+    <p id="generated-at">—</p>
+    <p class="footer-note">Data refreshes automatically on a schedule via GitHub Actions. Season/crest currency IDs are hand-pinned to the current patch and may need updating after a new one.</p>
+  </footer>
+
+</main>
 
 <script src="app.js"></script>
 </body>

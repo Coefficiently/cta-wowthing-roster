@@ -2,233 +2,255 @@
   "use strict";
 
   let DATA = null;
-  let sortKey = "itemLevel";
-  let searchTerm = "";
 
-  const rosterEl = document.getElementById("roster");
-  const emptyStateEl = document.getElementById("empty-state");
-  const template = document.getElementById("character-card-template");
+  const theadEl = document.getElementById("roster-thead");
+  const tbodyEl = document.getElementById("roster-tbody");
+  const detailPanel = document.getElementById("detail-panel");
+
+  const CLASS_COLORS = {
+    warrior: "#C79C6E", paladin: "#F58CBA", hunter: "#ABD473", rogue: "#FFF569",
+    priest: "#FFFFFF", "death-knight": "#C41F3B", shaman: "#0070DE", mage: "#69CCF0",
+    warlock: "#9482C9", monk: "#00FF96", druid: "#FF7D0A", "demon-hunter": "#A330C9",
+    evoker: "#33937F",
+  };
 
   function fmtNumber(n) {
     return (n || 0).toLocaleString("en-US");
   }
 
-  function classRaceRealm(char) {
-    const cls = DATA.classes[char.classId];
-    const race = DATA.races[char.raceId];
+  function classInfo(char) {
+    return DATA.classes[char.classId] || { name: "Unknown", slug: "" };
+  }
+
+  function classColor(char) {
+    return CLASS_COLORS[classInfo(char).slug] || "#c99a44";
+  }
+
+  function realmName(char) {
     const realm = DATA.realms[char.realmId];
-    const parts = [];
-    if (race) parts.push(race.name);
-    if (cls) parts.push(cls.name);
-    const bits = [parts.join(" ")];
-    if (realm) bits.push(realm.name);
-    return bits.filter(Boolean).join(" \u2014 ");
+    return realm ? realm.name : "\u2014";
   }
 
   function qualityColor(quality) {
     return (DATA.qualityColors && DATA.qualityColors[quality]) || "#3a3427";
   }
 
-  function renderGearRow(item) {
-    const li = document.createElement("li");
-    li.className = "gear-row";
-    li.style.borderLeftColor = qualityColor(item.quality);
+  // ---------------- Grid header ----------------
 
-    const slot = document.createElement("span");
-    slot.className = "slot";
-    slot.textContent = item.slotName || `Bag ${item.bagId}`;
-
-    const name = document.createElement("span");
-    name.className = "item-name";
-    name.textContent = item.itemName + (item.count > 1 ? ` \u00d7${item.count}` : "");
-
-    const ilvl = document.createElement("span");
-    ilvl.className = "item-ilvl";
-    ilvl.textContent = item.itemLevel > 0 ? item.itemLevel : "\u2014";
-
-    li.append(slot, name, ilvl);
-    return li;
+  function renderHeader(chars) {
+    theadEl.innerHTML = `
+      <tr class="row-character">
+        <th class="row-label"></th>
+        ${chars.map((c) => `
+          <th class="char-col" data-char-id="${c.id}" tabindex="0" role="button">
+            <span class="char-col-name" style="color:${classColor(c)}">${c.name}</span>
+          </th>`).join("")}
+      </tr>
+    `;
   }
 
-  function renderCurrencyRow(cur) {
-    const li = document.createElement("li");
-    li.className = "currency-row";
+  // ---------------- Grid body rows ----------------
 
-    const name = document.createElement("span");
-    name.className = "currency-name";
-    name.textContent = cur.name;
-
-    const qty = document.createElement("span");
-    qty.className = "currency-qty";
-    qty.textContent = cur.max > 0 ? `${fmtNumber(cur.quantity)} / ${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
-
-    li.append(name, qty);
-    return li;
+  function rowRealm(chars) {
+    return `<tr>
+      <td class="row-label">Realm</td>
+      ${chars.map((c) => `<td class="cell-dim">${realmName(c)}</td>`).join("")}
+    </tr>`;
   }
 
-  function renderLockoutRow(lock) {
-    const li = document.createElement("li");
-    li.className = "lockout-item";
-
-    const name = document.createElement("span");
-    name.className = "lockout-name";
-    name.textContent = `${lock.name} \u2014 ${lock.difficultyName}`;
-
-    const meta = document.createElement("span");
-    meta.className = "lockout-meta";
-    const reset = lock.resetTime ? new Date(lock.resetTime).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "unknown";
-    meta.textContent = `${lock.defeatedBosses}/${lock.maxBosses} bosses \u00b7 resets ${reset}`;
-
-    li.append(name, meta);
-    return li;
+  function rowItemLevel(chars) {
+    return `<tr>
+      <td class="row-label">Item Level</td>
+      ${chars.map((c) => `<td class="cell-gold cell-strong">${c.itemLevel}</td>`).join("")}
+    </tr>`;
   }
 
-  function fillListOrEmpty(ul, items, renderFn, emptyText) {
-    ul.innerHTML = "";
-    if (!items || items.length === 0) {
-      const li = document.createElement("li");
-      li.className = "empty-msg";
-      li.textContent = emptyText;
-      ul.appendChild(li);
-      return;
-    }
-    for (const item of items) {
-      ul.appendChild(renderFn(item));
-    }
+  function rowGold(chars) {
+    return `<tr>
+      <td class="row-label">Gold</td>
+      ${chars.map((c) => `<td class="cell-dim">${fmtNumber(c.gold)}</td>`).join("")}
+    </tr>`;
   }
 
-  function buildCard(char) {
-    const node = template.content.firstElementChild.cloneNode(true);
-
-    node.querySelector(".char-name").textContent = char.name;
-    node.querySelector(".char-meta").textContent = `${classRaceRealm(char)} \u00b7 level ${char.level}`;
-    node.querySelector(".ilvl-value").textContent = char.itemLevel;
-    node.querySelector(".gold-value").textContent = fmtNumber(char.gold);
-
-    fillListOrEmpty(
-      node.querySelector(".equipped-list"),
-      char.equipped,
-      renderGearRow,
-      "No equipped gear data."
-    );
-
-    fillListOrEmpty(
-      node.querySelector(".crests-list"),
-      char.currencies.crests,
-      renderCurrencyRow,
-      "None tracked."
-    );
-    fillListOrEmpty(
-      node.querySelector(".catalyst-list"),
-      char.currencies.catalyst,
-      renderCurrencyRow,
-      "None tracked."
-    );
-    fillListOrEmpty(
-      node.querySelector(".bonusrolls-list"),
-      char.currencies.bonusRolls,
-      renderCurrencyRow,
-      "None tracked."
-    );
-
-    fillListOrEmpty(
-      node.querySelector(".bag-list"),
-      char.bagItems,
-      renderGearRow,
-      "Bags are empty."
-    );
-
-    fillListOrEmpty(
-      node.querySelector(".lockout-list"),
-      char.lockouts,
-      renderLockoutRow,
-      "No active lockouts."
-    );
-
-    function toggle() {
-      const isOpen = node.classList.contains("is-open");
-      document.querySelectorAll(".char-card.is-open").forEach((el) => {
-        if (el !== node) {
-          el.classList.remove("is-open");
-          el.setAttribute("aria-expanded", "false");
-        }
-      });
-      node.classList.toggle("is-open", !isOpen);
-      node.setAttribute("aria-expanded", String(!isOpen));
-    }
-
-    node.addEventListener("click", (e) => {
-      toggle();
-    });
-    node.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        toggle();
-      }
-    });
-
-    return node;
+  function rowRating(chars) {
+    return `<tr>
+      <td class="row-label">Rating</td>
+      ${chars.map((c) => `<td class="cell-rating">${fmtNumber(c.mythicPlus.rating)}</td>`).join("")}
+    </tr>`;
   }
 
-  function getFilteredSortedCharacters() {
-    let chars = DATA.characters.slice();
+  function rowKeystone(chars) {
+    return `<tr>
+      <td class="row-label">Current Keystone</td>
+      ${chars.map((c) => {
+        const k = c.mythicPlus.currentKeystone;
+        if (!k) return `<td class="cell-dim">\u2014</td>`;
+        return `<td class="cell-keystone"><span class="keystone-level">+${k.level}</span> ${k.dungeonName}</td>`;
+      }).join("")}
+    </tr>`;
+  }
 
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
-      chars = chars.filter((c) => c.name.toLowerCase().includes(term));
-    }
+  function vaultCellHtml(slots) {
+    if (!slots || slots.length === 0) return `<span class="vault-slot vault-empty">\u2014</span>`;
+    return slots
+      .map((s) => `<span class="vault-slot ${s.met ? "vault-met" : "vault-empty"}">${s.met ? s.label : "\u2014"}</span>`)
+      .join("");
+  }
 
-    chars.sort((a, b) => {
-      if (sortKey === "name") return a.name.localeCompare(b.name);
-      if (sortKey === "level") return b.level - a.level || b.itemLevel - a.itemLevel;
-      return b.itemLevel - a.itemLevel;
-    });
+  function rowVault(chars) {
+    return `
+      <tr>
+        <td class="row-label">Vault: Raid</td>
+        ${chars.map((c) => `<td>${vaultCellHtml(c.vault.raid)}</td>`).join("")}
+      </tr>
+      <tr>
+        <td class="row-label">Vault: Dungeons</td>
+        ${chars.map((c) => `<td>${vaultCellHtml(c.vault.dungeon)}</td>`).join("")}
+      </tr>
+    `;
+  }
 
-    return chars;
+  function rowMythicPlusSectionHeader() {
+    return `<tr class="section-row"><td colspan="999">Mythic+</td></tr>`;
+  }
+
+  function rowDungeon(dungeon, chars) {
+    return `<tr>
+      <td class="row-label row-label-sub">${dungeon.name}</td>
+      ${chars.map((c) => {
+        const d = c.mythicPlus.dungeonScores.find((x) => x.mapId === dungeon.mapId);
+        if (!d || d.level === 0) return `<td class="cell-dim">\u2014</td>`;
+        return `<td class="cell-dungeon"><span class="dungeon-level">${d.level}</span><span class="dungeon-score">${fmtNumber(d.score)}</span></td>`;
+      }).join("")}
+    </tr>`;
+  }
+
+  function rowRaidSectionHeader() {
+    if (!DATA.raidName) return "";
+    return `<tr class="section-row"><td colspan="999">${DATA.raidName}</td></tr>`;
+  }
+
+  function rowRaidDifficulty(difficulty, chars) {
+    return `<tr>
+      <td class="row-label row-label-sub">${difficulty}</td>
+      ${chars.map((c) => {
+        const row = c.raidGrid[difficulty];
+        if (!row) return `<td>\u2014</td>`;
+        const squares = row
+          .map((dead) => {
+            let cls = "boss-square boss-unknown";
+            if (dead === true) cls = "boss-square boss-dead";
+            else if (dead === false) cls = "boss-square boss-alive";
+            return `<span class="${cls}"></span>`;
+          })
+          .join("");
+        return `<td><div class="boss-row">${squares}</div></td>`;
+      }).join("")}
+    </tr>`;
   }
 
   function render() {
-    const chars = getFilteredSortedCharacters();
-    rosterEl.innerHTML = "";
+    const chars = DATA.characters;
+    renderHeader(chars);
 
-    if (chars.length === 0) {
-      emptyStateEl.hidden = false;
+    let rows = "";
+    rows += rowRealm(chars);
+    rows += rowItemLevel(chars);
+    rows += rowGold(chars);
+    rows += rowRating(chars);
+    rows += rowKeystone(chars);
+    rows += rowVault(chars);
+    rows += rowMythicPlusSectionHeader();
+    for (const dungeon of DATA.mythicPlusDungeons) {
+      rows += rowDungeon(dungeon, chars);
+    }
+    rows += rowRaidSectionHeader();
+    if (DATA.raidName) {
+      for (const difficulty of DATA.raidDifficulties) {
+        rows += rowRaidDifficulty(difficulty, chars);
+      }
+    }
+
+    tbodyEl.innerHTML = rows;
+
+    document.querySelectorAll(".char-col").forEach((th) => {
+      const charId = Number(th.dataset.charId);
+      const open = () => openDetail(charId);
+      th.addEventListener("click", open);
+      th.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          open();
+        }
+      });
+    });
+  }
+
+  // ---------------- Detail panel (gear / currencies / bags) ----------------
+
+  function renderGearRow(item) {
+    const border = qualityColor(item.quality);
+    const countTxt = item.count > 1 ? ` \u00d7${item.count}` : "";
+    const ilvlTxt = item.itemLevel > 0 ? item.itemLevel : "\u2014";
+    const slotTxt = item.slotName || `Bag ${item.bagId}`;
+    return `<li class="gear-row" style="border-left-color:${border}">
+      <span class="slot">${slotTxt}</span>
+      <span class="item-name">${item.itemName}${countTxt}</span>
+      <span class="item-ilvl">${ilvlTxt}</span>
+    </li>`;
+  }
+
+  function renderCurrencyRow(cur) {
+    const qty = cur.max > 0 ? `${fmtNumber(cur.quantity)} / ${fmtNumber(cur.max)}` : fmtNumber(cur.quantity);
+    return `<li class="currency-row">
+      <span class="currency-name">${cur.name}</span>
+      <span class="currency-qty">${qty}</span>
+    </li>`;
+  }
+
+  function fillList(id, items, renderFn, emptyText) {
+    const el = document.getElementById(id);
+    if (!items || items.length === 0) {
+      el.innerHTML = `<li class="empty-msg">${emptyText}</li>`;
       return;
     }
-    emptyStateEl.hidden = true;
+    el.innerHTML = items.map(renderFn).join("");
+  }
 
-    for (const char of chars) {
-      rosterEl.appendChild(buildCard(char));
+  function openDetail(charId) {
+    const char = DATA.characters.find((c) => c.id === charId);
+    if (!char) return;
+
+    document.getElementById("detail-name").textContent = char.name;
+    document.getElementById("detail-name").style.color = classColor(char);
+    document.getElementById("detail-meta").textContent =
+      `${classInfo(char).name} \u00b7 ${realmName(char)} \u00b7 level ${char.level} \u00b7 ilvl ${char.itemLevel}`;
+
+    fillList("detail-equipped", char.equipped, renderGearRow, "No equipped gear data.");
+    fillList("detail-crests", char.currencies.crests, renderCurrencyRow, "None tracked.");
+    fillList("detail-catalyst", char.currencies.catalyst, renderCurrencyRow, "None tracked.");
+    fillList("detail-bonusrolls", char.currencies.bonusRolls, renderCurrencyRow, "None tracked.");
+    fillList("detail-bags", char.bagItems, renderGearRow, "Bags are empty.");
+
+    detailPanel.hidden = false;
+    if (typeof detailPanel.scrollIntoView === "function") {
+      detailPanel.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 
-  function renderHeader() {
-    document.getElementById("stat-warband-gold").textContent =
-      fmtNumber(DATA.warbandGold || 0) + "g";
+  document.getElementById("detail-close").addEventListener("click", () => {
+    detailPanel.hidden = true;
+  });
+
+  // ---------------- Header stats + init ----------------
+
+  function renderTopStats() {
+    document.getElementById("stat-warband-gold").textContent = fmtNumber(DATA.warbandGold || 0) + "g";
     document.getElementById("stat-char-count").textContent = DATA.characters.length;
 
     const generated = new Date(DATA.generatedAt);
     document.getElementById("generated-at").textContent =
-      "Last updated " + generated.toLocaleString(undefined, {
-        dateStyle: "medium",
-        timeStyle: "short",
-      });
-  }
-
-  function wireControls() {
-    document.getElementById("search").addEventListener("input", (e) => {
-      searchTerm = e.target.value;
-      render();
-    });
-
-    document.querySelectorAll(".sort-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".sort-btn").forEach((b) => b.classList.remove("is-active"));
-        btn.classList.add("is-active");
-        sortKey = btn.dataset.sort;
-        render();
-      });
-    });
+      "Last updated " + generated.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
   }
 
   async function init() {
@@ -236,12 +258,11 @@
       const res = await fetch("data.json", { cache: "no-store" });
       DATA = await res.json();
     } catch (err) {
-      rosterEl.innerHTML = `<p class="empty-msg">Could not load character data. Try again shortly.</p>`;
+      tbodyEl.innerHTML = `<tr><td class="empty-msg">Could not load character data. Try again shortly.</td></tr>`;
       console.error(err);
       return;
     }
-    renderHeader();
-    wireControls();
+    renderTopStats();
     render();
   }
 

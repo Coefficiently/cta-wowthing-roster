@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-10T20:52:23.111357+00:00",
+ "generatedAt": "2026-09-10T23:10:47.561233+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4641,9 +4641,9 @@
       "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 460,
+      "quantity": 488,
       "max": 500,
-      "totalQuantity": 460,
+      "totalQuantity": 488,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
@@ -4704,9 +4704,9 @@
     ]
    },
    "mythicPlus": {
-    "rating": 2946,
+    "rating": 2981,
     "currentKeystone": {
-     "dungeonName": "Murder Row",
+     "dungeonName": "Kings' Rest",
      "level": 13
     },
     "dungeonScores": [
@@ -4719,8 +4719,8 @@
      {
       "mapId": 586,
       "name": "Den of Nalorakk",
-      "level": 12,
-      "score": 367
+      "level": 14,
+      "score": 402
      },
      {
       "mapId": 587,
@@ -4782,11 +4782,11 @@
      },
      {
       "met": true,
-      "label": "10"
+      "label": "12"
      },
      {
-      "met": false,
-      "label": null
+      "met": true,
+      "label": "10"
      }
     ],
     "world": [

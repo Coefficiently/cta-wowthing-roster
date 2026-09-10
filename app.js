@@ -181,8 +181,8 @@
             if (dead === true) { cls = "boss-square boss-dead"; status = "Dead"; }
             else if (dead === false) { cls = "boss-square boss-alive"; status = "Alive"; }
             const bossName = bosses[i] || `Boss ${i + 1}`;
-            const title = escapeHtml(`${bossName} \u2014 ${status}`);
-            return `<span class="${cls}" title="${title}"></span>`;
+            const tooltipText = escapeHtml(`${bossName} \u2014 ${status}`);
+            return `<span class="${cls}" data-tooltip="${tooltipText}" aria-label="${tooltipText}"></span>`;
           })
           .join("");
         return `<td><div class="boss-row">${squares}</div></td>`;

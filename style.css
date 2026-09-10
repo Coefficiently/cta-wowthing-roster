@@ -192,15 +192,44 @@ a { color: var(--gold-2); }
 
 .boss-row { display: flex; gap: 3px; }
 .boss-square {
+  position: relative;
   width: 14px;
   height: 14px;
   border-radius: 2px;
   display: inline-block;
-  cursor: help;
 }
 .boss-dead { background: var(--boss-dead); }
 .boss-alive { background: var(--boss-unknown); border: 1px solid var(--line); }
 .boss-unknown { background: var(--boss-unknown); border: 1px solid var(--line); }
+
+.boss-square[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d0b07;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.boss-square[data-tooltip]:hover::before {
+  content: "";
+  position: absolute;
+  top: 108%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: var(--line);
+  z-index: 20;
+  pointer-events: none;
+}
 
 /* ---------- Detail panel ---------- */
 

@@ -31,6 +31,16 @@ whatever the current season uses. When a new WoW season/patch changes these,
 update the ID lists at the top of the script — look up the new IDs from
 `https://wowthing.org/api/static-*.json` (`rawCurrencies`, matched by name).
 
+Watch out for duplicate names: some seasons have multiple currency ids that
+display the exact same name (different seasons/sources reusing a label).
+Verify a candidate id against a real known value before trusting it — a
+name match alone isn't enough.
+
+Crest hold caps (`CREST_MAX_OVERRIDE`) aren't available from wowthing's
+public API at all, so they're hand-maintained too: each crest's cap rises
++100/week from season start, except Myth, which is always 100 less than the
+others. Update every Tuesday reset.
+
 ## Local development
 
 ```

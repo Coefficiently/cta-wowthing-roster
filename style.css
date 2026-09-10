@@ -163,7 +163,7 @@ a { color: var(--gold-2); }
 .cell-strong { font-weight: 700; font-variant-numeric: tabular-nums; }
 .cell-rating { color: var(--gold-2); font-variant-numeric: tabular-nums; }
 .cell-currency { font-variant-numeric: tabular-nums; }
-.cell-currency-tooltip { position: relative; cursor: help; }
+.cell-currency-tooltip { position: relative; }
 .cell-currency .wh-item-link { color: var(--gold-2); }
 .cell-keystone { color: var(--ink); }
 .keystone-level { color: var(--gold-2); font-weight: 700; margin-right: 0.3rem; }
@@ -318,7 +318,6 @@ a { color: var(--gold-2); }
 .gear-row-top .slot { color: var(--ink-dim); flex-shrink: 0; width: 5.5rem; font-size: 0.78rem; }
 .gear-row-top .item-name { flex: 1; min-width: 0; overflow-wrap: break-word; }
 .gear-row-top .item-ilvl { color: var(--gold-2); flex-shrink: 0; font-variant-numeric: tabular-nums; font-weight: 600; position: relative; }
-.gear-row-top .item-ilvl[data-tooltip] { cursor: help; }
 
 .item-tier-badge {
   display: inline-block;

@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-11T20:57:47.058120+00:00",
+ "generatedAt": "2026-09-11T23:15:40.897513+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4370,7 +4370,8 @@
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001&ilvl=334"
+     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001",
+     "itemLevelEstimated": true
     },
     {
      "slot": 5,
@@ -4414,7 +4415,8 @@
       }
      ],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967&ilvl=334"
+     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967",
+     "itemLevelEstimated": true
     },
     {
      "slot": 7,
@@ -4463,7 +4465,8 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574&ilvl=321"
+     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574",
+     "itemLevelEstimated": true
     },
     {
      "slot": 10,
@@ -4618,9 +4621,9 @@
       "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 56,
+      "quantity": 64,
       "max": 500,
-      "totalQuantity": 56,
+      "totalQuantity": 64,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
@@ -4628,9 +4631,9 @@
       "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 145,
+      "quantity": 181,
       "max": 500,
-      "totalQuantity": 25,
+      "totalQuantity": 61,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
@@ -4638,9 +4641,9 @@
       "id": 3444,
       "name": "Champion Mistcrest",
       "shortName": "Champion",
-      "quantity": 488,
+      "quantity": 500,
       "max": 500,
-      "totalQuantity": 488,
+      "totalQuantity": 500,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3444"
      },
@@ -4701,9 +4704,9 @@
     ]
    },
    "mythicPlus": {
-    "rating": 2981,
+    "rating": 3101,
     "currentKeystone": {
-     "dungeonName": "Kings' Rest",
+     "dungeonName": "Voidscar Arena",
      "level": 13
     },
     "dungeonScores": [
@@ -4734,14 +4737,14 @@
      {
       "mapId": 585,
       "name": "Voidscar Arena",
-      "level": 13,
-      "score": 385
+      "level": 15,
+      "score": 417
      },
      {
       "mapId": 399,
       "name": "Ruby Life Pools",
-      "level": 12,
-      "score": 372
+      "level": 14,
+      "score": 400
      },
      {
       "mapId": 249,
@@ -4752,8 +4755,8 @@
      {
       "mapId": 250,
       "name": "Temple of Sethraliss",
-      "level": 10,
-      "score": 335
+      "level": 14,
+      "score": 395
      }
     ]
    },
@@ -4775,15 +4778,15 @@
     "dungeon": [
      {
       "met": true,
+      "label": "15"
+     },
+     {
+      "met": true,
       "label": "14"
      },
      {
       "met": true,
       "label": "12"
-     },
-     {
-      "met": true,
-      "label": "10"
      }
     ],
     "world": [
@@ -5446,7 +5449,7 @@
    "id": 2504374,
    "name": "Ctavoker",
    "level": 90,
-   "itemLevel": 317,
+   "itemLevel": 318,
    "classId": 13,
    "raceId": 70,
    "realmId": 11,
@@ -5728,19 +5731,19 @@
      "slotName": "Back",
      "itemId": 268253,
      "itemName": "Silken Voodoo Drape",
-     "itemLevel": 321,
+     "itemLevel": 328,
      "quality": 4,
      "context": 95,
      "craftedQuality": 0,
      "upgrade": {
       "track": "Myth",
-      "rank": 2,
+      "rank": 4,
       "maxRank": 6
      },
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=268253?bonus=6652:13662:13334:12850&ilvl=321"
+     "wowheadUrl": "https://www.wowhead.com/item=268253?bonus=6652:13662:13334:12852&ilvl=328"
     },
     {
      "slot": 16,
@@ -5910,9 +5913,9 @@
       "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 40,
+      "quantity": 16,
       "max": 400,
-      "totalQuantity": 150,
+      "totalQuantity": 166,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3446"
      }
@@ -5953,8 +5956,11 @@
     ]
    },
    "mythicPlus": {
-    "rating": 2660,
-    "currentKeystone": null,
+    "rating": 2702,
+    "currentKeystone": {
+     "dungeonName": "Den of Nalorakk",
+     "level": 11
+    },
     "dungeonScores": [
      {
       "mapId": 588,
@@ -5989,8 +5995,8 @@
      {
       "mapId": 399,
       "name": "Ruby Life Pools",
-      "level": 10,
-      "score": 332
+      "level": 12,
+      "score": 374
      },
      {
       "mapId": 249,
@@ -6023,8 +6029,8 @@
     ],
     "dungeon": [
      {
-      "met": false,
-      "label": null
+      "met": true,
+      "label": "12"
      },
      {
       "met": false,
@@ -8718,7 +8724,7 @@
      "slotName": "Legs",
      "itemId": 271482,
      "itemName": "Leggings of the Ophidian Oracle",
-     "itemLevel": 302,
+     "itemLevel": 0,
      "quality": 4,
      "context": 151,
      "craftedQuality": 0,
@@ -8730,7 +8736,7 @@
      "enchant": "+ Intellect & + Stamina",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271482?bonus=13333:12836:43:13693:13698:1555&ench=7935&ilvl=302"
+     "wowheadUrl": "https://www.wowhead.com/item=271482?bonus=13333:12836:43:13693:13698:1555&ench=7935"
     },
     {
      "slot": 8,

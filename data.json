@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-12T04:33:53.881097+00:00",
+ "generatedAt": "2026-09-12T10:46:08.008765+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4370,7 +4370,8 @@
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001&ilvl=334"
+     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001",
+     "itemLevelEstimated": true
     },
     {
      "slot": 5,
@@ -4414,7 +4415,8 @@
       }
      ],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967&ilvl=334"
+     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967",
+     "itemLevelEstimated": true
     },
     {
      "slot": 7,
@@ -4463,7 +4465,8 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574&ilvl=321"
+     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574",
+     "itemLevelEstimated": true
     },
     {
      "slot": 10,
@@ -4618,9 +4621,9 @@
       "id": 3442,
       "name": "Adventurer Mistcrest",
       "shortName": "Adventurer",
-      "quantity": 64,
+      "quantity": 71,
       "max": 500,
-      "totalQuantity": 64,
+      "totalQuantity": 71,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3442"
      },
@@ -4628,9 +4631,9 @@
       "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 211,
+      "quantity": 259,
       "max": 500,
-      "totalQuantity": 91,
+      "totalQuantity": 139,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
@@ -4670,7 +4673,7 @@
       "id": 3465,
       "name": "Venomblight Manaflux",
       "shortName": "Venomblight Manaflux",
-      "quantity": 0,
+      "quantity": 1,
       "max": 8,
       "totalQuantity": 0,
       "isMovingMax": false,
@@ -4703,8 +4706,8 @@
    "mythicPlus": {
     "rating": 3101,
     "currentKeystone": {
-     "dungeonName": "Voidscar Arena",
-     "level": 13
+     "dungeonName": "Altar of Fangs",
+     "level": 10
     },
     "dungeonScores": [
      {
@@ -4863,7 +4866,7 @@
    "id": 2515523,
    "name": "Gonexttier",
    "level": 90,
-   "itemLevel": 321,
+   "itemLevel": 322,
    "classId": 13,
    "raceId": 70,
    "realmId": 57,
@@ -4897,13 +4900,13 @@
      "slotName": "Neck",
      "itemId": 268251,
      "itemName": "Amulet of the Twin Fangs",
-     "itemLevel": 321,
+     "itemLevel": 331,
      "quality": 4,
      "context": 95,
      "craftedQuality": 0,
      "upgrade": {
       "track": "Myth",
-      "rank": 2,
+      "rank": 5,
       "maxRank": 6
      },
      "enchant": null,
@@ -4915,7 +4918,7 @@
       }
      ],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=268251?bonus=6652:13668:13334:12850&gems=240906&ilvl=321"
+     "wowheadUrl": "https://www.wowhead.com/item=268251?bonus=6652:13668:13334:12853&gems=240906&ilvl=331"
     },
     {
      "slot": 3,
@@ -4934,7 +4937,8 @@
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271499?bonus=43:13440:13694:13697:12846&ench=8001&ilvl=321"
+     "wowheadUrl": "https://www.wowhead.com/item=271499?bonus=43:13440:13694:13697:12846&ench=8001",
+     "itemLevelEstimated": true
     },
     {
      "slot": 5,
@@ -4997,7 +5001,8 @@
      "enchant": "+ Intellect & + Stamina",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=13334:42:13693:13698:12846&ench=7935&ilvl=321"
+     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=13334:42:13693:13698:12846&ench=7935",
+     "itemLevelEstimated": true
     },
     {
      "slot": 8,
@@ -5241,7 +5246,7 @@
       "id": 3446,
       "name": "Myth Mistcrest",
       "shortName": "Myth",
-      "quantity": 72,
+      "quantity": 12,
       "max": 400,
       "totalQuantity": 262,
       "isMovingMax": true,
@@ -5578,8 +5583,7 @@
      "enchant": "+ Intellect & + Stamina",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=6652:13440:13693:13698:12846&ench=7935",
-     "itemLevelEstimated": true
+     "wowheadUrl": "https://www.wowhead.com/item=271500?bonus=6652:13440:13693:13698:12846&ench=7935&ilvl=321"
     },
     {
      "slot": 8,
@@ -6115,7 +6119,7 @@
    "id": 2504379,
    "name": "Migwangomage",
    "level": 90,
-   "itemLevel": 317,
+   "itemLevel": 316,
    "classId": 8,
    "raceId": 25,
    "realmId": 6,
@@ -6400,21 +6404,17 @@
     {
      "slot": 14,
      "slotName": "Trinket 2",
-     "itemId": 270169,
-     "itemName": "Hex Lord's Dooming Idol",
-     "itemLevel": 308,
+     "itemId": 249346,
+     "itemName": "Vaelgor's Final Stare",
+     "itemLevel": 298,
      "quality": 4,
-     "context": 3,
+     "context": 6,
      "craftedQuality": 0,
-     "upgrade": {
-      "track": "Champion",
-      "rank": 6,
-      "maxRank": 6
-     },
+     "upgrade": null,
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=270169?bonus=6652:13333:12838&ilvl=308"
+     "wowheadUrl": "https://www.wowhead.com/item=249346?bonus=6652:13335:13654&ilvl=298"
     },
     {
      "slot": 15,
@@ -9246,7 +9246,8 @@
      "enchant": "Enchant Chest - Mark of the Worldsoul",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271540?bonus=6652:12841:13690:13698:1558&ench=7987&ilvl=305"
+     "wowheadUrl": "https://www.wowhead.com/item=271540?bonus=6652:12841:13690:13698:1558&ench=7987",
+     "itemLevelEstimated": true
     },
     {
      "slot": 6,

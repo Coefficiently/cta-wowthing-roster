@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-11T23:15:40.897513+00:00",
+ "generatedAt": "2026-09-12T04:33:53.881097+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4370,8 +4370,7 @@
      "enchant": "Enchant Shoulders - Amirdrassil's Grace",
      "gems": [],
      "isTierPiece": true,
-     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001",
-     "itemLevelEstimated": true
+     "wowheadUrl": "https://www.wowhead.com/item=271526?bonus=6652:13335:13694:13697:12854&ench=8001&ilvl=334"
     },
     {
      "slot": 5,
@@ -4415,8 +4414,7 @@
       }
      ],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967",
-     "itemLevelEstimated": true
+     "wowheadUrl": "https://www.wowhead.com/item=271525?bonus=6652:13335:12854:13695:1587&gems=240967&ilvl=334"
     },
     {
      "slot": 7,
@@ -4465,8 +4463,7 @@
      "enchant": null,
      "gems": [],
      "isTierPiece": false,
-     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574",
-     "itemLevelEstimated": true
+     "wowheadUrl": "https://www.wowhead.com/item=271524?bonus=12846:13334:6652:13696:1574&ilvl=321"
     },
     {
      "slot": 10,
@@ -4631,9 +4628,9 @@
       "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 181,
+      "quantity": 211,
       "max": 500,
-      "totalQuantity": 61,
+      "totalQuantity": 91,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
@@ -4834,7 +4831,7 @@
       true,
       true,
       true,
-      false
+      true
      ]
     },
     "The Tidebound Grotto": {

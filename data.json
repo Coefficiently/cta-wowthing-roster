@@ -1,6 +1,6 @@
 {
  "account": "cta",
- "generatedAt": "2026-09-12T10:46:08.008765+00:00",
+ "generatedAt": "2026-09-12T15:31:26.492498+00:00",
  "minLevel": 90,
  "minItemLevel": 290,
  "warbandGold": 0,
@@ -4631,9 +4631,9 @@
       "id": 3443,
       "name": "Veteran Mistcrest",
       "shortName": "Veteran",
-      "quantity": 259,
+      "quantity": 339,
       "max": 500,
-      "totalQuantity": 139,
+      "totalQuantity": 219,
       "isMovingMax": true,
       "wowheadUrl": "https://www.wowhead.com/currency=3443"
      },
